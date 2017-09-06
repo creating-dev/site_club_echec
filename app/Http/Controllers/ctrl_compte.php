@@ -47,7 +47,7 @@ class ctrl_compte
         return view('compte');
 
     }
-
+   
     public function return_page(){
 
        return Redirect::to($_SESSION['save_page']);
