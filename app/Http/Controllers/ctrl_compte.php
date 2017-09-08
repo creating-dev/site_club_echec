@@ -10,48 +10,47 @@ namespace App\Http\Controllers;
 
 
 
+use Database\DAO\DAO_users;
+use Illuminate\Http\Request;
+use App\Http\Requests;
 use Illuminate\Support\Facades\Redirect;
 
 session_start();
 
 class ctrl_compte
 {
-    public static $save_page = '';
-
-    public function save_page_url()
-    {
-        $url_provenance = $_SERVER['HTTP_REFERER'];
-
-        $url_actuel = "http://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];
-
-        if ($url_provenance != $url_actuel) {
-
-            $url_explode = explode("/", $url_provenance);
-
-            $page = $url_explode[sizeof($url_explode) - 1];
-
-            if( !isset($_SESSION['save_page']) || $_SESSION['save_page'] != $page){
-
-                $_SESSION['save_page'] = $page;
-
-            }
-        }
-
-        return $_SESSION['save_page'];
-    }
 
     public function page_compte(){
 
-        self::save_page_url();
+        tools::save_page_url();
 
         return view('compte');
 
     }
 
-    public function return_page(){
+    public function connexion(Request $request){
 
-       return Redirect::to($_SESSION['save_page']);
+        $req = $request->request->all();
+
+        $is_ok = DAO_users::inscription_user($req);
+
+        if($is_ok){
+
+        $_SESSION['connexion'] = 'ok';
+
+         return tools::return_page();
+
+        }
 
     }
+
+
+    public function deconnexion(){
+
+        $_SESSION['connexion'] = 'not_ok';
+
+        return Redirect::to('compte');
+    }
+
 
 }
