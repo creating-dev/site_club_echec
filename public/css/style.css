@@ -1,14 +1,10 @@
 
-<<<<<<< HEAD
 a{
     text-decoration: none;
     list-style-type: none;
 }
 
-#baniere{
-=======
 #baniere {
->>>>>>> jerome
     background-color: black;
     height: 105px;
     margin-left: 0px;
@@ -127,13 +123,11 @@ hr {
     text-align: center;
 }
 
-<<<<<<< HEAD
 #mon_compte{
     margin-left: 10%;
     margin-right: 10%;
 }
 
-=======
 #methode {
     list-style-type: circle;
 }
@@ -160,4 +154,4 @@ hr {
 .container{
     background-image: url("public/img/fond.png");
 }
->>>>>>> jerome
+
