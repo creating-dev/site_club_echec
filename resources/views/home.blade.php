@@ -15,7 +15,7 @@
     </p>
     <br><br>
     <div class="row">
-        <div class="col-lg-5">
+        <div class="col-lg-4">
 
     <ul id="methode">
         <li>Méthodes et Techniques de Travail Structurées</li>
@@ -25,13 +25,13 @@
         <li> Cours Spécialisés pourles Elèves en DifficultésScolaires</li>
     </ul>
         </div>
-            <div class="col-lg-3">
+            <div class="col-lg-4">
             </div>
                 <div class="col-lg-3">
         <ul id="infCourante">
             <li> Réouverture du Club : </li>
             <li>  Mercredi 6 Septembre </li>
-            <li> (1 Mois d’Essai Gratuit)</li>
+            <li> <small>(1 Mois d’Essai Gratuit)</small></li>
 
         </ul>
                 </div>
@@ -40,7 +40,7 @@
     </div>
     <br><br>
 
-    <h4 id="titre3Ho">Les passionnés du Club d’Ollioules seront honorés de vous accueillir le :</h4>
+    <h4 id="titre4Ho">Les passionnés du Club d’Ollioules seront honorés de vous accueillir le :</h4>
     <br>
     <div class="row">
         <div class="col-lg-4">
@@ -58,7 +58,7 @@
         <div class="col-lg-4">
         </div>
     </div>
-    <h4 id="titre5Ho">Pour tous renseignements, n’hésitez pas à contacter l’Entraîneur du Club </h4>
+    <h6 id="titre5Ho">Pour tous renseignements, n’hésitez pas à contacter l’Entraîneur du Club </h6>
 <br><br><br>
 
 
