@@ -1,12 +1,9 @@
 
-<<<<<<< HEAD
-=======
 a{
     text-decoration: none;
     list-style-type: none;
 }
 
->>>>>>> jojo
 #baniere {
     background-color: black;
     height: 105px;
@@ -126,14 +123,12 @@ hr {
     text-align: center;
 }
 
-<<<<<<< HEAD
-=======
+
 #mon_compte{
     margin-left: 10%;
     margin-right: 10%;
 }
 
->>>>>>> jojo
 #methode {
     list-style-type: circle;
 }
@@ -158,11 +153,6 @@ hr {
 }
 
 .container{
-<<<<<<< HEAD
-    background-image:site_club_echec/public/img/fond.png;
-}
-=======
-    background-image: url("public/img/fond.png");
+    background-image: url("../img/fond.PNG");
 }
 
->>>>>>> jojo
