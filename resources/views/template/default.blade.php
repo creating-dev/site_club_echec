@@ -32,7 +32,7 @@
                             <li><a href="agenda">Agenda</a></li>
                             <li><a href="video">Video</a></li>
                             <li><a href="goodies">Goodies</a></li>
-                            <li><a href="forums">Fsorum</a></li>
+                            <li><a href="forums">Forum</a></li>
                             <li><a href="goodies"><img src="img/kdo.PNG" alt=""></a></li>
                             <li><a href="compte"><img src="img/compte.PNG" alt=""></a></li>
 
