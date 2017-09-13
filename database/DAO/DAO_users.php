@@ -21,7 +21,7 @@ class DAO_users
         return  new PDO('mysql:host=localhost;dbname='. env('DB_DATABASE') .';charset=utf8', 'root', '');
     }
 
-    public static function inscription_user($parameters) : bool {
+    public static function inscription_user($parameters) {
 
         $bdd = self::bdd();
 
