@@ -17,26 +17,30 @@
     <div class="row">
         <div class="col-lg-4">
 
-    <ul id="methode">
-        <li>Méthodes et Techniques de Travail Structurées</li>
-        <li> Travail Personnalisé</li>
-        <li> Travail en Groupe</li>
-        <li> Tournois Jeunes</li>
-        <li> Cours Spécialisés pour les Elèves en Difficultés Scolaires</li>
-    </ul>
+            <ul id="methode">
+                <li>Méthodes et Techniques de Travail Structurées</li>
+                <li> Travail Personnalisé</li>
+                <li> Travail en Groupe</li>
+                <li> Tournois Jeunes</li>
+                <li> Cours Spécialisés pour les Elèves en Difficultés Scolaires</li>
+            </ul>
         </div>
-            <div class="col-lg-4">
-            </div>
+        <div class="col-lg-4">
+            <img src="../public/img/videoPresentation.png" alt="">
+        </div>
         <div class="col-lg-4">
 
-        <div  class="jumbotron">
-        <ul id="infCourante">
-            <li> Réouverture du Club : </li>
-            <li>  Mercredi 6 Septembre </li>
-            <li> <small>(1 Mois d’Essai Gratuit)</small></li>
+            <div class="jumbotron">
+                <ul id="infCourante">
+                    <li> Réouverture du Club :</li>
+                    <li> Mercredi 6 Septembre</li>
+                    <li>
+                        <small>(1 Mois d’Essai Gratuit)</small>
+                    </li>
 
-        </ul>
-        </div></div>
+                </ul>
+            </div>
+        </div>
 
     </div>
     <br><br>
@@ -47,20 +51,20 @@
         <div class="col-lg-4">
         </div>
         <div class="col-lg-4">
-    <ul id="hCourant">
-        <li>Lundi : 16h30 - 20h30</li>
-        <li>Mardi : 14h - 18h</li>
-        <li>Mercredi : 14h - 18h</li>
-        <li>Jeudi : 14h - 20h30</li>
-        <li>Vendredi : 16h30 - 20h30</li>
-        <li>Samedi : 9h - 12h</li>
-    </ul>
+            <ul id="hCourant">
+                <li>Lundi : 16h30 - 20h30</li>
+                <li>Mardi : 14h - 18h</li>
+                <li>Mercredi : 14h - 18h</li>
+                <li>Jeudi : 14h - 20h30</li>
+                <li>Vendredi : 16h30 - 20h30</li>
+                <li>Samedi : 9h - 12h</li>
+            </ul>
         </div>
         <div class="col-lg-4">
         </div>
     </div>
     <h6 id="titre5Ho">Pour tous renseignements, n’hésitez pas à contacter l’Entraîneur du Club </h6>
-<br><br><br>
+    <br><br><br>
 
 
 @endsection

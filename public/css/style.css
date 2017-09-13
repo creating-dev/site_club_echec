@@ -1,5 +1,5 @@
 
-a{
+a {
     text-decoration: none;
     list-style-type: none;
 }
@@ -111,49 +111,53 @@ hr {
 
 #titre3Ho {
     text-align: center;
-    text-decoration: underline double;
-
+    font: italic bold 38px comic sans ms;
 
 }
 
 #titre4Ho {
     text-align: center;
+    font: italic bold 25px comic sans ms;
 }
 
 #titre5Ho {
     text-align: center;
 }
 
-
-#mon_compte{
+#mon_compte {
     margin-left: 10%;
     margin-right: 10%;
 }
 
 #methode {
     list-style-type: circle;
+    font: italic bold 20px comic sans ms;
 }
 
 #infCourante {
     list-style-type: none;
+    font: italic bold 20px comic sans ms;
 }
 
 #hCourant {
     list-style-type: none;
     text-justify: auto;
+    font: italic bold 20px comic sans ms;
 
 }
 
 #presentation {
     text-align: justify;
+    text-indent: 20px;
+    font: italic bold 24px comic sans ms;
 }
 
-.jumbotron{
-    background-color: yellow;
+.jumbotron {
+    background-color: lightgoldenrodyellow;
 
 }
 
-body{
+body {
     background: url("../img/fond.PNG") no-repeat fixed;
     background-size: cover;
 }
