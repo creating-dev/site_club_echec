@@ -9,7 +9,34 @@
 
     <div id="mon_compte">
 
-        
+        <form action="#">
+
+            <select>
+                <option value="Mr">Mr</option>
+                <option value="Mme">Madame</option>
+                <option value="J_F">Jeune Fille</option>
+                <option value="J_H">Jeune Homme</option>
+            </select>
+            <br>
+
+            <input type="text" name="nom" id="">
+            <input type="text" name="prenom" id=""><br>
+
+            <input type="date" name="date" id=""><br>
+            <input type="text" name="categorie" id="" disabled><br>
+            <input type="text" name="pseudo" id=""><br>
+            <input type="password" name="pass" id=""><br>
+            <input type="password" name="confirm_pass" id=""><br>
+            <input type="email" name="mail" id=""><br>
+            <input type="tel" name="tel" id=""><br>
+            <textarea name="adresse" id="" cols="30" rows="3">
+
+            </textarea><br>
+            <input type="text" name="ffe" id=""><br>
+
+
+
+        </form>
 
         <a href="deco"> deconnexion</a>
     </div>
