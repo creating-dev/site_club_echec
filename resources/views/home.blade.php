@@ -22,21 +22,22 @@
         <li> Travail Personnalisé</li>
         <li> Travail en Groupe</li>
         <li> Tournois Jeunes</li>
-        <li> Cours Spécialisés pourles Elèves en DifficultésScolaires</li>
+        <li> Cours Spécialisés pour les Elèves en Difficultés Scolaires</li>
     </ul>
         </div>
             <div class="col-lg-4">
             </div>
-                <div class="col-lg-3">
+        <div class="col-lg-4">
+
+        <div  class="jumbotron">
         <ul id="infCourante">
             <li> Réouverture du Club : </li>
             <li>  Mercredi 6 Septembre </li>
             <li> <small>(1 Mois d’Essai Gratuit)</small></li>
 
         </ul>
-                </div>
-        <div class="col-lg-1">
-        </div>
+        </div></div>
+
     </div>
     <br><br>
 

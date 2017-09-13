@@ -55,6 +55,7 @@
 #corps {
     min-height: 500px;
     background-color: darkseagreen;
+    padding: 2%;
 }
 
 #pub {
@@ -123,15 +124,23 @@ hr {
 
 #infCourante {
     list-style-type: none;
-    font-style: italic;
-    border-style: double;
 }
 
 #hCourant {
     list-style-type: none;
+    text-justify: auto;
+
 }
 
 #presentation {
     text-align: justify;
 }
 
+.jumbotron{
+    background-color: yellow;
+
+}
+
+.container{
+    background-image: url("public/img/fond.png");
+}
