@@ -24,6 +24,8 @@ class ctrl_compte
 
         tools::save_page_url();
 
+        $_SESSION['erreur'] = [];
+
         return view('compte');
 
     }
@@ -41,6 +43,8 @@ class ctrl_compte
          return tools::return_page();
 
         }
+
+        return view('compte');
 
     }
 

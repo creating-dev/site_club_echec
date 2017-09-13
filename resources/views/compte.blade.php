@@ -8,6 +8,9 @@
     <?php if (isset($_SESSION['connexion']) && $_SESSION['connexion'] == 'ok') : ?>
 
     <div id="mon_compte">
+
+        
+
         <a href="deco"> deconnexion</a>
     </div>
 
@@ -18,6 +21,17 @@
         <form action="compte" method="post">
             {{ csrf_field() }}
 
+             <?php
+                $erreur = \App\Http\Controllers\Erreur::get_erreur();
+
+                foreach ($erreur as $value){
+                    echo $value;
+                }
+
+              ?>
+
+            <br><br>
+
             <label for="">nom</label><br>
             <input type="text" name="user" id="user" placeholder="entrer votre peseudo"><br>
 
@@ -25,12 +39,9 @@
             <input type="text" name="pass" id="pass" placeholder="entrer votre peseudo"><br><br>
 
             <input type="submit">
+            <br><br><br>
         </form>
 
     </div>
-
-
-
     <?php endif; ?>
-
 @endsection

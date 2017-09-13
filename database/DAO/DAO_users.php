@@ -9,6 +9,7 @@
 namespace Database\DAO;
 
 
+use App\Http\Controllers\Erreur;
 use PDO;
 
 
@@ -24,6 +25,9 @@ class DAO_users
 
         $bdd = self::bdd();
 
+        Erreur::set_erreur('pass', '');
+        Erreur::set_erreur('user', '');
+
         $req = $bdd->prepare('SELECT * FROM users WHERE nom = :nom');
         $req->execute([
             'nom' => $parameters['user']
@@ -33,20 +37,18 @@ class DAO_users
         if ( !empty($rep) && $rep != null ){
 
             if ( isset($rep['nom']) && $rep['nom'] == $parameters['user']){
-                var_dump('user ok');
-
                 if ($rep['pass'] == $parameters['pass'] && $rep['pass'] != null){
 
                     return true;
 
                 }else{
-                    var_dump('pass incorect');
+                    Erreur::set_erreur('pass', 'la valeur du champs pass est incorect ou vide !!');
                 }
             }
 
 
         }else{
-            var_dump('user incorect');
+            Erreur::set_erreur('user', 'la valeur du champs nom est incorect ou vide !!');
         }
 
         return false;
