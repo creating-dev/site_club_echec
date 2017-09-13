@@ -57,10 +57,50 @@ class DAO_users
 
         $bdd = self::bdd();
 
+        Erreur::set_erreur('nom', '');
+        Erreur::set_erreur('prenom', '');
+        Erreur::set_erreur('date', '');
+        Erreur::set_erreur('pseudo', '');
         Erreur::set_erreur('pass', '');
-        Erreur::set_erreur('user', '');
+        Erreur::set_erreur('confirm_pass', '');
+        Erreur::set_erreur('mail', '');
 
-        var_dump($parameters);  // traiter les donnée du formulaire
+        $user = new users();
+
+        $user->setToken($parameters['_token']);
+        $user->setGenre($parameters['genre']);
+        $user->setNom($parameters['nom']);
+        $user->setPrenom($parameters['prenom']);
+        $user->setBirthday($parameters['date']);
+        $user->setPseudo($parameters['pseudo']);
+        $user->setPass($parameters['pass'], $parameters['confirm_pass']);
+        $user->setMail($parameters['mail']);
+        $user->setTel($parameters['tel']);
+        $user->setAdresse($parameters['adresse']);
+        $user->setCodeFFE($parameters['ffe']);
+        $user->setAvatar($parameters['avatar']);
+        $user->setCategorie('test');
+
+        if ( !empty($user->getNom()) && !empty($user->getGenre()) &&!empty($user->getBirthday()) &&!empty($user->getCategorie()) &&!empty($user->getPseudo()) &&!empty($user->getPass()) &&!empty($user->getMail())){
+
+            $reponse = $bdd->prepare('INSERT INTO users (nom, pass, avatar, token, genre, birthday, categorie, mail, tel, adresse, codeFFE) VALUES (:nom, :pass, :avatar, :token, :genre, :birthday, :categorie, :mail, :tel, :adresse, :codeFFE)');
+            $reponse->execute([
+                'nom' => $user->getNom(),
+                'pass' => $user->getPass(),
+                'avatar' => $user->getAvatar(),
+                'token' => $user->getToken(),
+                'genre' => $user->getGenre(),
+                'birthday' => $user->getBirthday(),
+                'categorie' => $user->getCategorie(),
+                'mail' => $user->getMail(),
+                'tel' => $user->getTel(),
+                'adresse' => $user->getAdresse(),
+                'codeFFE' => $user->getCodeFFE()
+            ]);
+
+            return true;
+
+        }
 
         return false;
     }

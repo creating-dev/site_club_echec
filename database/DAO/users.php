@@ -8,10 +8,14 @@
 
 namespace Database\DAO;
 
+use App\Http\Controllers\Erreur;
+
 class users
 {
 
     private $nom;
+    private $prenom;
+    private $pseudo;
     private $pass;
     private $avatar;
     private $token;
@@ -20,14 +24,13 @@ class users
     private $categorie;
     private $mail;
     private $tel;
-    private $tel_contact;
     private $adresse;
     private $code_FFE;
 
     /**
      * @return mixed
      */
-    public function getNom():string
+    public function getNom()
     {
         return $this->nom;
     }
@@ -37,29 +40,94 @@ class users
      */
     public function setNom($nom)
     {
-        $this->nom = $nom;
+        if (isset($nom)){
+            $this->nom = $nom;
+        }else{
+            Erreur::set_erreur('nom', 'le champs nom est vide');
+        }
+
+    }
+
+
+    /**
+     * @return mixed
+     */
+    public function getPrenom()
+    {
+        return $this->prenom;
+    }
+
+    /**
+     * @param mixed $prenom
+     */
+    public function setPrenom($prenom)
+    {
+        if (isset($prenom)){
+            $this->prenom = $prenom;
+        }else{
+            Erreur::set_erreur('prenom', 'le champs prenom est vide');
+        }
+    }
+
+
+    /**
+     * @return mixed
+     */
+    public function getPseudo()
+    {
+        return $this->pseudo;
+    }
+
+    /**
+     * @param mixed $pseudo
+     */
+    public function setPseudo($pseudo)
+    {
+        if (isset($pseudo)){
+            $this->pseudo = $pseudo;
+        }else{
+            Erreur::set_erreur('pseudo', 'le champs pseudo est vide');
+        }
     }
 
     /**
      * @return mixed
      */
-    public function getPass():string
+    public function getPass()
     {
         return $this->pass;
     }
 
     /**
-     * @param mixed $pass
+     * @param $pass
+     * @param $confirm_pass
+     * @return string
      */
-    public function setPass($pass)
+    public function setPass($pass, $confirm_pass)
     {
-        $this->pass = $pass;
+        if (  isset($pass)){
+            if(  isset($confirm_pass)){
+                if ($pass == $confirm_pass){
+                    $this->pass = $pass;
+                }else{
+
+                    Erreur::set_erreur('confirm_pass', 'les mots de pass ne sont pas identique');
+                    Erreur::set_erreur('pass', 'les mots de pass ne sont pas identique');
+                }
+            }else {
+                Erreur::set_erreur('confirm_pass', 'le champs confirmation du mot de passe est vide');
+            }
+        }else{
+            Erreur::set_erreur('pass', 'le champs mot de passe est vide');
+        }
+
+
     }
 
     /**
      * @return mixed
      */
-    public function getAvatar():string
+    public function getAvatar()
     {
         return $this->avatar;
     }
@@ -69,13 +137,14 @@ class users
      */
     public function setAvatar($avatar)
     {
-        $this->avatar = $avatar;
+
+            $this->avatar = $avatar;
     }
 
     /**
      * @return mixed
      */
-    public function getToken():string
+    public function getToken()
     {
         return $this->token;
     }
@@ -91,7 +160,7 @@ class users
     /**
      * @return mixed
      */
-    public function getGenre():string
+    public function getGenre()
     {
         return $this->genre;
     }
@@ -101,13 +170,13 @@ class users
      */
     public function setGenre($genre)
     {
-        $this->genre = $genre;
+            $this->genre = $genre;
     }
 
     /**
      * @return mixed
      */
-    public function getBirthday():DateTime
+    public function getBirthday()
     {
         return $this->birthday;
     }
@@ -117,7 +186,12 @@ class users
      */
     public function setBirthday($birthday)
     {
-        $this->birthday = $birthday;
+        if (isset($birthday)){
+            $this->birthday = $birthday;
+        }else{
+            Erreur::set_erreur('date', 'le champs date de naissance est vide');
+        }
+
     }
 
     /**
@@ -139,7 +213,7 @@ class users
     /**
      * @return mixed
      */
-    public function getMail():string
+    public function getMail()
     {
         return $this->mail;
     }
@@ -149,13 +223,17 @@ class users
      */
     public function setMail($mail)
     {
-        $this->mail = $mail;
+        if (isset($mail)){
+            $this->mail = $mail;
+        }else{
+            Erreur::set_erreur('mail', 'le champs mail est vide');
+        }
     }
 
     /**
      * @return mixed
      */
-    public function getTel():string
+    public function getTel()
     {
         return $this->tel;
     }
@@ -165,29 +243,13 @@ class users
      */
     public function setTel($tel)
     {
-        $this->tel = $tel;
+            $this->tel = $tel;
     }
 
     /**
      * @return mixed
      */
-    public function getTelContact()
-    {
-        return $this->tel_contact;
-    }
-
-    /**
-     * @param mixed $tel_contact
-     */
-    public function setTelContact($tel_contact)
-    {
-        $this->tel_contact = $tel_contact;
-    }
-
-    /**
-     * @return mixed
-     */
-    public function getAdresse():string
+    public function getAdresse()
     {
         return $this->adresse;
     }
@@ -197,13 +259,13 @@ class users
      */
     public function setAdresse($adresse)
     {
-        $this->adresse = $adresse;
+            $this->adresse = $adresse;
     }
 
     /**
      * @return mixed
      */
-    public function getCodeFFE():string
+    public function getCodeFFE()
     {
         return $this->code_FFE;
     }
@@ -213,7 +275,7 @@ class users
      */
     public function setCodeFFE($code_FFE)
     {
-        $this->code_FFE = $code_FFE;
+            $this->code_FFE = $code_FFE;
     }
 
 }

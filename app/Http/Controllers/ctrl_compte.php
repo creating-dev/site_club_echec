@@ -33,8 +33,6 @@ class ctrl_compte
 
     public function page_inscription(){
 
-        tools::save_page_url();
-
         $_SESSION['erreur'] = [];
 
         return view('inscription');
@@ -80,7 +78,7 @@ class ctrl_compte
 
         }
 
-        // return view('compte');
+         return view('inscription');
     }
 
     public function retour(){
