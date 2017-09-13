@@ -30,11 +30,19 @@ class ctrl_compte
 
     }
 
+
+    public function page_inscription(){
+
+        $_SESSION['erreur'] = [];
+
+        return view('inscription');
+    }
+
     public function connexion(Request $request){
 
         $req = $request->request->all();
 
-        $is_ok = DAO_users::inscription_user($req);
+        $is_ok = DAO_users::connect_user($req);
 
         if($is_ok){
 
@@ -54,6 +62,27 @@ class ctrl_compte
         $_SESSION['connexion'] = 'not_ok';
 
         return Redirect::to('compte');
+    }
+
+    public function inscription(Request $request){
+
+        $req = $request->request->all();
+
+        $is_ok = DAO_users::inscription_user($req);
+
+        if($is_ok){
+
+            $_SESSION['connexion'] = 'ok';
+
+            return tools::return_page();
+
+        }
+
+         return view('inscription');
+    }
+
+    public function retour(){
+        return tools::return_page();
     }
 
 

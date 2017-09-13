@@ -4,24 +4,17 @@
 
 @section('content')
 
-    <?php if (isset($_SESSION['connexion']) && $_SESSION['connexion'] == 'ok') : ?>
-    <h1 style="text-align: center; width: 100%">mon compte</h1>
-    <a href="deco" style="float: right; margin-right: 10%"> deconnexion</a>
+    <h1 style="text-align: center; width: 100%">S'inscrire</h1><br><br><br>
 
-    <br><br><br><br>
     <div id="mon_compte">
 
-        <form action="#">
+        <form action="inscription" method="post">
 
             <div class="row">
 
                 {{ csrf_field() }}
 
-                <?php
-                
-                $erreur = \App\Http\Controllers\Erreur::get_erreur();
-
-                ?>
+                    <?php $erreur = \App\Http\Controllers\Erreur::get_erreur(); ?>
 
                 <div class="col-lg-8">
                     <div class="form-group">
@@ -103,11 +96,11 @@
                         <label for="">*Confirmation du mot de passe :</label><br>
                         <input type="password" name="confirm_pass" style="width: 200px" class="form-control <?php if(isset($erreur['confirm_pass'])&& $erreur['confirm_pass'] != ''){ echo 'is-invalid';} ?>">
                         <div class="invalid-feedback">
-                            <?php
-                            if(isset($erreur['confirm_pass'])&& $erreur['confirm_pass'] != ''){
-                                echo $erreur['confirm_pass'];
-                            }
-                            ?>
+                        <?php
+                        if(isset($erreur['confirm_pass'])&& $erreur['confirm_pass'] != ''){
+                            echo $erreur['confirm_pass'];
+                        }
+                        ?>
                         </div>
                     </div>
 
@@ -150,7 +143,7 @@
 
             </div>
 
-            <input type="submit" value="Modifier le profil" class="btn btn-primary">
+            <input type="submit" value="valider" class="btn btn-primary">
             <a href="retour" class="btn btn-primary">Annuler</a>
 
         </form>
@@ -158,46 +151,4 @@
         <br><br><br><br><br><br>
     </div>
 
-    <?php else: ?>
-
-    <div id="connexion">
-
-        <form action="compte" method="post">
-            {{ csrf_field() }}
-
-             <?php $erreur = \App\Http\Controllers\Erreur::get_erreur(); ?>
-
-            <br><br><br><br>
-
-            <div class="form-group">
-                <label for="">Pseudo :</label><br>
-                <input type="text" name="user" id="user" placeholder="entrer votre peseudo" value="<?php if(isset($_POST['user'])){ echo $_POST['user'];} ?>"  class="form-control <?php if(isset($erreur['user'])&& $erreur['user'] != ''){ echo 'is-invalid';} ?>"  style="width: 300px;margin-left: 36%">
-                <div class="invalid-feedback">
-                    <?php
-                    if(isset($erreur['user'])&& $erreur['user'] != ''){
-                        echo $erreur['user'];
-                    }
-                    ?>
-                </div>
-            </div>
-
-            <div class="form-group">
-                <label for="">mot de pass :</label><br>
-                <input type="password" name="pass" id="pass" placeholder="entrer votre mot de passe" class="form-control <?php if(isset($erreur['pass'])&& $erreur['pass'] != ''){ echo 'is-invalid';} ?>"  style="width: 300px;margin-left: 36%">
-                <div class="invalid-feedback">
-                    <?php
-                    if(isset($erreur['pass'])&& $erreur['pass'] != ''){
-                        echo $erreur['pass'];
-                    }
-                    ?>
-                </div>
-            </div>
-
-            <input type="submit" value="valider" class="btn btn-primary">
-            <a href="inscription" class="btn btn-primary">S'inscrire au site</a>
-            <br><br><br><br><br><br>
-        </form>
-
-    </div>
-    <?php endif; ?>
 @endsection
