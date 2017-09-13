@@ -64,5 +64,6 @@ Route::get('/contact', function () {
 });
 
 Route::get('/compte', 'ctrl_compte@page_compte');
+Route::get('/deco', 'ctrl_compte@deconnexion');
 
-Route::get('/compte_ok', 'ctrl_compte@return_page');
+Route::post('/compte', 'ctrl_compte@connexion');
