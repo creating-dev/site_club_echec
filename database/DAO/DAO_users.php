@@ -21,7 +21,7 @@ class DAO_users
         return  new PDO('mysql:host=localhost;dbname='. env('DB_DATABASE') .';charset=utf8', 'root', '');
     }
 
-    public static function inscription_user($parameters) {
+    public static function connect_user($parameters) {
 
         $bdd = self::bdd();
 
@@ -50,6 +50,17 @@ class DAO_users
         }else{
             Erreur::set_erreur('user', 'la valeur du champs nom est incorect ou vide !!');
         }
+
+        return false;
+    }
+    public static function inscription_user($parameters) {
+
+        $bdd = self::bdd();
+
+        Erreur::set_erreur('pass', '');
+        Erreur::set_erreur('user', '');
+
+        var_dump($parameters);  // traiter les donnée du formulaire
 
         return false;
     }
