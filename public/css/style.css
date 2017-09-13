@@ -10,7 +10,7 @@
 #ban{
     text-align: center;
     border-bottom: 1px solid white;
-    color: white;
+    color: yellow;
     margin-left: 40px;
     margin-right: -40px;
     font-size: 55px;
@@ -34,18 +34,18 @@
 #menu li {
     list-style-type: none;
     display: inline-block;
-    margin-left: 6.5%;
+    margin-left: 6%;
     font-size: 20px;
 }
 
 #menu li a{
     text-decoration: none;
-    color: white;
+    color: yellow;
 }
 
 #menu li a:hover{
     text-decoration: none;
-    color: yellow;
+    color: white;
 }
 
 #menu li:first-child {
@@ -55,7 +55,7 @@
 
 #corps{
     min-height: 500px;
-    background-color: #8eb4cb;
+    background-color: darkseagreen;
 }
 
 #pub{
@@ -100,6 +100,18 @@ hr{
 
 #connexion {
     width: 100%;
+    text-align: center;}
+
+
+#titre3Ho{
     text-align: center;
-    background-color: #2ab27b;
 }
+
+#titre4Ho{
+    text-align: center;
+}
+
+#titre5Ho{
+    text-align: center;
+}
+
