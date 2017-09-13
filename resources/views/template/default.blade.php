@@ -27,7 +27,7 @@
                     <div id="menu">
                         <ul>
                             <li><a href="#"><img src="img/burger.PNG" alt=""></a></li>
-                            <li><a href="actualite">Actualité</a></li>
+                            <li><a href="home">Acceuil</a></li>
                             <li><a href="club">Club</a></li>
                             <li><a href="agenda">Agenda</a></li>
                             <li><a href="video">Video</a></li>

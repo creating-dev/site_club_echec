@@ -61,6 +61,7 @@ a{
     min-height: 500px;
     background-color: darkseagreen;
     padding: 2%;
+    opacity: 0.9;
 }
 
 #pub {
@@ -123,6 +124,7 @@ hr {
     text-align: center;
 }
 
+
 #mon_compte{
     margin-left: 10%;
     margin-right: 10%;
@@ -151,7 +153,15 @@ hr {
 
 }
 
+<<<<<<< HEAD
 .container{
     background-image: url("../img/fond.png");
+=======
+body{
+    background: url("../img/fond.PNG") no-repeat fixed;
+    background-size: cover;
+>>>>>>> jerome
 }
+
+
 
