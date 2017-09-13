@@ -18,7 +18,7 @@
                 {{ csrf_field() }}
 
                 <?php
-                
+
                 $erreur = \App\Http\Controllers\Erreur::get_erreur();
 
                 ?>
