@@ -1,13 +1,12 @@
 
-
-#baniere{
+#baniere {
     background-color: black;
     height: 105px;
     margin-left: 0px;
     margin-right: 0px;
 }
 
-#ban{
+#ban {
     text-align: center;
     border-bottom: 1px solid white;
     color: yellow;
@@ -16,15 +15,15 @@
     font-size: 55px;
 }
 
-#log1{
+#log1 {
     margin-left: -16px;
 }
 
-#log2{
+#log2 {
     margin-left: -24px;
 }
 
-#menu{
+#menu {
     background-color: black;
     color: white;
     height: 80px;
@@ -38,27 +37,27 @@
     font-size: 20px;
 }
 
-#menu li a{
+#menu li a {
     text-decoration: none;
     color: yellow;
 }
 
-#menu li a:hover{
+#menu li a:hover {
     text-decoration: none;
     color: white;
 }
 
 #menu li:first-child {
-   float: left;
+    float: left;
     margin-left: -30px;
 }
 
-#corps{
+#corps {
     min-height: 500px;
     background-color: darkseagreen;
 }
 
-#pub{
+#pub {
     margin-top: -20px;
     padding-top: 2%;
     background-color: black;
@@ -68,7 +67,7 @@
     text-align: center;
 }
 
-#footer{
+#footer {
     margin-top: -19px;
     background-color: #007002;
     color: black;
@@ -85,33 +84,51 @@
     text-align: left;
 }
 
-#footer li a{
+#footer li a {
     text-decoration: none;
     color: black;
 }
 
-hr{
+hr {
     border: 1px solid black;
 }
 
-#information_img_1{
+#information_img_1 {
     margin-left: -17px;
 }
 
 #connexion {
     width: 100%;
-    text-align: center;}
-
-
-#titre3Ho{
     text-align: center;
 }
 
-#titre4Ho{
+#titre3Ho {
     text-align: center;
 }
 
-#titre5Ho{
+#titre4Ho {
     text-align: center;
+}
+
+#titre5Ho {
+    text-align: center;
+}
+
+#methode {
+    list-style-type: circle;
+}
+
+#infCourante {
+    list-style-type: none;
+    font-style: italic;
+    border-style: double;
+}
+
+#hCourant {
+    list-style-type: none;
+}
+
+#presentation {
+    text-align: justify;
 }
 
