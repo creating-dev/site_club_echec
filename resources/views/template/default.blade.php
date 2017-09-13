@@ -19,7 +19,7 @@
             <div class="col-lg-12">
                 <div id="baniere" class="row">
                     <div class="col-lg-1" id="log1"><img src="img/log-1.PNG" alt=""></div>
-                    <div class="col-lg-10" id="ban">Club d'eches d'ollioules </div>
+                    <div class="col-lg-10" id="ban">Club d'Echecs d'Ollioules </div>
                     <div class="col-lg-1" id="log2"><img src="img/log-2.PNG" alt=""></div>
                 </div>
             </div>
@@ -28,11 +28,11 @@
                         <ul>
                             <li><a href="#"><img src="img/burger.PNG" alt=""></a></li>
                             <li><a href="actualite">Actualité</a></li>
-                            <li><a href="club">club</a></li>
-                            <li><a href="agenda">agenda</a></li>
-                            <li><a href="video">video</a></li>
-                            <li><a href="goodies">goodies</a></li>
-                            <li><a href="forums">forum</a></li>
+                            <li><a href="club">Club</a></li>
+                            <li><a href="agenda">Agenda</a></li>
+                            <li><a href="video">Video</a></li>
+                            <li><a href="goodies">Goodies</a></li>
+                            <li><a href="forums">Fsorum</a></li>
                             <li><a href="goodies"><img src="img/kdo.PNG" alt=""></a></li>
                             <li><a href="compte"><img src="img/compte.PNG" alt=""></a></li>
 
