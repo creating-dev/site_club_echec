@@ -68,8 +68,8 @@
 
             </div>
 
-            <input type="submit" value="valider">
-            <input type="submit" value="annuler">
+            <input type="submit" value="valider" class="btn btn-primary">
+            <a href="#" class="btn btn-primary">Annuler</a>
 
         </form>
 
@@ -100,7 +100,8 @@
             <label for="">mot de pass :</label><br>
             <input type="text" name="pass" id="pass" placeholder="entrer votre peseudo"><br><br>
 
-            <input type="submit" value="valider">
+            <input type="submit" value="valider" class="btn btn-primary">
+            <a href="#" class="btn btn-primary">S'inscrire au site</a>
             <br><br><br><br><br><br>
         </form>
 
