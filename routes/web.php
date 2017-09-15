@@ -72,4 +72,5 @@ Route::get('/deco', 'ctrl_compte@deconnexion');
 Route::get('/retour', 'ctrl_compte@retour');
 
 Route::post('/compte', 'ctrl_compte@connexion');
+
 Route::post('/inscription', 'ctrl_compte@inscription');
