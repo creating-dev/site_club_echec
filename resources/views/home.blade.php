@@ -17,17 +17,19 @@
     <div class="row">
         <div class="col-lg-4">
 
-            <ul id="methode">
-                <li>Méthodes et Techniques de Travail Structurées</li>
-                <li> Travail Personnalisé</li>
-                <li> Travail en Groupe</li>
-                <li> Tournois Jeunes</li>
-                <li> Cours Spécialisés pour les Elèves en Difficultés Scolaires</li>
-            </ul>
+                <ul id="methode">
+                    <li>Méthodes et Techniques de Travail Structurées</li>
+                    <li> Travail Personnalisé</li>
+                    <li> Travail en Groupe</li>
+                    <li> Tournois Jeunes</li>
+                    <li> Cours Spécialisés pour les Elèves en Difficultés Scolaires</li>
+                </ul>
+
         </div>
-        <div class="col-lg-4">
+<div class="col-lg-4">
+    <div id="yout">
             <img src="../public/img/videoPresentation.png" alt="">
-        </div>
+        </div></div>
         <div class="col-lg-4">
 
             <div class="jumbotron">

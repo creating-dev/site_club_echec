@@ -111,13 +111,13 @@ hr {
 
 #titre3Ho {
     text-align: center;
-    font: italic bold 38px comic sans ms;
+    font: italic bold 28px comic sans ms;
 
 }
 
 #titre4Ho {
     text-align: center;
-    font: italic bold 25px comic sans ms;
+    font: italic bold 15px comic sans ms;
 }
 
 #titre5Ho {
@@ -131,25 +131,25 @@ hr {
 
 #methode {
     list-style-type: circle;
-    font: italic bold 20px comic sans ms;
+    font: italic bold 10px comic sans ms;
 }
 
 #infCourante {
     list-style-type: none;
-    font: italic bold 20px comic sans ms;
+    font: italic bold 10px comic sans ms;
 }
 
 #hCourant {
     list-style-type: none;
     text-justify: auto;
-    font: italic bold 20px comic sans ms;
+    font: italic bold 10px comic sans ms;
 
 }
 
 #presentation {
     text-align: justify;
-    text-indent: 20px;
-    font: italic bold 24px comic sans ms;
+    text-indent: 10px;
+    font: italic bold 14px comic sans ms;
 }
 
 .jumbotron {
@@ -160,6 +160,12 @@ hr {
 body {
     background: url("../img/fond.PNG") no-repeat fixed;
     background-size: cover;
+}
+
+#yout {
+
+    text-align: center;
+
 }
 
 
