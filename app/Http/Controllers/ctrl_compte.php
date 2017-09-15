@@ -81,6 +81,21 @@ class ctrl_compte
          return view('inscription');
     }
 
+    public function update(Request $request){
+
+        $req = $request->request->all();
+
+        $is_ok = DAO_users::update_user($req);
+
+        if($is_ok){
+
+            var_dump('ok');
+
+        }
+
+         return view('compte');
+    }
+
     public function retour(){
         return tools::return_page();
     }

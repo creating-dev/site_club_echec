@@ -13,6 +13,7 @@ use App\Http\Controllers\Erreur;
 class users
 {
 
+    private $id;
     private $nom;
     private $prenom;
     private $pseudo;
@@ -26,6 +27,24 @@ class users
     private $tel;
     private $adresse;
     private $code_FFE;
+
+
+
+    /**
+     * @return mixed
+     */
+    public function getId()
+    {
+        return $this->id;
+    }
+
+    /**
+     * @param mixed $id
+     */
+    public function setId($id)
+    {
+        $this->id = $id;
+    }
 
     /**
      * @return mixed
