@@ -26,17 +26,17 @@ class DAO_users
         $bdd = self::bdd();
 
         Erreur::set_erreur('pass', '');
-        Erreur::set_erreur('user', '');
+        Erreur::set_erreur('pseudo', '');
 
-        $req = $bdd->prepare('SELECT * FROM users WHERE nom = :nom');
+        $req = $bdd->prepare('SELECT * FROM users WHERE pseudo = :pseudo');
         $req->execute([
-            'nom' => $parameters['user']
+            'pseudo' => $parameters['pseudo']
         ]);
         $rep = $req->fetch();
 
         if ( !empty($rep) && $rep != null ){
 
-            if ( isset($rep['nom']) && $rep['nom'] == $parameters['user']){
+            if ( isset($rep['pseudo']) && $rep['pseudo'] == $parameters['pseudo']){
                 if ($rep['pass'] == $parameters['pass'] && $rep['pass'] != null){
 
                     return true;
@@ -48,7 +48,7 @@ class DAO_users
 
 
         }else{
-            Erreur::set_erreur('user', 'la valeur du champs nom est incorect ou vide !!');
+            Erreur::set_erreur('pseudo', 'la valeur du champs pseudo est incorect ou vide !!');
         }
 
         return false;
@@ -83,8 +83,9 @@ class DAO_users
 
         if ( !empty($user->getNom()) && !empty($user->getGenre()) &&!empty($user->getBirthday()) &&!empty($user->getCategorie()) &&!empty($user->getPseudo()) &&!empty($user->getPass()) &&!empty($user->getMail())){
 
-            $reponse = $bdd->prepare('INSERT INTO users (nom, pass, avatar, token, genre, birthday, categorie, mail, tel, adresse, codeFFE) VALUES (:nom, :pass, :avatar, :token, :genre, :birthday, :categorie, :mail, :tel, :adresse, :codeFFE)');
+            $reponse = $bdd->prepare('INSERT INTO users (pseudo, nom, pass, avatar, token, genre, birthday, categorie, mail, tel, adresse, codeFFE) VALUES (:pseudo, :nom, :pass, :avatar, :token, :genre, :birthday, :categorie, :mail, :tel, :adresse, :codeFFE)');
             $reponse->execute([
+                'pseudo' => $user->getPseudo(),
                 'nom' => $user->getNom(),
                 'pass' => $user->getPass(),
                 'avatar' => $user->getAvatar(),

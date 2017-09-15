@@ -171,11 +171,11 @@
 
             <div class="form-group">
                 <label for="">Pseudo :</label><br>
-                <input type="text" name="user" id="user" placeholder="entrer votre peseudo" value="<?php if(isset($_POST['user'])){ echo $_POST['user'];} ?>"  class="form-control <?php if(isset($erreur['user'])&& $erreur['user'] != ''){ echo 'is-invalid';} ?>"  style="width: 300px;margin-left: 36%">
+                <input type="text" name="pseudo" id="pseudo" placeholder="entrer votre peseudo" value="<?php if(isset($_POST['pseudo'])){ echo $_POST['pseudo'];} ?>"  class="form-control <?php if(isset($erreur['pseudo'])&& $erreur['pseudo'] != ''){ echo 'is-invalid';} ?>"  style="width: 300px;margin-left: 36%">
                 <div class="invalid-feedback">
                     <?php
-                    if(isset($erreur['user'])&& $erreur['user'] != ''){
-                        echo $erreur['user'];
+                    if(isset($erreur['pseudo'])&& $erreur['pseudo'] != ''){
+                        echo $erreur['pseudo'];
                     }
                     ?>
                 </div>

@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Ven 15 Septembre 2017 à 07:54
+-- Généré le :  Ven 15 Septembre 2017 à 08:12
 -- Version du serveur :  5.7.11
 -- Version de PHP :  7.0.4
 
@@ -28,6 +28,7 @@ SET time_zone = "+00:00";
 
 CREATE TABLE `users` (
   `id_users` int(11) NOT NULL,
+  `pseudo` varchar(255) NOT NULL,
   `nom` varchar(255) NOT NULL,
   `pass` varchar(255) NOT NULL,
   `avatar` varchar(255) DEFAULT NULL,
@@ -45,8 +46,8 @@ CREATE TABLE `users` (
 -- Contenu de la table `users`
 --
 
-INSERT INTO `users` (`id_users`, `nom`, `pass`, `avatar`, `token`, `genre`, `birthday`, `categorie`, `mail`, `tel`, `adresse`, `codeFFE`) VALUES
-(1, 'jojo', 'jojo', NULL, 'sfdsrrfhgs442424xfcvfgfd', 'F', '2017-09-07', 'poule', 'ghgfhfgfghfg@test.fr', '0901020304', '26 gfdgdfgfdgfdgdfg 90000 yyutyuytu', NULL);
+INSERT INTO `users` (`id_users`, `pseudo`, `nom`, `pass`, `avatar`, `token`, `genre`, `birthday`, `categorie`, `mail`, `tel`, `adresse`, `codeFFE`) VALUES
+(1, 'tyty', 'jojo', 'jojo', NULL, 'sfdsrrfhgs442424xfcvfgfd', 'F', '2017-09-07', 'poule', 'ghgfhfgfghfg@test.fr', '0901020304', '26 gfdgdfgfdgfdgdfg 90000 yyutyuytu', NULL);
 
 --
 -- Index pour les tables exportées
