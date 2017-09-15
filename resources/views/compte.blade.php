@@ -22,7 +22,7 @@
                 $erreur = \App\Http\Controllers\Erreur::get_erreur();
 
                 $user = \Database\DAO\DAO_users::select_user($_SESSION['pseudo']);
-                    
+
                 ?>
 
                 <input type="hidden" name="id" value="<?= $user['id_users']?>">
