@@ -153,14 +153,9 @@ hr {
 
 }
 
-<<<<<<< HEAD
-.container{
-    background-image: url("../img/fond.png");
-=======
 body{
     background: url("../img/fond.PNG") no-repeat fixed;
     background-size: cover;
->>>>>>> jerome
 }
 
 
