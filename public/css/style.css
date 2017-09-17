@@ -18,6 +18,8 @@ a {
     margin-left: 40px;
     margin-right: -40px;
     font-size: 55px;
+    font-family: "Comic Sans MS";
+    text-shadow: 5px 2px 5px lightgreen;
 }
 
 #log1 {
@@ -59,13 +61,14 @@ a {
 
 #corps {
     min-height: 500px;
-    background-color: darkseagreen;
+    background-color: lightgreen;
+    border: double white 10px ;
     padding: 2%;
     opacity: 0.9;
 }
 
 #pub {
-    margin-top: -20px;
+
     padding-top: 2%;
     background-color: black;
     color: white;
@@ -117,7 +120,7 @@ hr {
 
 #titre4Ho {
     text-align: center;
-    font: italic bold 15px comic sans ms;
+    font: italic bold 20px comic sans ms;
 }
 
 #titre5Ho {
@@ -131,35 +134,36 @@ hr {
 
 #methode {
     list-style-type: circle;
-    font: italic bold 10px comic sans ms;
+    font: italic bold 15px comic sans ms;
 }
 
 #infCourante {
     list-style-type: none;
-    font: italic bold 10px comic sans ms;
+    font: italic bold 15px comic sans ms;
 }
 
 #hCourant {
     list-style-type: none;
     text-justify: auto;
-    font: italic bold 10px comic sans ms;
+    font: italic bold 15px comic sans ms;
 
 }
 
 #presentation {
     text-align: justify;
     text-indent: 10px;
-    font: italic bold 14px comic sans ms;
+    font: italic bold 15px comic sans ms;
 }
 
 .jumbotron {
-    background-color: lightgoldenrodyellow;
+    background-color: lightyellow;
 
 }
 
 body {
     background: url("../img/fond.PNG") no-repeat fixed;
     background-size: cover;
+    margin
 }
 
 #yout {
