@@ -73,4 +73,6 @@ Route::get('/retour', 'ctrl_compte@retour');
 
 Route::post('/compte', 'ctrl_compte@connexion');
 
+Route::post('/update_compte', 'ctrl_compte@update');
+
 Route::post('/inscription', 'ctrl_compte@inscription');
