@@ -28,7 +28,14 @@
                 <ul>
                     <li><a href="#"><img src="img/burger.PNG" alt=""></a></li>
                     <li><a href="home">Acceuil</a></li>
-                    <li><a href="club">Club</a></li>
+                    <li class="dropdown"><a href="club" class="dropdown-toggle" data-toggle="dropdown">Club<b
+                                    class="caret"></b></a>
+                        <ul class="dropdown-menu ">
+                            <li><a href="#">Adhésion au club</a></li>
+                            <li><a href="#">Cours et Tarifs</a></li>
+                            <li><a href="#">Licence FFE</a></li>
+                        </ul>
+                    </li>
                     <li><a href="agenda">Agenda</a></li>
                     <li><a href="video">Video</a></li>
                     <li><a href="goodies">Goodies</a></li>

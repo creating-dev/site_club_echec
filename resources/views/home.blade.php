@@ -5,7 +5,7 @@
 @section('content')
     <br><br>
     <h2 id="titre3Ho"> Le jeu d'Echec est le Sport Intellectuel par Excellence ! </h2>
-    <br><br>
+    <hr class="titr"> <br>
     <p id="presentation">
         Quel que soit votre Age, votre Niveau, votre Motivation, Fille ou Garçon…
         Les Echecs vous enrichiront et ne vous laisseront Jamais repartir les Mains vides !
