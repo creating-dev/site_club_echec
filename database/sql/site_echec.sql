@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Ven 15 Septembre 2017 à 08:40
+-- Généré le :  Lun 18 Septembre 2017 à 13:37
 -- Version du serveur :  5.7.11
 -- Version de PHP :  7.0.4
 
@@ -48,7 +48,7 @@ CREATE TABLE `users` (
 --
 
 INSERT INTO `users` (`id_users`, `pseudo`, `nom`, `prenom`, `pass`, `avatar`, `token`, `genre`, `birthday`, `categorie`, `mail`, `tel`, `adresse`, `codeFFE`) VALUES
-(1, 'jojo', 'jojo', 'toto', 'jojo', NULL, 'sfdsrrfhgs442424xfcvfgfd', 'F', '2017-09-07', 'poule', 'ghgfhfgfghfg@test.fr', '0901020304', '26 gfdgdfgfdgfdgdfg 90000 yyutyuytu', NULL);
+(1, 'jojo', 'jonathan', 'da', 'jojo', 'uploads/1/avatar.png', 'V5rLaTzv8aAaShxvXYVGQd5CvlATWVm1Y8lIOUG8', 'Mr', '2017-09-23', 'Petits Poussin', 'jbdfjojo@gmail.com', '0620420555', NULL, NULL);
 
 --
 -- Index pour les tables exportées
@@ -60,15 +60,6 @@ INSERT INTO `users` (`id_users`, `pseudo`, `nom`, `prenom`, `pass`, `avatar`, `t
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id_users`);
 
---
--- AUTO_INCREMENT pour les tables exportées
---
-
---
--- AUTO_INCREMENT pour la table `users`
---
-ALTER TABLE `users`
-  MODIFY `id_users` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=9;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
