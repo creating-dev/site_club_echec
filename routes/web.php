@@ -19,6 +19,10 @@ Route::get('/home', function () {
     return view('home');
 });
 
+Route::get('/adhesion', function () {
+    return view('adhesion');
+});
+
 Route::get('/actualite', function () {
     return view('actualite');
 });
