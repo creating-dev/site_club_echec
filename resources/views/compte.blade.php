@@ -11,7 +11,7 @@
     <br><br><br><br>
     <div id="mon_compte">
 
-        <form action="update_compte" method="post">
+        <form action="update_compte" method="post" enctype="multipart/form-data">
 
             <div class="row">
 
@@ -64,7 +64,7 @@
 
                     <div class="form-group">
                         <label for="">*Date de naissance :</label><br>
-                        <input type="date" name="date" style="width: 200px" value="<?php if(isset($_POST['date'])){ echo $_POST['date'];}else{ echo $user['birthday'];} ?>" class="form-control <?php if(isset($erreur['date'])&& $erreur['date'] != ''){ echo 'is-invalid';} ?>" >
+                        <input type="date" onchange="is_categorie()" id="date"  name="date" style="width: 200px" value="<?php if(isset($_POST['date'])){ echo $_POST['date'];}else{ echo $user['birthday'];} ?>" class="form-control <?php if(isset($erreur['date'])&& $erreur['date'] != ''){ echo 'is-invalid';} ?>" >
                         <div class="invalid-feedback">
                             <?php
                             if(isset($erreur['date'])&& $erreur['date'] != ''){
@@ -76,7 +76,8 @@
 
                     <div class="form-group">
                         <label for="">*Categorie :</label><br>
-                        <input type="text" name="categorie" style="width: 200px" class="form-control" disabled>
+                        <input type="text" id="categorie1" style="width: 200px" class="form-control"  value="<?php if(isset($_POST['categorie'])){ echo $_POST['categorie'];}else{ echo $user['categorie'];} ?>" disabled>
+                        <input type="hidden" id="categorie2"  name="categorie" style="width: 200px" value="<?php if(isset($_POST['categorie'])){ echo $_POST['categorie'];}else{ echo $user['categorie'];} ?>"  class="form-control">
                     </div>
 
                     <div class="form-group">
@@ -93,7 +94,7 @@
 
                     <div class="form-group">
                         <label for="">*mot de passe :</label><br>
-                        <input type="password" name="pass" style="width: 200px" class="form-control <?php if(isset($erreur['pass'])&& $erreur['pass'] != ''){ echo 'is-invalid';} ?>" >
+                        <input type="password" name="pass" style="width: 200px" value="<?php if(isset($_POST['pass'])){ echo $_POST['pass'];}else{ echo $user['pass'];} ?>"  class="form-control <?php if(isset($erreur['pass'])&& $erreur['pass'] != ''){ echo 'is-invalid';} ?>" >
                         <div class="invalid-feedback">
                             <?php
                             if(isset($erreur['pass'])&& $erreur['pass'] != ''){
@@ -105,7 +106,7 @@
 
                     <div class="form-group">
                         <label for="">*Confirmation du mot de passe :</label><br>
-                        <input type="password" name="confirm_pass" style="width: 200px" class="form-control <?php if(isset($erreur['confirm_pass'])&& $erreur['confirm_pass'] != ''){ echo 'is-invalid';} ?>">
+                        <input type="password" name="confirm_pass" style="width: 200px"  value="<?php if(isset($_POST['pass'])){ echo $_POST['pass'];}else{ echo $user['pass'];} ?>"  class="form-control <?php if(isset($erreur['confirm_pass'])&& $erreur['confirm_pass'] != ''){ echo 'is-invalid';} ?>">
                         <div class="invalid-feedback">
                             <?php
                             if(isset($erreur['confirm_pass'])&& $erreur['confirm_pass'] != ''){
@@ -145,8 +146,8 @@
 
                 <div class="col-lg-4" style="text-align: center">
                     <div class="form-group">
-                        <img src="img/avatar.PNG" alt="" ><br><br>
-                        <input type="file" name="avatar" class="form-control">
+                        <img src="<?php if(isset($user['avatar'])&& $user['avatar'] != ''){ echo $user['avatar'];} ?>"  width="200" alt="" ><br><br>
+                        <input type="file" name="avatar"  id="avatar" value="test" class="form-control">
                     </div>
                 </div>
 

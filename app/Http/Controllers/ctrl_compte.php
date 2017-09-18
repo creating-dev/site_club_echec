@@ -89,11 +89,10 @@ class ctrl_compte
 
         if($is_ok){
 
-            var_dump('ok');
 
         }
 
-         return view('compte');
+        return view('compte');
     }
 
     public function retour(){

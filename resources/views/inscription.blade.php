@@ -8,7 +8,7 @@
 
     <div id="mon_compte">
 
-        <form action="inscription" method="post">
+        <form action="inscription" method="post" enctype="multipart/form-data">
 
             <div class="row">
 
@@ -65,7 +65,8 @@
 
                     <div class="form-group">
                         <label for="">*Categorie :</label><br>
-                        <input type="text" id="categorie" name="categorie" style="width: 200px" class="form-control" disabled>
+                        <input type="text" id="categorie1" style="width: 200px" class="form-control"  value="<?php if(isset($_POST['categorie'])){ echo $_POST['categorie'];} ?>" disabled>
+                        <input type="hidden" id="categorie2"  name="categorie" style="width: 200px" value="<?php if(isset($_POST['categorie'])){ echo $_POST['categorie'];} ?>"  class="form-control">
                     </div>
 
                     <div class="form-group">
@@ -137,7 +138,7 @@
                 <div class="col-lg-4" style="text-align: center">
                     <div class="form-group">
                         <img src="img/avatar.PNG" alt="" ><br><br>
-                        <input type="file" name="avatar" class="form-control">
+                        <input type="file" name="avatar"  id="avatar" value="test" class="form-control">
                     </div>
                 </div>
 
