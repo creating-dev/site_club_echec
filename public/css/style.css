@@ -54,10 +54,10 @@ a {
     color: white;
 }
 
-#menu li:first-child {
+/*#menu li:first-child {
     float: left;
     margin-left: -30px;
-}
+}*/
 
 #corps {
     min-height: 500px;
@@ -208,6 +208,13 @@ body {
 .dropdown:hover .dropdown-menu {
     display: block;
 }
+
+.divider{
+
+
+}
+
+
 
 
 
