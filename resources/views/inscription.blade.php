@@ -53,7 +53,7 @@
 
                     <div class="form-group">
                         <label for="">*Date de naissance :</label><br>
-                        <input type="date" name="date" style="width: 200px" value="<?php if(isset($_POST['date'])){ echo $_POST['date'];} ?>" class="form-control <?php if(isset($erreur['date'])&& $erreur['date'] != ''){ echo 'is-invalid';} ?>" >
+                        <input type="date" onchange="is_categorie()" id="date" name="date" style="width: 200px" value="<?php if(isset($_POST['date'])){ echo $_POST['date'];} ?>" class="form-control <?php if(isset($erreur['date'])&& $erreur['date'] != ''){ echo 'is-invalid';} ?>" >
                         <div class="invalid-feedback">
                             <?php
                             if(isset($erreur['date'])&& $erreur['date'] != ''){
@@ -65,7 +65,7 @@
 
                     <div class="form-group">
                         <label for="">*Categorie :</label><br>
-                        <input type="text" name="categorie" style="width: 200px" class="form-control" disabled>
+                        <input type="text" id="categorie" name="categorie" style="width: 200px" class="form-control" disabled>
                     </div>
 
                     <div class="form-group">
