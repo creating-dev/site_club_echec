@@ -33,17 +33,15 @@
                         <a href="club" class="dropdown-toggle" data-toggle="dropdown">Club<b
                                     class="caret"></b></a>
 
-                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
-                                <li class="col-sm-4">
-                                <a href="adhesion">Adhésion au club</a>
-                                </li>
-                                <li class="col-sm-4">
-                                <a href="#">Cours et Tarifs</a>
-                                </li>
-                                <li class="col-sm-4">
-                                <a href="#">Licence FFE</a>
-                                </li>
-                            </ul>
+                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+
+                            <li><a href="adhesion">Adhésion au club</a></li>
+
+                           <li> <a href="#">Cours et Tarifs</a></li>
+
+                           <li> <a href="#">Licence FFE</a></li>
+
+                        </ul>
 
                     </li>
                     <li><a href="agenda">Agenda</a></li>
