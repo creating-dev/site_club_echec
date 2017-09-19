@@ -1,4 +1,4 @@
-
+/*css template blade*/
 a {
     text-decoration: none;
     list-style-type: none;
@@ -13,7 +13,7 @@ a {
 
 #ban {
     text-align: center;
-    border-bottom: 1px solid white;
+    border-bottom: 1px solid #007002;
     color: yellow;
     margin-left: 40px;
     margin-right: -40px;
@@ -24,6 +24,7 @@ a {
 
 #log1 {
     margin-left: -16px;
+
 }
 
 #log2 {
@@ -31,11 +32,11 @@ a {
 }
 
 #menu {
-    background-color: black;
-    color: white;
-    height: 80px;
-    padding-top: 2%;
-}
+     background-color: black;
+     color: white;
+     height: 80px;
+     padding-top: 2%;
+ }
 
 #menu li {
     list-style-type: none;
@@ -57,8 +58,8 @@ a {
 
 #corps {
     min-height: 500px;
-    background-color: lightgreen;
-    border: double #007002 10px;
+    background-color: white;
+    border: double #007002 20px;
     padding: 2%;
     opacity: 0.9;
 }
@@ -108,10 +109,7 @@ hr {
     text-align: center;
 }
 
-#titre3Ho {
-    text-align: center;
-    font: italic bold 28px comic sans ms;
-}
+
 
 hr.titr{
     border-color: lightyellow;
@@ -134,6 +132,12 @@ hr.titr:before {
     border-width: 0 0 5px 0;
     border-radius: 20px;
 }
+/*css home page : */
+#titre3Ho {
+    text-align: center;
+    font: italic bold 28px comic sans ms;
+}
+
 
 #titre4Ho {
     text-align: center;
@@ -187,7 +191,11 @@ body {
     text-align: center;
 }
 
+/* css pour menu dropdown :
+
+
 .dropdown {
+
     position: relative;
     display: inline-block;
 
@@ -204,7 +212,38 @@ body {
 .dropdown:hover .dropdown-menu {
     display: block;
 }
+*/
 
+/*css sous-menu*/
+
+
+
+#s_menu {
+    list-style-type: none;
+    font-size: 20px;
+    text-align: center;
+    background-color: #007002;
+    height: 30px;
+    border-top: 1px solid ;
+    margin-left: 0px;
+    margin-right: 0px;
+
+
+
+}
+
+#s_menu li a {
+    text-decoration: none;
+    color: black;
+}
+
+#s_menu li a:hover {
+    text-decoration: none;
+    color: white;
+    background: red;
+
+
+}
 
 
 

@@ -1,6 +1,6 @@
 @extends('template/default')
 
-@section('title', 'Page Title')
+@section('title', 'PDD')
 
 @section('content')
     <p> protection des données</p>

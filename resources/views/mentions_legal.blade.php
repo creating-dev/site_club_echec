@@ -1,6 +1,6 @@
 @extends('template/default')
 
-@section('title', 'Page Title')
+@section('title', 'Mentions Légales')
 
 @section('content')
     <p>mention legales</p>

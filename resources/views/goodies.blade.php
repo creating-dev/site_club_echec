@@ -1,6 +1,6 @@
 @extends('template/default')
 
-@section('title', 'Page Title')
+@section('title', 'Goodies')
 
 @section('content')
     <p>goodies</p>

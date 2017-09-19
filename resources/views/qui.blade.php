@@ -1,6 +1,6 @@
 @extends('template/default')
 
-@section('title', 'Page Title')
+@section('title', 'A propos')
 
 @section('content')
     <p>qui somme nous ??</p>

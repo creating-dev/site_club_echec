@@ -6,10 +6,16 @@
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
+    <!-- librairie  bootstrap installer par composer-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
+
+    <!--librairie glyph installer manuellement-->
+    <link rel="stylesheet" href="../resources/Lib/font-awesome/css/font-awesome.min.css">
+
+    <!--fichier css-->
     <link rel="stylesheet" href="css/style.css">
 
-    <title>site echec </title>
+    <title>@yield('title')</title>
 </head>
 <body>
 
@@ -29,21 +35,26 @@
                 <ul>
                     <li style="margin-left: -30px; float: left"><a href="#"><img src="img/burger.PNG" alt=""></a></li>
                     <li><a href="home">Acceuil</a></li>
+                    <li><a href="club">club</a></li>
+
+                    <!-- menu dropdown
                     <li class=" dropdown">
-                        <a href="club" class="dropdown-toggle" data-toggle="dropdown">Club<b
-                                    class="caret"></b></a>
+                            <a href="club" class="dropdown-toggle" data-toggle="dropdown">Club<b
+                                        class="caret"></b></a>
 
-                        <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
+                            <ul class="dropdown-menu" role="menu" aria-labelledby="dropdownMenu">
 
-                            <li><a href="adhesion">Adhésion au club</a></li>
+                                <li><a href="adhesion">Adhésion au club</a></li>
 
-                           <li> <a href="#">Cours et Tarifs</a></li>
+                               <li> <a href="#">Cours et Tarifs</a></li>
 
-                           <li> <a href="#">Licence FFE</a></li>
+                               <li> <a href="#">Licence FFE</a></li>
 
-                        </ul>
+                            </ul>
 
-                    </li>
+                        </li>
+                        -->
+
                     <li><a href="agenda">Agenda</a></li>
                     <li><a href="video">Video</a></li>
                     <li><a href="goodies">Goodies</a></li>
@@ -54,6 +65,10 @@
             </div>
         </div>
         <div class="col-lg-12">
+            <div id="sous_menu">
+                @yield('sous_menu')
+            </div>
+
             <div id="corps">
                 @yield('content')
             </div>
