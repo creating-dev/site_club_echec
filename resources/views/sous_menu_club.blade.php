@@ -5,7 +5,7 @@
         <div class="col-lg-2">
             <li>
 
-            <a href="adhesion" id="m_A_C"><span class="icon"></span> Adhésion au club</a>
+            <a href="adhesion" id="m_A_C"><span class="icon"></span> Adhésion</a>
             </li>
         </div>
               <div class="col-lg-1">&nbsp;</div>
