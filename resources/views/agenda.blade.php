@@ -4,9 +4,7 @@
 @section('title', 'agenda')
 
 
-@section('sous_menu')
-    <p>agenda</p>
-@endsection
+@include('sous_menu_agenda')
 
 
 

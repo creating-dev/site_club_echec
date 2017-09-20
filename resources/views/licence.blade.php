@@ -1,11 +1,13 @@
 @extends('template/default')
 
-@section('title', 'Adhesion')
+@section('title', 'licence FFE')
 
 @include('sous_menu_club')
 
 @section('content')
 
-    <h1>Adhesion</h1>
+    <h1>Licence FFE</h1>
+
+
 
 @endsection

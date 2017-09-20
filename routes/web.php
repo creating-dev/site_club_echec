@@ -23,6 +23,14 @@ Route::get('/adhesion', function () {
     return view('adhesion');
 });
 
+Route::get('/cours', function () {
+    return view('cours');
+});
+
+Route::get('/licence', function () {
+    return view('licence');
+});
+
 Route::get('/actualite', function () {
     return view('actualite');
 });
@@ -64,7 +72,7 @@ Route::get('/forums', function () {
 });
 
 Route::get('/contact', function () {
-    return view('contact');
+     return view('contact');
 });
 
 Route::get('/compte', 'ctrl_compte@page_compte');

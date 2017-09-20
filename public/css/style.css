@@ -62,6 +62,9 @@ a {
     border: double #007002 20px;
     padding: 2%;
     opacity: 0.9;
+    position: relative;
+    z-index: -1;
+
 }
 
 #pub {
@@ -80,10 +83,10 @@ a {
     color: black;
     min-height: 100px;
     text-align: center;
-    margin-left: 0px;
-    margin-right: 0px;
     padding-top: 1%;
     font-weight: bold;
+    margin-left: 0px;
+    margin-right: 0px;
 }
 
 #footer li {
@@ -227,21 +230,26 @@ body {
     border-top: 1px solid ;
     margin-left: 0px;
     margin-right: 0px;
+    position: relative;
+    z-index: 1;
+}
 
-
-
+#s_menu li{
+    width: 100%;
 }
 
 #s_menu li a {
     text-decoration: none;
     color: black;
+    display: block;
 }
 
 #s_menu li a:hover {
     text-decoration: none;
-    color: white;
-    background: red;
-
+    color: yellow;
+    display: block;
+    position: relative;
+    z-index: 5;
 
 }
 
