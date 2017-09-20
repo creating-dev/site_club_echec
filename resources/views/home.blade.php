@@ -17,19 +17,20 @@
     <div class="row">
         <div class="col-lg-4">
 
-                <ul id="methode">
-                    <li>Méthodes et Techniques de Travail Structurées</li>
-                    <li> Travail Personnalisé</li>
-                    <li> Travail en Groupe</li>
-                    <li> Tournois Jeunes</li>
-                    <li> Cours Spécialisés pour les Elèves en Difficultés Scolaires</li>
-                </ul>
+            <ul id="methode">
+                <li>Méthodes et Techniques de Travail Structurées</li>
+                <li> Travail Personnalisé</li>
+                <li> Travail en Groupe</li>
+                <li> Tournois Jeunes</li>
+                <li> Cours Spécialisés pour les Elèves en Difficultés Scolaires</li>
+            </ul>
 
         </div>
-<div class="col-lg-4">
-    <div id="yout">
-            <img src="../public/img/videoPresentation.png" alt="">
-        </div></div>
+        <div class="col-lg-4">
+            <div id="yout">
+                <img src="../public/img/videoPresentation.png" alt="">
+            </div>
+        </div>
         <div class="col-lg-4">
 
             <div class="jumbotron">
@@ -66,7 +67,23 @@
         </div>
     </div>
     <h6 id="titre5Ho">Pour tous renseignements, n’hésitez pas à contacter l’Entraîneur du Club </h6>
-    <br><br><br>
+    <br>
+    <div class="row">
+
+        <div class="col-lg-4"></div>
+        <div class="col-lg-4">
+            <div class="jumbotron1">
+                <ul class="club">
+                    <li>Eric Mory : 06.50.95.77.29</li>
+                    <li><p class="email">
+                            <a href="mailto:mory.eric@gmail.com" title="Envoyez un Email !">mory.eric@gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4"></div>
+        </div>
+    </div>
+    <br><br>
 
 
 @endsection

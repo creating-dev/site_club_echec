@@ -6,6 +6,74 @@
 
 @section('content')
 
-    <h1>Adhesion</h1>
+    <h4 id="titre3Ho">L’adhésion au Club :</h4>
+    <hr class="titr">
+    <br><br>
+
+    <p id="adhesion">L’adhésion vous donne la possibilité de venir profiter d’une ambiance conviviale et enrichissante
+        pour joueraux échecspendant les heures d’ouverture du Club :</p>
+
+    <br><br>
+    <div class="row">
+
+        <div class="col-lg-4"></div>
+        <div class="col-lg-4">
+            <div class="jumbotron1">
+                <ul class="adhesion">
+                    <li>Lundi : 16h30 – 20h30</li>
+                    <li>Mardi : 14h – 18h</li>
+                    <li>Mercredi : 14h - 18h</li>
+                    <li>Jeudi : 14h – 20h30</li>
+                    <li>Vendredi : 16h30 – 20h30</li>
+                    <li>Samedi : 9h – 12h</li>
+                </ul>
+            </div>
+            <div class="col-lg-4"></div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <p id="adhesion">Vous pourrez ainsi apprendre et vous confrontez aux membres du Club dans une saine émulation,
+        profiter de
+        l’expérience de son entraîneur
+        ainsi que du matériel mis à votre disposition par le Club d’Ollioules Jeux, pendules, livres, ordinateurs,
+        logiciels, tournois…</p>
+
+    <br><br>
+
+    <p id="adhesion">
+        Elle vous permettra de bénéficier également d’un suivi en compétition et l’accès à des remises sur les cours
+        particuliers / Stages /
+        Achats de matériel…</p>
+
+    <br><br>
+
+    <div class="row">
+
+        <div class="col-lg-4"></div>
+        <div class="col-lg-4">
+            <div class="jumbotron1">
+                <ul class="adhesion">
+                    <li>Tarif Adhésion Adulte : 80 €</li>
+
+                    <li>Tarif Adhésion Jeune : 40 €</li>
+                </ul>
+            </div>
+            <div class="col-lg-4"></div>
+        </div>
+    </div>
+
+    <br><br>
+
+    <p id="club">Vous pouvez adhérer en ligne en suivant ce lien :</p>
+    <div class="row">
+
+        <div class="col-lg-4"></div>
+        <div class="col-lg-4" id="inscript">
+            <a href="#">Inscription</a>
+        </div>
+        <div class="col-lg-4"></div>
+    </div>
 
 @endsection

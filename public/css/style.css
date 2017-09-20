@@ -159,25 +159,25 @@ hr.titr:before {
 
 #methode {
     list-style-type: circle;
-    font: italic bold 15px comic sans ms;
+    font: italic bold 18px comic sans ms;
 }
 
 #infCourante {
     list-style-type: none;
-    font: italic bold 15px comic sans ms;
+    font: italic bold 18px comic sans ms;
 }
 
 #hCourant {
     list-style-type: none;
     text-justify: auto;
-    font: italic bold 15px comic sans ms;
+    font: italic bold 18px comic sans ms;
 
 }
 
 #presentation {
     text-align: justify;
     text-indent: 10px;
-    font: italic bold 15px comic sans ms;
+    font: italic bold 18px comic sans ms;
 }
 
 .jumbotron {
@@ -195,28 +195,6 @@ body {
     text-align: center;
 }
 
-/* css pour menu dropdown :
-
-
-.dropdown {
-
-    position: relative;
-    display: inline-block;
-
-}
-
-.dropdown-menu {
-    display: none;
-    position: absolute;
-    background-color: black;
-    width: 250px;
-
-}
-
-.dropdown:hover .dropdown-menu {
-    display: block;
-}
-*/
 
 /*css sous-menu*/
 
@@ -253,6 +231,59 @@ body {
     z-index: 5;
 
 }
+
+/*css adhesion*/
+
+#adhesion{
+    text-align: justify;
+    text-indent: 10px;
+    font: italic bold 18px comic sans ms;
+}
+
+.jumbotron1 {
+    background-color: lightyellow;
+text-align: center;
+}
+
+.adhesion{
+
+    list-style-type: none;
+
+}
+
+ a:visited {
+    color: #007002;
+    background-color: transparent;
+    text-decoration: none;
+     text-align: center;
+}
+
+ a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: underline;
+     text-align: center;
+}
+ #inscript{
+     text-align: center;
+     font: italic bold 18px comic sans ms;
+ }
+
+/*css club*/
+
+#club{
+    text-align: center;
+    text-indent: 10px;
+    font: italic bold 18px comic sans ms;
+
+}
+
+.club{
+    list-style-type: none;
+
+}
+
+
 
 
 
