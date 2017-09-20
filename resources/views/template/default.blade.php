@@ -35,7 +35,7 @@
                 <ul>
                     <li style="margin-left: -30px; float: left"><a href="#"><img src="img/burger.PNG" alt=""></a></li>
                     <li><a href="home">Acceuil</a></li>
-
+                    <li><a href="club">club</a></li>
 
 
                     <!-- menu dropdown
