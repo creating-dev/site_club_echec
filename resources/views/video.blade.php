@@ -2,10 +2,10 @@
 
 @section('title', 'video')
 
-@section('sous_menu')
-    <p>sous menu video</p>
-@endsection
+@include('sous_menu_video')
+
 
 @section('content')
     <p>video</p>
 @endsection
+

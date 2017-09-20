@@ -1,4 +1,4 @@
-//alert("hjfhkjrh");
+//alert("alert");
 
 $(document).ready(function () {
 
@@ -54,6 +54,21 @@ $(document).ready(function () {
 
     });
 
+
+
+    //glyph sous menu video
+
+    $("#v_cour").hover(function () {//video cours
+
+        hover_add_glyph(' fa-video-camera', 0);
+
+    });
+
+    $("#v_club").hover(function () {//video club
+
+        hover_add_glyph(' fa-video-camera', 1);
+
+    });
 });
 
 //function pour afficher le glyph
