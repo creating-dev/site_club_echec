@@ -62,7 +62,7 @@ a {
     background-color: antiquewhite;
     border: double #007002 20px;
     padding: 2%;
-    opacity: 0.9;
+    opacity: 1;
     position: relative;
     z-index: 1;
 
@@ -116,10 +116,10 @@ hr {
 
 
 hr.titr{
-    border-color: lightyellow;
+    border-color: #007002;
     height: 30px;
     border-style: solid;
-    border-width: 5px 0 0 0;
+    border-width: 7px 0 0 0;
     border-radius: 20px;
 
 
@@ -133,7 +133,7 @@ hr.titr:before {
     margin-top: -31px;
     border-style: solid;
     border-color: black;
-    border-width: 0 0 5px 0;
+    border-width: 0 0 7px 0;
     border-radius: 20px;
 }
 /*css home page : */
@@ -186,7 +186,7 @@ hr.titr:before {
 }
 
 body {
-    background: url("../img/fond.PNG") no-repeat fixed;
+    background: url("../img/fond.jpg") no-repeat fixed;
     background-size: cover;
 
 }
