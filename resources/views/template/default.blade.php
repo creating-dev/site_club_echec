@@ -32,40 +32,50 @@
         <div class="col-lg-12">
 
             <div id="burger">
-                <h2><u><b>Menu</b></u></h2>
+                <h2><u><b>Menu</b></u></h2><br><br><br><br>
 
-                <ul>
-                    <li><a href="compte">Compte</a></li>
-                    <li><a href="club">Club</a>
+                <div class="row">
+                    <div class="col-lg-3">
                         <ul>
-                            <li><a href="adhesion">Adhésion</a></li>
+                            <li><h3><u><a href="club">Club</a></u></h3></li>
+                            <li>&nbsp;</li>
+                            <li><a href="adhesion">Adhesion</a></li>
                             <li><a href="cours">Cours et Tarif</a></li>
                             <li><a href="licence">Licence FFE</a></li>
                         </ul>
-                    </li>
-                    <li><a href="agenda">Agenda</a>
+                    </div>
+                    <div class="col-lg-3">
                         <ul>
-                            <li><a href="agenda_equipe">Equipes</a></li>
-                            <li><a href="agenda_competition">Conpétitions</a></li>
-                            <li><a href="agenda_tournois">Tournois</a>
-                                <ul>
-                                    <li><a href="">Interne</a></li>
-                                    <li><a href="">National</a></li>
-                                </ul>
-                            </li>
+                            <li><h3><u><a href="agenda">Agenda</a></u></h3></li>
+                            <li>&nbsp;</li>
+                            <li><a href="agenda_equipe">Equipe</a></li>
+                            <li><a href="agenda_competition">Competitions</a></li>
+                            <li><a href="agenda_tournois">Tournois</a></li>
                             <li><a href="agenda_stage">Stages</a></li>
                             <li><a href="agenda_reunion">Réunions</a></li>
                         </ul>
-                    </li>
-                    <li><a href="video">Video</a>
+                    </div>
+                    <div class="col-lg-3">
                         <ul>
-                            <li><a href="video_cours">Cours</a></li>
+                            <li><h3><u><a href="video">Vidéo</a></u></h3></li>
+                            <li>&nbsp;</li>
+                            <li><a href="video_cours">cours</a></li>
                             <li><a href="video_club">Club</a></li>
                         </ul>
-                    </li>
-                    <li><a href="">Goodies</a></li>
-                    <li><a href="">Forum</a></li>
-                </ul>
+                    </div>
+                    <div class="col-lg-3">
+                        <ul>
+                            <li><h3><u><a href="">Compte</a></u></h3></li>
+                            <li>&nbsp;</li>
+                            <?php if( isset($_SESSION["connexion"]) && $_SESSION["connexion"] != 'ok'): ?>
+                            <li><a href="compte">Se Connecter</a></li>
+                            <li><a href="inscription">S'inscrire</a></li>
+                            <?php else: ?>
+                            <li><a href="compte">Mon Compte</a></li>
+                            <?php endif; ?>
+                        </ul>
+                    </div>
+                </div>
 
             </div>
 

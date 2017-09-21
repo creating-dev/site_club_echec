@@ -19,7 +19,6 @@ class tools
     public static function save_page_url()
     {
 
-
         $url_provenance = $_SERVER['HTTP_REFERER'];
 
         $url_actuel = "http://" . $_SERVER['HTTP_HOST'] . $_SERVER['REQUEST_URI'];

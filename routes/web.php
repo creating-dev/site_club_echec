@@ -12,101 +12,123 @@
 */
 
 Route::get('/', function () {
+    session_start();
     return view('home');
 });
 
 Route::get('/home', function () {
+    session_start();
     return view('home');
 });
 
 //menu general
 
 Route::get('/agenda', function () {
+    session_start();
     return view('agenda');
 });
 
 Route::get('/CGU', function () {
+    session_start();
     return view('CGU');
 });
 
 Route::get('/club', function () {
+    session_start();
     return view('club');
 });
 
 Route::get('/goodies', function () {
+    session_start();
     return view('goodies');
 });
 
 
 //menu club
 Route::get('/adhesion', function () {
+    session_start();
     return view('adhesion');
 });
 
 Route::get('/cours', function () {
+    session_start();
     return view('cours');
 });
 
 Route::get('/licence', function () {
+    session_start();
     return view('licence');
 });
 
 //menu agenda
 
 Route::get('/agenda_equipe', function () {
+    session_start();
     return view('agenda_equipe');
 });
 
 Route::get('/agenda_competition', function () {
+    session_start();
     return view('agenda_competition');
 });
 
 Route::get('/agenda_tournois', function () {
+    session_start();
     return view('agenda_tournois');
 });
 
 Route::get('/agenda_stage', function () {
+    session_start();
     return view('agenda_stage');
 });
 
 Route::get('/agenda_reunion', function () {
+    session_start();
     return view('agenda_reunion');
 });
 
 //menu video
 
 Route::get('/video_cours', function () {
+    session_start();
     return view('video_cours');
 });
 
 
 Route::get('/video_club', function () {
+    session_start();
     return view('video_club');
 });
 
 
 //footer
 Route::get('/mentions_legal', function () {
+    session_start();
     return view('mentions_legal');
 });
 
 Route::get('/PDD', function () {
+    session_start();
     return view('PDD');
 });
 
 Route::get('/qui', function () {
+    session_start();
     return view('qui');
 });
 
 Route::get('/video', function () {
+    session_start();
     return view('video');
 });
 
 Route::get('/forums', function () {
+    session_start();
     return view('forums');
 });
 
 Route::get('/contact', function () {
+    session_start();
      return view('contact');
 });
 

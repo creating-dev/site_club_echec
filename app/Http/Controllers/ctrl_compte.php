@@ -98,6 +98,4 @@ class ctrl_compte
     public function retour(){
         return tools::return_page();
     }
-
-
 }
