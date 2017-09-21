@@ -24,6 +24,7 @@ let $menu_burger = $("#menu_burger");
         if ( $burger.has(event.target).length == 0  && !$burger.is(event.target)){
             if(!$burger.is(':hidden')){
                 $burger.fadeOut()
+                $menu_burger.html('<i class="fa fa-bars fa-3x" aria-hidden="true">')
             }
         }
     });
