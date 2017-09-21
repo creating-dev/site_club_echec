@@ -14,10 +14,12 @@ let $menu_burger = $("#menu_burger");
             $burger.fadeOut()
             $menu_burger.html('<i class="fa fa-bars fa-3x" aria-hidden="true">')
             $('#fade').remove()
+            $("body").css("overflow", "scroll");
         }else {
             $burger.fadeIn();
             $menu_burger.html('<i class="fa fa-times fa-3x" aria-hidden="true">')
             $burger.parent().append(' <div id="fade"></div>')
+            $("body").css("overflow", "hidden");
         }
     });
 
@@ -28,6 +30,7 @@ let $menu_burger = $("#menu_burger");
                 $burger.fadeOut()
                 $menu_burger.html('<i class="fa fa-bars fa-3x" aria-hidden="true">')
                 $('#fade').remove()
+                $("body").css("overflow", "scroll");
             }
         }
     });
