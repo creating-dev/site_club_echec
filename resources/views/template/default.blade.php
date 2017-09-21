@@ -1,4 +1,4 @@
-s<!doctype html>
+<!doctype html>
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
@@ -31,9 +31,47 @@ s<!doctype html>
         </div>
         <div class="col-lg-12">
 
+            <div id="burger">
+                <h2><u><b>Menu</b></u></h2>
+
+                <ul>
+                    <li><a href="compte">Compte</a></li>
+                    <li><a href="club">Club</a>
+                        <ul>
+                            <li><a href="adhesion">Adhésion</a></li>
+                            <li><a href="cours">Cours et Tarif</a></li>
+                            <li><a href="licence">Licence FFE</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="agenda">Agenda</a>
+                        <ul>
+                            <li><a href="agenda_equipe">Equipes</a></li>
+                            <li><a href="agenda_competition">Conpétitions</a></li>
+                            <li><a href="agenda_tournois">Tournois</a>
+                                <ul>
+                                    <li><a href="">Interne</a></li>
+                                    <li><a href="">National</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="agenda_stage">Stages</a></li>
+                            <li><a href="agenda_reunion">Réunions</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="video">Video</a>
+                        <ul>
+                            <li><a href="video_cours">Cours</a></li>
+                            <li><a href="video_club">Club</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="">Goodies</a></li>
+                    <li><a href="">Forum</a></li>
+                </ul>
+
+            </div>
+
             <div id="menu">
                 <ul>
-                    <li style="margin-left: -30px; float: left"><a href="#"><img src="img/burger.PNG" alt=""></a></li>
+                    <li style="margin-left: -30px; float: left;"><a href="" id="menu_burger"><img src="img/burger.PNG" alt=""></a></li>
                     <li><a href="home">Acceuil</a></li>
                     <li><a href="club">club</a></li>
 
@@ -140,8 +178,7 @@ s<!doctype html>
 
 </div>
 
-
-<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js"></script>
 <script src="js/tools_jermen.js"></script>

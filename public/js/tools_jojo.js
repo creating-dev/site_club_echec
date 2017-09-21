@@ -1,4 +1,33 @@
 
+$(document).ready(function(){
+
+/* variable Jquery */
+let $document = $(window);
+let $burger = $("#burger");
+let $menu_burger = $("#menu_burger");
+
+    $menu_burger.click(function(e){
+        e.stopPropagation()
+        e.preventDefault()
+
+        if(!$burger.is(':hidden')){
+            $burger.fadeOut()
+        }else {
+            $burger.fadeIn();
+        }
+    });
+
+
+    $document.on("click.Bst", function(event){
+        if ( $burger.has(event.target).length == 0  && !$burger.is(event.target)){
+            if(!$burger.is(':hidden')){
+                $burger.fadeOut()
+            }
+        }
+    });
+
+});
+
 
 
 function is_categorie() {
