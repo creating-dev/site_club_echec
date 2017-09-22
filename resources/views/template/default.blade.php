@@ -24,9 +24,9 @@
     <div class="row">
         <div class="col-lg-12">
             <div id="baniere" class="row">
-                <div class="col-lg-1" id="log1"><img src="img/log-1.png" alt=""></div>
+                <div class="col-lg-1" id="log1"><img src="img/header/log-1.png" alt=""></div>
                 <div class="col-lg-10" id="ban">Club d'Echecs d'Ollioules</div>
-                <div class="col-lg-1" id="log2"><img src="img/log-2.png" alt=""></div>
+                <div class="col-lg-1" id="log2"><img src="img/header/log-2.png" alt=""></div>
             </div>
         </div>
         <div class="col-lg-12">
@@ -88,8 +88,8 @@
                     <li><a href="video">Video</a></li>
                     <li><a href="goodies">Goodies</a></li>
                     <li><a href="forums">Forum</a></li>
-                    <li><a href="goodies"><img src="img/kdo.PNG" alt=""></a></li>
-                    <li><a href="compte"><img src="img/compte.PNG" alt=""></a></li>
+                    <li><a href="goodies"><img src="img/menu/kdo.PNG" alt=""></a></li>
+                    <li><a href="compte"><img src="img/menu/compte.PNG" alt=""></a></li>
                 </ul>
             </div>
         </div>
@@ -124,29 +124,29 @@
                     <p>imformation pratique</p>
                     <hr>
                     <br>
-                    <span id="information_img_1"><a href="#" target="_blank"><img src="img/plan.PNG" alt=""></a></span>
-                    <span id="information_img_2"><a href="#" target="_blank"><img src="img/acces.PNG" alt=""></a></span>
-                    <span id="information_img_3"><a href="contact"><img src="img/contacter.PNG" alt=""></a></span>
+                    <span id="information_img_1"><a href="#" target="_blank"><img src="img/footer/plan.PNG" alt=""></a></span>
+                    <span id="information_img_2"><a href="#" target="_blank"><img src="img/footer/acces.PNG" alt=""></a></span>
+                    <span id="information_img_3"><a href="contact"><img src="img/footer/contacter.PNG" alt=""></a></span>
                 </div>
                 <div class="col-lg-3">
                     <p>retrouvez-nous</p>
                     <hr>
                     <br>
                     <span id="retrouvez-nous_img_1"><a href="https://www.facebook.com/club.echecs.ollioules/"
-                                                       target="_blank"><img src="img/facebook.PNG" alt=""></a></span>
-                    <span id="retrouvez-nous_img_2"><a href="#" target="_blank"><img src="img/youtube.PNG"
+                                                       target="_blank"><img src="img/footer/facebook.PNG" alt=""></a></span>
+                    <span id="retrouvez-nous_img_2"><a href="#" target="_blank"><img src="img/footer/youtube.PNG"
                                                                                      alt=""></a></span>
-                    <span id="retrouvez-nous_img_3"><a href="#" target="_blank"><img src="img/twiter.PNG"
+                    <span id="retrouvez-nous_img_3"><a href="#" target="_blank"><img src="img/footer/twiter.PNG"
                                                                                      alt=""></a></span>
                 </div>
                 <div class="col-lg-3">
                     <p>nos partenaires</p>
                     <hr>
                     <br>
-                    <span id="partenaires_img_1"><a href="https://www.ffe.com/" target="_blank"><img src="img/ffe.PNG"
+                    <span id="partenaires_img_1"><a href="https://www.ffe.com/" target="_blank"><img src="img/footer/ffe.PNG"
                                                                                                      alt=""></a></span>
                     <span id="partenaires_img_2"><a href="http://www.ollioules.fr/" target="_blank"><img
-                                    src="img/ollioules.PNG" alt=""></a></span>
+                                    src="img/footer/ollioules.PNG" alt=""></a></span>
                 </div>
             </div>
         </div>

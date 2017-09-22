@@ -7,7 +7,7 @@
         <div class="col-lg-4">
 
             <li>
-                <a href="video_cours" id="v_cour"><span class="icon"></span> Cours</a>
+                <a href="video_cours?page=1" id="v_cour"><span class="icon"></span> Cours</a>
             </li>
         </div>
 

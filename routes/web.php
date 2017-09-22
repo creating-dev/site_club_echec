@@ -132,6 +132,11 @@ Route::get('/contact', function () {
      return view('contact');
 });
 
+Route::get('/View_video_cours', function () {
+    session_start();
+     return view('View_video_cours');
+});
+
 
 Route::get('/compte', 'ctrl_compte@page_compte');
 
