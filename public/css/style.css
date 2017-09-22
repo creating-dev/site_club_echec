@@ -186,7 +186,7 @@ hr.titr:before {
 }
 
 body {
-    background: url("../img/fond.jpg") no-repeat fixed;
+    background: url("../img/header/fond.jpg") no-repeat fixed;
     background-size: cover;
 
 }
@@ -332,6 +332,35 @@ text-align: center;
     width: 100%; height: 100%;
     opacity: .80;
     z-index: 10;
+}
+
+#video_cours{
+    text-align: center;
+}
+
+.cours{
+    margin-bottom: 1%;
+}
+
+.carte_video{
+    background-color: rgba(0,0,0,0.3);
+    padding: 1% 1% 3% 1%;
+    border-radius: 1%;
+}
+
+#view_titre_video{
+    text-align: center;
+}
+
+#view_video{
+    text-align: center;
+    width: 560px;
+    margin-left: 24%;
+}
+
+#pagination{
+    text-align: center;
+    width: 100%;
 }
 
 
