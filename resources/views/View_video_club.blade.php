@@ -1,7 +1,7 @@
 @extends('template/default')
 
 
-@section('title', 'vidéo des cours')
+@section('title', 'vidéo du Club')
 
 
 @include('sous_menu_video')
@@ -9,7 +9,7 @@
 @section('content')
 
     <?php
-      $video = \Database\DAO\DAO_video::select_Video_cours($_GET['lien']);
+      $video = \Database\DAO\DAO_video::select_Video_club($_GET['lien']);
     ?>
 
     <div id="view_titre_video">

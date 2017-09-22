@@ -15,7 +15,7 @@
         <div class="col-lg-4">
 
             <li>
-                <a href="video_club" id="v_club"><span class="icon"></span> Club</a>
+                <a href="video_club?page=1" id="v_club"><span class="icon"></span> Club</a>
             </li>
         </div>
         <div class="col-lg-2">&nbsp;</div>
