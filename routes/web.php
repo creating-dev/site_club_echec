@@ -137,6 +137,11 @@ Route::get('/View_video_cours', function () {
      return view('View_video_cours');
 });
 
+Route::get('/View_video_club', function () {
+    session_start();
+     return view('View_video_club');
+});
+
 
 Route::get('/compte', 'ctrl_compte@page_compte');
 

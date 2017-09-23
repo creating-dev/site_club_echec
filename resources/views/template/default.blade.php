@@ -59,8 +59,8 @@
                         <ul>
                             <li><h3><u><a href="video">Vidéo</a></u></h3></li>
                             <li>&nbsp;</li>
-                            <li><a href="video_cours">cours</a></li>
-                            <li><a href="video_club">Club</a></li>
+                            <li><a href="video_cours?page=1">cours</a></li>
+                            <li><a href="video_club?page=1">Club</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-3">

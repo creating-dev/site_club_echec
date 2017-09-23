@@ -23,7 +23,7 @@
             <div id="zone_video" class="row">
 
                 <?php
-                    $video_all = \Database\DAO\DAO_video_cours::select_all_Video();
+                    $video_all = \Database\DAO\DAO_video::select_all_Video_cours();
 
                     $video_page = array_chunk($video_all, 9);
 
