@@ -156,3 +156,5 @@ Route::post('/compte', 'ctrl_compte@connexion');
 Route::post('/update_compte', 'ctrl_compte@update');
 
 Route::post('/inscription', 'ctrl_compte@inscription');
+
+Route::post('/video', 'ctrl_video@search_video');

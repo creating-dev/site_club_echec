@@ -145,7 +145,7 @@
             </div>
 
             <input type="submit" value="valider" class="btn btn-primary">
-            <a href="retour" class="btn btn-primary">Annuler</a>
+            <a href="retour"><buuton class="btn btn-primary">Annuler</buuton></a>
 
         </form>
 

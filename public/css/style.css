@@ -1,5 +1,5 @@
 /*css template blade*/
-a {
+a, form a {
     text-decoration: none;
     list-style-type: none;
 }
