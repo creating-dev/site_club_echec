@@ -24,9 +24,7 @@ class ctrl_video
 
         foreach ($reponse as $video){
 
-            // refaire le system de tri par titre 
-
-            if (strpos($video['titre'] , $req['titre'])){
+            if (preg_match('#'.$req['titre'].'#', $video['titre'])){
                 array_push($tab_video, $video);
             }
         }
@@ -34,7 +32,11 @@ class ctrl_video
         if(!empty($tab_video)){
             $data = $tab_video;
         }else{
-            $data = $reponse;
+            if (!empty($req['titre'])){
+                $data = [];
+            }else{
+                $data = $reponse;
+            }
         }
 
         return view('video', ['tab' => $data]);
