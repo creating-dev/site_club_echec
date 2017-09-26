@@ -363,6 +363,11 @@ text-align: center;
     width: 100%;
 }
 
+#not_found{
+    color: red;
+    text-align: center;
+}
+
 
 
 

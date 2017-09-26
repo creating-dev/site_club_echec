@@ -72,4 +72,20 @@ class DAO_video
     }
 
 
+
+    public static function select_Video_search($categorie, $sous_categorie){
+
+        $bdd = self::bdd();
+
+        $req = $bdd->prepare('SELECT * FROM '. $categorie .' WHERE sous_categorie = :sous_categorie');
+        $req->execute([
+            'sous_categorie' => $sous_categorie
+        ]);
+
+        $rep = $req->fetchAll();
+
+        return $rep;
+    }
+
+
 }
