@@ -11,8 +11,8 @@
             {{ csrf_field() }}
                 <div class="col-lg-3">
                     <div class="form-group">
-                        <label class="control-label" for="">mot clé</label>
-                        <input type="text" name="mot_cle" style="width: 200px" value="<?php if(isset($_POST['mot_cle'])){ echo $_POST['mot_cle'];} ?>" class="form-control" >
+                        <label class="control-label" for="">Titre</label>
+                        <input type="text" name="titre" style="width: 200px" value="<?php if(isset($_POST['titre'])){ echo $_POST['titre'];} ?>" class="form-control" >
                     </div>
                 </div>
 
@@ -20,8 +20,8 @@
                     <div class="form-group">
                         <label class="control-label" for="">categorie</label>
                         <select name="categorie" class="form-control" style="width: 200px">
-                            <option value="cours">cours</option>
-                            <option value="club">club</option>
+                            <option value="video_cours">cours</option>
+                            <option value="video_club">club</option>
                         </select>
                     </div>
                 </div>
@@ -60,11 +60,10 @@
                 <?php
                 $video_all = \Database\DAO\DAO_video::select_all_Video_club();
 
-                $video_page = array_chunk($video_all, 9);
+                $video_page = array_chunk($tab, 9);
 
                 $page = 0;
 
-                //var_dump($_POST);
                 ?>
 
                 <?php for ($i = 0; $i < count($video_page[$page]); $i++): ?>
