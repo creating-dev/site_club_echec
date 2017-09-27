@@ -181,5 +181,5 @@
 
     <?php endif; ?>
 
->>>>>>> jojo
+
 @endsection
