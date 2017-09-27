@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.5.1
--- http://www.phpmyadmin.net
+-- version 4.6.4
+-- https://www.phpmyadmin.net/
 --
 -- Client :  127.0.0.1
--- Généré le :  Sam 23 Septembre 2017 à 05:29
--- Version du serveur :  5.7.11
--- Version de PHP :  7.0.4
+-- Généré le :  Mer 27 Septembre 2017 à 09:23
+-- Version du serveur :  5.7.14
+-- Version de PHP :  7.0.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -62,26 +62,27 @@ CREATE TABLE `video_club` (
   `lien` varchar(255) NOT NULL,
   `date` date NOT NULL,
   `vu` int(11) NOT NULL,
-  `description` longtext NOT NULL
+  `description` longtext NOT NULL,
+  `sous_categorie` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Contenu de la table `video_club`
 --
 
-INSERT INTO `video_club` (`id`, `titre`, `lien`, `date`, `vu`, `description`) VALUES
-(1, 'titre', 'y0kLwedGarI', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!'),
-(2, 'titre', 'aHpl_RH5mDE', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!'),
-(3, 'titre', 'CwY277ljAlQ', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!'),
-(4, 'titre', 'TAyGP0nAwbk', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!'),
-(5, 'titre', 'hhfMqMJZT_8', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!'),
-(6, 'titre', 'KoFOaB9c8eI', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!'),
-(7, 'titre', 'y0kLwedGarI', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!'),
-(8, 'titre', 'aHpl_RH5mDE', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!'),
-(9, 'titre', 'CwY277ljAlQ', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!'),
-(10, 'titre', 'TAyGP0nAwbk', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!'),
-(11, 'titre', 'hhfMqMJZT_8', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!'),
-(12, 'titre', 'KoFOaB9c8eI', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!');
+INSERT INTO `video_club` (`id`, `titre`, `lien`, `date`, `vu`, `description`, `sous_categorie`) VALUES
+(1, 'toto', 'y0kLwedGarI', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!', 'sous_categorie_1'),
+(2, 'tata', 'aHpl_RH5mDE', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!', 'sous_categorie_1'),
+(3, 'toto a la plage', 'CwY277ljAlQ', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!', 'sous_categorie_2'),
+(4, 'tata a la plage', 'TAyGP0nAwbk', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!', 'sous_categorie_2'),
+(5, 'titre 2', 'hhfMqMJZT_8', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!', 'sous_categorie_2'),
+(6, 'titre du bobo', 'KoFOaB9c8eI', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!', 'sous_categorie_1'),
+(7, 'bobo a la montagne', 'y0kLwedGarI', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!', 'sous_categorie_1'),
+(8, 'tutu a la montagne', 'aHpl_RH5mDE', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!', 'sous_categorie_1'),
+(9, 'pepe', 'CwY277ljAlQ', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!', 'sous_categorie_2'),
+(10, 'yuyu', 'TAyGP0nAwbk', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!', 'sous_categorie_2'),
+(11, 'huhu', 'hhfMqMJZT_8', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!', 'sous_categorie_1'),
+(12, 'titre', 'KoFOaB9c8eI', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!', 'sous_categorie_1');
 
 -- --------------------------------------------------------
 
@@ -95,26 +96,27 @@ CREATE TABLE `video_cours` (
   `lien` varchar(255) NOT NULL,
   `date` date NOT NULL,
   `vu` int(11) NOT NULL,
-  `description` longtext NOT NULL
+  `description` longtext NOT NULL,
+  `sous_categorie` varchar(255) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Contenu de la table `video_cours`
 --
 
-INSERT INTO `video_cours` (`id`, `titre`, `lien`, `date`, `vu`, `description`) VALUES
-(1, 'titre', 'y0kLwedGarI', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!'),
-(2, 'titre', 'aHpl_RH5mDE', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!'),
-(3, 'titre', 'CwY277ljAlQ', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!'),
-(4, 'titre', 'TAyGP0nAwbk', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!'),
-(5, 'titre', 'hhfMqMJZT_8', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!'),
-(6, 'titre', 'KoFOaB9c8eI', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!'),
-(7, 'titre', 'y0kLwedGarI', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!'),
-(8, 'titre', 'aHpl_RH5mDE', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!'),
-(9, 'titre', 'CwY277ljAlQ', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!'),
-(10, 'titre', 'TAyGP0nAwbk', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!'),
-(11, 'titre', 'hhfMqMJZT_8', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!'),
-(12, 'titre', 'KoFOaB9c8eI', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!');
+INSERT INTO `video_cours` (`id`, `titre`, `lien`, `date`, `vu`, `description`, `sous_categorie`) VALUES
+(1, 'toto', 'y0kLwedGarI', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!', 'sous_categorie_1'),
+(2, 'tata', 'aHpl_RH5mDE', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!', 'sous_categorie_2'),
+(3, 'toto a la plage', 'CwY277ljAlQ', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!', 'sous_categorie_1'),
+(4, 'tata a la plage', 'TAyGP0nAwbk', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!', 'sous_categorie_1'),
+(5, 'titre 2', 'hhfMqMJZT_8', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!', 'sous_categorie_1'),
+(6, 'titre du bobo', 'KoFOaB9c8eI', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!', 'sous_categorie_2'),
+(7, 'bobo a la montagne', 'y0kLwedGarI', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!', 'sous_categorie_2'),
+(8, 'tutu a la montagne', 'aHpl_RH5mDE', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!', 'sous_categorie_2'),
+(9, 'pepe', 'CwY277ljAlQ', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!', 'sous_categorie_1'),
+(10, 'yuyu', 'TAyGP0nAwbk', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!', 'sous_categorie_2'),
+(11, 'huhu', 'hhfMqMJZT_8', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!', 'sous_categorie_2'),
+(12, 'titre', 'KoFOaB9c8eI', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!', 'sous_categorie_2');
 
 --
 -- Index pour les tables exportées
