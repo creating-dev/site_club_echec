@@ -2,19 +2,19 @@
 
     <div id="s_menu" class="row">
 
-        <div class="col-lg-1">&nbsp;</div>
+        <div class="col-lg-1">&nbsp;</div></span>
 
         <div class="col-lg-2">
 
             <li>
                 <div class="dropdown">
-                    <a href="agenda_equipe" id="a_g_1"><span class="icon"></span> équipes</a>
-                    <ul class="dropdown-content">
-                        <li><a href="#">Nationale 4 adultes</a></li>
-                        <li><a href="#">Nationale 3 jeunes</a></li>
-                        <li><a href="#">Nationale 4 jeunes</a></li>
-                    </ul>
-                </div>
+                    <a href="agenda_equipe" id="a_g_1"> équipes</a>
+                    <ul class="dropdown-content"><span class="icon"></span>
+                    <li><a href="#">Nationale 4 adultes</a></li>
+                    <li><a href="#">Nationale 3 jeunes</a></li>
+                    <li><a href="#">Nationale 4 jeunes</a></li>
+                </ul>
+        </div>
             </li>
 
 

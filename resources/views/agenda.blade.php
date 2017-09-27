@@ -9,9 +9,7 @@
 
 
 @section('content')
-<<<<<<< HEAD
-    <p>agenda acceuil</p>
-=======
+
 
     <h2 style="text-align: center"><u>agenda</u></h2><br>
     <?php
