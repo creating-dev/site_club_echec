@@ -9,5 +9,5 @@
 
 
 @section('content')
-    <p>agenda</p>
+    <p>agenda acceuil</p>
 @endsection

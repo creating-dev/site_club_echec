@@ -19,7 +19,7 @@ a, form a {
     margin-right: -40px;
     font-size: 55px;
     font-family: "Comic Sans MS";
-    text-shadow: 5px 2px 5px lightgreen;
+    text-shadow: 5px 2px 5px #34B484;
 }
 
 #log1 {
@@ -366,6 +366,36 @@ text-align: center;
 #not_found{
     color: red;
     text-align: center;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+
+
+    list-style: none;
+    display: none;
+    position: absolute;
+    background-color: #333333;
+    color: white;
+    min-width: 200px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    padding: 12px 16px;
+    z-index: 1;
+}
+
+.dropdown-content ul li a{
+
+    font-color: white;
+    display: block;
+
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
 }
 
 
