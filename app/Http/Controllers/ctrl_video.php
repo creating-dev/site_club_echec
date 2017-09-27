@@ -40,9 +40,6 @@ class ctrl_video
             }
         }
 
-        var_dump($data);
-        die();
-
         return view('video', ['tab' => $data]);
     }
 
