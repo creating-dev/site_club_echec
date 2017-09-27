@@ -8,8 +8,8 @@
 
             <li>
                 <div class="dropdown">
-                    <a href="agenda_equipe" id="a_g_1"> équipes</a>
-                    <ul class="dropdown-content"><span class="icon"></span>
+                    <a href="agenda_equipe" id="a_g_1"> <span class="icon"></span> équipes</a>
+                    <ul class="dropdown-content">
                     <li><a href="#">Nationale 4 adultes</a></li>
                     <li><a href="#">Nationale 3 jeunes</a></li>
                     <li><a href="#">Nationale 4 jeunes</a></li>
