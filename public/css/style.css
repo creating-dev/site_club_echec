@@ -395,6 +395,13 @@ text-align: center;
     transform: translateY(-50%);
 }
 
+#view_agenda_mois_titre{
+    text-align: center;
+    padding: 2%;
+    background-color: #2ab27b;
+    margin-bottom: 2%;
+}
+
 
 
 
