@@ -31,6 +31,7 @@ class ctrl_video
 
         if(!empty($tab_video)){
             $data = $tab_video;
+            var_dump('ok');
         }else{
             if (!empty($req['titre'])){
                 $data = [];
@@ -38,6 +39,9 @@ class ctrl_video
                 $data = $reponse;
             }
         }
+
+        var_dump($data);
+        die();
 
         return view('video', ['tab' => $data]);
     }
