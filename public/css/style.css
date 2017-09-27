@@ -368,6 +368,33 @@ text-align: center;
     text-align: center;
 }
 
+.agenda_all{
+    text-align: center;
+    background-color: #2ab27b;
+    margin-bottom: 1%;
+}
+
+.agenda_all a{
+   color: black;
+}
+
+.agenda_mois{
+    margin-bottom: 5px;
+}
+
+.carte_event{
+    text-align: center;
+    margin: 5% 0% 5% 0%;
+    padding: 1%;
+    background-color: aquamarine;
+}
+
+.agenda_view_mois{
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
 
 
 
