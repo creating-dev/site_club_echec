@@ -60,32 +60,7 @@ Route::get('/licence', function () {
     return view('licence');
 });
 
-//menu agenda
 
-Route::get('/agenda_equipe', function () {
-    session_start();
-    return view('agenda_equipe');
-});
-
-Route::get('/agenda_competition', function () {
-    session_start();
-    return view('agenda_competition');
-});
-
-Route::get('/agenda_tournois', function () {
-    session_start();
-    return view('agenda_tournois');
-});
-
-Route::get('/agenda_stage', function () {
-    session_start();
-    return view('agenda_stage');
-});
-
-Route::get('/agenda_reunion', function () {
-    session_start();
-    return view('agenda_reunion');
-});
 
 //menu video
 

@@ -8,7 +8,7 @@
 
             <li>
                 <div class="dropdown">
-                    <a href="agenda_equipe" id="a_g_1"> <span class="icon"></span> équipes</a>
+                    <a href="#" id="a_g_1"> <span class="icon"></span> équipes</a>
                     <ul class="dropdown-content">
                     <li><a href="#">Nationale 4 adultes</a></li>
                     <li><a href="#">Nationale 3 jeunes</a></li>
@@ -22,7 +22,7 @@
         <div class="col-lg-2">
             <li>
                 <div class="dropdown">
-                    <a href="agenda_competition" id="a_g_2"><span class="icon"></span> Compétitions</a>
+                    <a href="#" id="a_g_2"><span class="icon"></span> Compétitions</a>
                     <ul class="dropdown-content">
                         <li><a href="#">jeune</a></li>
                         <li><a href="#">adultes</a></li>
@@ -35,7 +35,7 @@
         <div class="col-lg-2">
             <li>
                 <div class="dropdown">
-                    <a href="agenda_tournois" id="a_g_3"><span class="icon"></span> Tournois</a>
+                    <a href="#" id="a_g_3"><span class="icon"></span> Tournois</a>
                     <ul class="dropdown-content">
                         <li><a href="#">jeune</a></li>
                         <li><a href="#">adultes</a></li>
@@ -51,7 +51,7 @@
         <div class="col-lg-2">
             <li>
                 <div class="dropdown">
-                    <a href="agenda_stage" id="a_g_4"><span class="icon"></span> Stages</a>
+                    <a href="#" id="a_g_4"><span class="icon"></span> Stages</a>
                     <ul class="dropdown-content">
                         <li><a href="#">Toussaint</a></li>
                         <li><a href="#">Noèl</a></li>
@@ -65,7 +65,7 @@
         <div class="col-lg-2">
             <li>
                 <div class="dropdown">
-                    <a href="agenda_reunion" id="a_g_5"><span class="icon"></span> Réunions</a>
+                    <a href="#" id="a_g_5"><span class="icon"></span> Réunions</a>
                     <ul class="dropdown-content">
                         <li><a href="#">Comité directoire</a></li>
                         <li><a href="#">Pré</a></li>
