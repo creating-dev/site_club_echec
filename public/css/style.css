@@ -215,6 +215,8 @@ body {
 
 #s_menu li{
     width: 100%;
+    font-style: oblique ;
+    Font-Weight: Bold;
 }
 
 #s_menu li a {
@@ -378,7 +380,7 @@ text-align: center;
     display: none;
     position: relative;
     background-color:#007002;
-    min-width: 210px;
+    min-width: 150%;
     padding: 12px 16px;
 
 }

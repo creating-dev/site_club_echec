@@ -95,7 +95,7 @@ function hover_add_glyph(icone, position) {
     if ($icone.innerHTML == '' ) {
 
 
-        $icone.parentElement.style.width = '130%';
+        $icone.parentElement.style.width = '150%';
         $icone.parentElement.style.padding = '2%';
         $icone.parentElement.style.backgroundColor = 'black';
         $icone.parentElement.style.color = 'yellow';
