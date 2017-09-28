@@ -10,8 +10,8 @@
     <hr class="titr">
     <br><br>
 
-    <p id="adhesion">L’adhésion vous donne la possibilité de venir profiter d’une ambiance conviviale et enrichissante
-        pour joueraux échecspendant les heures d’ouverture du Club :</p>
+    <p class="adhesion">L’adhésion vous donne la possibilité de venir profiter d’une ambiance conviviale et enrichissante
+        pour jouer aux échecs pendant les heures d’ouverture du Club :</p>
 
     <br><br>
     <div class="row">
@@ -19,7 +19,7 @@
         <div class="col-lg-4"></div>
         <div class="col-lg-4">
             <div class="jumbotron1">
-                <ul class="adhesion">
+                <ul class="adhes">
                     <li>Lundi : 16h30 – 20h30</li>
                     <li>Mardi : 14h – 18h</li>
                     <li>Mercredi : 14h - 18h</li>
@@ -34,7 +34,7 @@
 
     <br><br>
 
-    <p id="adhesion">Vous pourrez ainsi apprendre et vous confrontez aux membres du Club dans une saine émulation,
+    <p class="adhesion">Vous pourrez ainsi apprendre et vous confrontez aux membres du Club dans une saine émulation,
         profiter de
         l’expérience de son entraîneur
         ainsi que du matériel mis à votre disposition par le Club d’Ollioules Jeux, pendules, livres, ordinateurs,
@@ -42,7 +42,7 @@
 
     <br><br>
 
-    <p id="adhesion">
+    <p class="adhesion">
         Elle vous permettra de bénéficier également d’un suivi en compétition et l’accès à des remises sur les cours
         particuliers / Stages /
         Achats de matériel…</p>
@@ -54,7 +54,7 @@
         <div class="col-lg-4"></div>
         <div class="col-lg-4">
             <div class="jumbotron1">
-                <ul class="adhesion">
+                <ul class="adhes">
                     <li>Tarif Adhésion Adulte : 80 €</li>
 
                     <li>Tarif Adhésion Jeune : 40 €</li>
