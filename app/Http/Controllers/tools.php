@@ -61,7 +61,7 @@ class tools
     }
 
 
-    public static function format_datetime_of_date($date){
+    public static function format_datetime_for_date($date){
 
         $tab_date = explode('-', $date);
 

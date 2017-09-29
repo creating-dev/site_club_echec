@@ -284,6 +284,16 @@ a:hover {
     text-indent: 10px;
     font: italic bold 18px comic sans ms;
 }
+.tarifBis {
+
+
+    text-align: center;
+    text-indent: 10px;
+    font: italic bold 18px comic sans ms;
+    color: darkred;
+
+}
+
 
 #cour {
 
@@ -294,21 +304,47 @@ a:hover {
 table{
     margin: auto;
     list-style-type: none;
+
 }
 
 tr {
-    background-color: lightyellow;
-     border: medium solid #000000;
-     width: 60%;
 
+
+     width: 60%;
+    text-align: center;
  }
 
 
 td {
     border: medium solid #007002;
     width: 20%;
+    background-color: lightyellow;
 }
 
+th {
+    text-align: center;
+    border: medium solid #007002;
+    width: 20%;
+    background-color: lightyellow;
+}
+
+/*css licence*/
+
+.licence{
+    text-align: justify;
+    text-indent: 10px;
+    font: italic bold 18px comic sans ms;
+}
+#licence{
+    text-align: center;
+    text-decoration: underline;
+    color: darkred;
+}
+
+.vide{
+    border: none;
+    background-color: transparent;
+}
 
 
 /*css menu burger*/
