@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Client :  127.0.0.1
--- Généré le :  Mer 27 Septembre 2017 à 09:23
+-- Généré le :  Ven 29 Septembre 2017 à 20:19
 -- Version du serveur :  5.7.14
 -- Version de PHP :  7.0.10
 
@@ -19,6 +19,31 @@ SET time_zone = "+00:00";
 --
 -- Base de données :  `site_echec`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `agenda`
+--
+
+CREATE TABLE `agenda` (
+  `id` int(11) NOT NULL,
+  `Date_agenda` date NOT NULL,
+  `Titre` varchar(255) NOT NULL,
+  `heure_fin` time NOT NULL,
+  `heure_debut` time NOT NULL,
+  `description` varchar(255) NOT NULL,
+  `categorie` varchar(255) NOT NULL,
+  `sous_categorie` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Contenu de la table `agenda`
+--
+
+INSERT INTO `agenda` (`id`, `Date_agenda`, `Titre`, `heure_fin`, `heure_debut`, `description`, `categorie`, `sous_categorie`) VALUES
+(1, '2017-02-17', 'test', '10:38:00', '07:15:00', 'test desc', 'cate_1', 'sous_cate_1'),
+(2, '2017-02-16', 'test 2', '21:38:00', '20:15:00', 'test desc', 'cate_1', 'sous_cate_1');
 
 -- --------------------------------------------------------
 
@@ -123,6 +148,12 @@ INSERT INTO `video_cours` (`id`, `titre`, `lien`, `date`, `vu`, `description`, `
 --
 
 --
+-- Index pour la table `agenda`
+--
+ALTER TABLE `agenda`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- Index pour la table `users`
 --
 ALTER TABLE `users`
@@ -144,6 +175,11 @@ ALTER TABLE `video_cours`
 -- AUTO_INCREMENT pour les tables exportées
 --
 
+--
+-- AUTO_INCREMENT pour la table `agenda`
+--
+ALTER TABLE `agenda`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
 -- AUTO_INCREMENT pour la table `video_club`
 --
