@@ -428,6 +428,7 @@ a:hover {
 
 .agenda_mois {
     margin-bottom: 5px;
+    min-height: 100px;
 }
 
 .carte_event {
@@ -437,18 +438,63 @@ a:hover {
     background-color: aquamarine;
 }
 
-.agenda_view_mois {
+.carte_event a{
+   color: black;
+    display: block;
+}
+
+.agenda_view_mois{
+
     position: relative;
     top: 50%;
     transform: translateY(-50%);
 
 }
 
-#view_agenda_mois_titre {
-    text-align: center;
+#carte_view_event_agenda{
+    background-color: rgba(0,0,0,0.1);
+    min-height: 500px;
+    margin-left: 2%;
+    margin-right: 2%;
+}
+
+#view_agenda_mois_titre{
+
+    jojo: center;
     padding: 2%;
     background-color: #2ab27b;
     margin-bottom: 2%;
+}
+
+#view_agenda_event_titre span:first-child{
+    display: block;
+    text-align: center;
+    margin-top: 20px;
+    padding: 2%;
+    font-size: 25px;
+    background-color: #34B484;
+}
+
+#view_agenda_event_titre span:nth-child(2){
+    display: inline-block;
+    text-align: center;
+    background-color: #34B484;
+    float: left;
+    width: 50%;
+    padding-bottom: 2%;
+}
+
+#view_agenda_event_titre span:nth-child(3){
+    display: inline-block;
+    text-align: center;
+    background-color: #34B484;
+    float: right;
+    width: 50%;
+    padding-bottom: 2%;
+}
+
+#view_agenda_event_desc{
+    margin-top: -30%;
 }
 
 

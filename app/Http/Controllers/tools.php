@@ -45,4 +45,33 @@ class tools
         return Redirect::to($_SESSION['save_page']);
 
     }
+
+    public static function format_date($jours,$mois, $annee){
+
+        if ($jours < 10){
+            $jours = 0 . $jours;
+        }
+
+        if ($mois < 10){
+            $mois = 0 . $mois;
+        }
+
+
+        return $jours . '/' . $mois . '/' . $annee ;
+    }
+
+
+    public static function format_datetime_of_date($date){
+
+        $tab_date = explode('-', $date);
+
+        return $tab_date[2] . '/' . $tab_date[1] . '/' . $tab_date[0] ;
+    }
+
+    public static function format_date_for_datetime($date ){
+
+        $tab_date = explode('/', $date);
+
+        return $tab_date[2] . '-' . $tab_date[1] . '-' . $tab_date[0] ;
+    }
 }
