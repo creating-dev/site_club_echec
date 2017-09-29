@@ -10,12 +10,12 @@
 
 @section('content')
 
-<<<<<<< HEAD
+
 
     <h2 style="text-align: center"><u>agenda</u></h2><br>
-=======
+
     <h2 style="text-align: center"><u>agenda 2017</u></h2><br>
->>>>>>> jojo
+
     <?php
 
     $calendrier = \App\Http\Controllers\ctrl_agenda::calendrier();
