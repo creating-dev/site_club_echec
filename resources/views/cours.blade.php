@@ -17,6 +17,37 @@
         et profiter d'un suivi de votre évolution échiquéenne, personnelle, comme en compétition,
         grâce à l'expérience de son entraîneur et une ambiance propice à l'épanouissement</p>
     <br>
-<p class="tarif" id="cour" >Les cours se répartissent de la manière suivante : </p>
+    <p class="tarif" id="cour">Les cours se répartissent de la manière suivante : </p>
+
+    <br>
+    <br>
+
+    <table>
+                <tr>
+
+                    <td><h5>Lundi </h5></td>
+
+                    <td>
+                        <li style="text-align: right"> Niveau Débutant / Débutant +  16h30 – 18h</li>
+                        <li> Adultes / Vétérans  18h30 – 20h30</li>
+                    </td>
+                </tr>
+                <tr>
+                    <td>&nbsp;</td>
+                </tr>
+                <tr>
+
+                    <td><h5>Mardi :</h5></td>
+
+                    <td>
+                        <li>Adultes / Vétérans  14h – 16h</li>
+                        <li>Niveau Débutant / Débutant +  16h30 – 18h</li>
+                    </td>
+
+                </tr>
+    </table>
+
+    <br>
+    <br>
 
 @endsection
