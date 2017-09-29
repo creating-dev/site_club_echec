@@ -380,6 +380,7 @@ text-align: center;
 
 .agenda_mois{
     margin-bottom: 5px;
+    min-height: 100px;
 }
 
 .carte_event{
@@ -387,6 +388,11 @@ text-align: center;
     margin: 5% 0% 5% 0%;
     padding: 1%;
     background-color: aquamarine;
+}
+
+.carte_event a{
+   color: black;
+    display: block;
 }
 
 .agenda_view_mois{

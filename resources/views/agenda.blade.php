@@ -10,7 +10,7 @@
 
 @section('content')
 
-    <h2 style="text-align: center"><u>agenda</u></h2><br>
+    <h2 style="text-align: center"><u>agenda 2017</u></h2><br>
     <?php
 
     $calendrier = \App\Http\Controllers\ctrl_agenda::calendrier();
@@ -50,21 +50,41 @@
                             }else{
                                 $semaines = 5;
                             }
+
+                        $date =  \App\Http\Controllers\tools::format_date($i , $j ,'2017');
+                        $event_count = count(\Database\DAO\DAO_agenda::select_Date_agenda(\App\Http\Controllers\tools::format_date_for_datetime($date)));
                         ?>
 
-                        <?php if ($i == 8 || $i == 15 || $i == 22 || $i == 29): ?>
+                        <?php if ($event_count == 0): ?>
+                                <?php if ($i == 8 || $i == 15 || $i == 22 || $i == 29): ?>
 
-                            <div class="col-lg-1">
-                                &nbsp;
-                            </div>
+                                    <div class="col-lg-1">
+                                        &nbsp;
+                                    </div>
 
-                            <div class="col-lg-1">
-                                <a href="agenda?jours={{$i}}&mois={{$j}}&semaines={{$semaines}}">{{$i}}</a>
-                            </div>
+                                    <div class="col-lg-1">
+                                        <a href="agenda?jours={{$i}}&mois={{$j}}&semaines={{$semaines}}">{{$i}}</a>
+                                    </div>
+                                <?php else: ?>
+                                    <div class="col-lg-1">
+                                        <a href="agenda?jours={{$i}}&mois={{$j}}&semaines={{$semaines}}">{{$i}}</a>
+                                    </div>
+                                <?php endif; ?>
                         <?php else: ?>
-                            <div class="col-lg-1">
-                                <a href="agenda?jours={{$i}}&mois={{$j}}&semaines={{$semaines}}">{{$i}}</a>
-                            </div>
+                                <?php if ($i == 8 || $i == 15 || $i == 22 || $i == 29): ?>
+
+                                    <div class="col-lg-1">
+                                        &nbsp;
+                                    </div>
+
+                                    <div class="col-lg-1">
+                                        <a style="color: red" href="agenda?jours={{$i}}&mois={{$j}}&semaines={{$semaines}}">{{$i}}</a>
+                                    </div>
+                                <?php else: ?>
+                                    <div class="col-lg-1">
+                                        <a style="color: red"  href="agenda?jours={{$i}}&mois={{$j}}&semaines={{$semaines}}">{{$i}}</a>
+                                    </div>
+                                <?php endif; ?>
                         <?php endif; ?>
 
                     <?php endfor; ?>
@@ -157,10 +177,17 @@
                     </div>
                     <div class="col-lg-10" style="background-color: #cbb956 ">
                         <div class="row">
-                            <?php for ($i = 1; $i <= 6; $i++): ?>
+
+                            <?php
+                                $date =  \App\Http\Controllers\tools::format_date($j , $_GET['mois'] ,'2017');
+                                $event_count = count(\Database\DAO\DAO_agenda::select_Date_agenda(\App\Http\Controllers\tools::format_date_for_datetime($date)));
+                            ?>
+
+                            <?php for ($i = 1; $i <= $event_count; $i++): ?>
+
                             <div class="col-lg-4">
-                                <div class="carte_event" id="<?php echo \App\Http\Controllers\tools::format_date($j,$_GET['mois'], '2017') . '_event_' . $i?>">
-                                    event {{$i}}
+                                <div class="carte_event">
+                                    <a href="agenda?jours={{$j}}&mois={{$_GET['mois']}}&semaines=3&event=<?php echo \App\Http\Controllers\tools::format_date($j,$_GET['mois'], '2017') . '_event_' . $i?>">event {{$i}}</a>
                                 </div>
                             </div>
                             <?php endfor; ?>
@@ -170,19 +197,38 @@
             <?php endfor; ?>
         </div>
         <div class="col-lg-6">
-            <div id="carte_view_event_agenda" class="row">
-                <div class="col-lg-12" id="view_agenda_event_titre">
-                        <span>titre</span>
-                        <span>date: 12/05/17</span>
-                        <span>heure: 12:00/14:00</span>
-                </div>
-                <div class="col-lg-12" id="view_agenda_event_desc">
-                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam autem ducimus est eveniet harum hic impedit ipsum minima modi molestiae nam nemo optio perferendis, quia recusandae rerum temporibus tenetur velit?
-                </div>
-            </div>
+
+
+             <?php if (isset($_GET['event'])): ?>
+                    <?php
+                        $tab_event = explode('_', $_GET['event']);
+                        $event = \Database\DAO\DAO_agenda::select_Date_agenda(\App\Http\Controllers\tools::format_date_for_datetime($tab_event[0]));
+                    ?>
+            <?php if (!empty($event)): ?>
+
+                    <?php
+                        $heure_debut = explode(':', $event[$tab_event[2]  - 1]['heure_debut']);
+                        $heure_fin = explode(':', $event[$tab_event[2]  - 1]['heure_fin']);
+                    ?>
+
+
+                    <div id="carte_view_event_agenda" class="row">
+                        <div class="col-lg-12" id="view_agenda_event_titre">
+                                <span>{{$event[$tab_event[2] - 1]['Titre']}}</span>
+                                <span>date: {{ \App\Http\Controllers\tools::format_datetime_of_date($event[$tab_event[2]  - 1]['Date_agenda']) }}</span>
+                                <span>heure: {{$heure_debut[0]}}:{{$heure_debut[1]}}/{{$heure_fin[0]}}:{{$heure_fin[1]}}</span>
+                        </div>
+                        <div class="col-lg-12" id="view_agenda_event_desc">
+                            {{$event[$tab_event[2] - 1]['description']}}
+                        </div>
+                    </div>
+
+                <?php endif; ?>
+            <?php endif; ?>
+
         </div>
     </div>
 
     <?php endif; ?>
-    
+
 @endsection
