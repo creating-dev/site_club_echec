@@ -159,7 +159,7 @@
                         <div class="row">
                             <?php for ($i = 1; $i <= 6; $i++): ?>
                             <div class="col-lg-4">
-                                <div class="carte_event">
+                                <div class="carte_event" id="<?php echo \App\Http\Controllers\tools::format_date($j,$_GET['mois'], '2017') . '_event_' . $i?>">
                                     event {{$i}}
                                 </div>
                             </div>
@@ -184,5 +184,5 @@
     </div>
 
     <?php endif; ?>
-
+    
 @endsection
