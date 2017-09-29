@@ -170,11 +170,16 @@
             <?php endfor; ?>
         </div>
         <div class="col-lg-6">
-
-            <div id="view_agenda_event_titre">
-                
+            <div id="carte_view_event_agenda" class="row">
+                <div class="col-lg-12" id="view_agenda_event_titre">
+                        <span>titre</span>
+                        <span>date: 12/05/17</span>
+                        <span>heure: 12:00/14:00</span>
+                </div>
+                <div class="col-lg-12" id="view_agenda_event_desc">
+                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam autem ducimus est eveniet harum hic impedit ipsum minima modi molestiae nam nemo optio perferendis, quia recusandae rerum temporibus tenetur velit?
+                </div>
             </div>
-
         </div>
     </div>
 
