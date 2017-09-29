@@ -145,4 +145,25 @@
             </td>
         </tr>
     </table>
+
+    <br>
+    <br>
+
+    <p id="club">
+        Pour tous renseignements, n’hésitez pas à contacter l’Entraîneur du Club</p>
+    <div class="row">
+
+        <div class="col-lg-4"></div>
+        <div class="col-lg-4">
+            <div class="jumbotron1">
+                <ul class="club">
+                    <li>Eric Mory : 06.50.95.77.29</li>
+                    <li><p class="email">
+                            <a href="mailto:mory.eric@gmail.com" title="Envoyez un Email !">mory.eric@gmail.com</a>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-lg-4"></div>
+        </div>
+    </div>
 @endsection
