@@ -23,28 +23,32 @@
     <br>
 
     <table>
-                <tr>
+        <tr>
 
-                    <td><h5>Lundi </h5></td>
+            <td>
+                <h5>Lundi </h5>
+            </td>
 
-                    <td>
-                        <li style="text-align: right"> Niveau Débutant / Débutant +  16h30 – 18h</li>
-                        <li> Adultes / Vétérans  18h30 – 20h30</li>
-                    </td>
-                </tr>
-                <tr>
-                    <td>&nbsp;</td>
-                </tr>
-                <tr>
+            <td>
+                <li> Niveau Débutant / Débutant + :</li>
+                <li> Adultes / Vétérans : </li>
+            </td>
+            <td>
+                <li> 16h30 – 18h</li>
+                <li>18h30 – 20h30</li>
+            </td>
+        </tr>
 
-                    <td><h5>Mardi :</h5></td>
+        <tr>
 
-                    <td>
-                        <li>Adultes / Vétérans  14h – 16h</li>
-                        <li>Niveau Débutant / Débutant +  16h30 – 18h</li>
-                    </td>
+            <td><h5>Mardi :</h5></td>
 
-                </tr>
+            <td>
+                <li>Adultes / Vétérans  14h – 16h</li>
+                <li>Niveau Débutant / Débutant +  16h30 – 18h</li>
+            </td>
+
+        </tr>
     </table>
 
     <br>
