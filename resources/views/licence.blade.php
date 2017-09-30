@@ -18,7 +18,7 @@
     </p>
     <br>
     <p class="licence">
-        <span  class="fa fa-id-card" style="color: darkred;font-size: x-large; text-decoration: underline">
+        <span  class="fa fa-id-card"  style="color: darkred;font-size: x-large; text-decoration: underline">
         &nbsp  La Licence B </span>  ne permet de participer à des parties officielles que dans le cas où elles
         ont une durée inférieure à 60 minutes. (Elle est suffisante pour toute personne désirant participer
         à ses premières compétitions.)

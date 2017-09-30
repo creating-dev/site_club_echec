@@ -35,7 +35,7 @@
                 <div class="col-lg-4 cours">
                     <div class="carte_video">
                         <div class="col-lg-12">
-                            <span style="float: left"><?= $video_page[$page][$i]['date'] ?></span> <span><?= $video_page[0][$i]['titre'] ?></span> <span style="float: right">vu: <?= $video_page[$page][$i]['vu'] ?></span>
+                            <span style="float: left">{{$video_page[$page][$i]['date'] }}</span> <span><?= $video_page[0][$i]['titre'] ?></span> <span style="float: right">vu: <?= $video_page[$page][$i]['vu'] ?></span>
                             <hr>
                         </div>
                         <div class="col-lg-12">
