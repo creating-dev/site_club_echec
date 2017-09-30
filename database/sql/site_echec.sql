@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.5.5.1
--- http://www.phpmyadmin.net
+-- version 4.6.4
+-- https://www.phpmyadmin.net/
 --
 -- Client :  127.0.0.1
--- Généré le :  Lun 18 Septembre 2017 à 13:37
--- Version du serveur :  5.7.11
--- Version de PHP :  7.0.4
+-- Généré le :  Ven 29 Septembre 2017 à 20:19
+-- Version du serveur :  5.7.14
+-- Version de PHP :  7.0.10
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -19,6 +19,31 @@ SET time_zone = "+00:00";
 --
 -- Base de données :  `site_echec`
 --
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `agenda`
+--
+
+CREATE TABLE `agenda` (
+  `id` int(11) NOT NULL,
+  `Date_agenda` date NOT NULL,
+  `Titre` varchar(255) NOT NULL,
+  `heure_fin` time NOT NULL,
+  `heure_debut` time NOT NULL,
+  `description` varchar(255) NOT NULL,
+  `categorie` varchar(255) NOT NULL,
+  `sous_categorie` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Contenu de la table `agenda`
+--
+
+INSERT INTO `agenda` (`id`, `Date_agenda`, `Titre`, `heure_fin`, `heure_debut`, `description`, `categorie`, `sous_categorie`) VALUES
+(1, '2017-02-17', 'test', '10:38:00', '07:15:00', 'test desc', 'cate_1', 'sous_cate_1'),
+(2, '2017-02-16', 'test 2', '21:38:00', '20:15:00', 'test desc', 'cate_1', 'sous_cate_1');
 
 -- --------------------------------------------------------
 
@@ -50,9 +75,83 @@ CREATE TABLE `users` (
 INSERT INTO `users` (`id_users`, `pseudo`, `nom`, `prenom`, `pass`, `avatar`, `token`, `genre`, `birthday`, `categorie`, `mail`, `tel`, `adresse`, `codeFFE`) VALUES
 (1, 'jojo', 'jonathan', 'da', 'jojo', 'uploads/1/avatar.png', 'V5rLaTzv8aAaShxvXYVGQd5CvlATWVm1Y8lIOUG8', 'Mr', '2017-09-23', 'Petits Poussin', 'jbdfjojo@gmail.com', '0620420555', NULL, NULL);
 
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `video_club`
+--
+
+CREATE TABLE `video_club` (
+  `id` int(11) NOT NULL,
+  `titre` varchar(255) NOT NULL,
+  `lien` varchar(255) NOT NULL,
+  `date` date NOT NULL,
+  `vu` int(11) NOT NULL,
+  `description` longtext NOT NULL,
+  `sous_categorie` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Contenu de la table `video_club`
+--
+
+INSERT INTO `video_club` (`id`, `titre`, `lien`, `date`, `vu`, `description`, `sous_categorie`) VALUES
+(1, 'toto', 'y0kLwedGarI', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!', 'sous_categorie_1'),
+(2, 'tata', 'aHpl_RH5mDE', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!', 'sous_categorie_1'),
+(3, 'toto a la plage', 'CwY277ljAlQ', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!', 'sous_categorie_2'),
+(4, 'tata a la plage', 'TAyGP0nAwbk', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!', 'sous_categorie_2'),
+(5, 'titre 2', 'hhfMqMJZT_8', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!', 'sous_categorie_2'),
+(6, 'titre du bobo', 'KoFOaB9c8eI', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!', 'sous_categorie_1'),
+(7, 'bobo a la montagne', 'y0kLwedGarI', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!', 'sous_categorie_1'),
+(8, 'tutu a la montagne', 'aHpl_RH5mDE', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!', 'sous_categorie_1'),
+(9, 'pepe', 'CwY277ljAlQ', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!', 'sous_categorie_2'),
+(10, 'yuyu', 'TAyGP0nAwbk', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!', 'sous_categorie_2'),
+(11, 'huhu', 'hhfMqMJZT_8', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!', 'sous_categorie_1'),
+(12, 'titre', 'KoFOaB9c8eI', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!', 'sous_categorie_1');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `video_cours`
+--
+
+CREATE TABLE `video_cours` (
+  `id` int(11) NOT NULL,
+  `titre` varchar(255) NOT NULL,
+  `lien` varchar(255) NOT NULL,
+  `date` date NOT NULL,
+  `vu` int(11) NOT NULL,
+  `description` longtext NOT NULL,
+  `sous_categorie` varchar(255) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+--
+-- Contenu de la table `video_cours`
+--
+
+INSERT INTO `video_cours` (`id`, `titre`, `lien`, `date`, `vu`, `description`, `sous_categorie`) VALUES
+(1, 'toto', 'y0kLwedGarI', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!', 'sous_categorie_1'),
+(2, 'tata', 'aHpl_RH5mDE', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!', 'sous_categorie_2'),
+(3, 'toto a la plage', 'CwY277ljAlQ', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!', 'sous_categorie_1'),
+(4, 'tata a la plage', 'TAyGP0nAwbk', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!', 'sous_categorie_1'),
+(5, 'titre 2', 'hhfMqMJZT_8', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!', 'sous_categorie_1'),
+(6, 'titre du bobo', 'KoFOaB9c8eI', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!', 'sous_categorie_2'),
+(7, 'bobo a la montagne', 'y0kLwedGarI', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!', 'sous_categorie_2'),
+(8, 'tutu a la montagne', 'aHpl_RH5mDE', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!', 'sous_categorie_2'),
+(9, 'pepe', 'CwY277ljAlQ', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!', 'sous_categorie_1'),
+(10, 'yuyu', 'TAyGP0nAwbk', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!', 'sous_categorie_2'),
+(11, 'huhu', 'hhfMqMJZT_8', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!', 'sous_categorie_2'),
+(12, 'titre', 'KoFOaB9c8eI', '2017-09-06', 10, 'Lorem ipsum dolor sit amet, consectetur adipisicing elit. Animi consequatur culpa eveniet ex explicabo harum incidunt magni minima minus non perferendis, perspiciatis quae quasi quos ratione reiciendis saepe soluta voluptatum!', 'sous_categorie_2');
+
 --
 -- Index pour les tables exportées
 --
+
+--
+-- Index pour la table `agenda`
+--
+ALTER TABLE `agenda`
+  ADD PRIMARY KEY (`id`);
 
 --
 -- Index pour la table `users`
@@ -60,6 +159,37 @@ INSERT INTO `users` (`id_users`, `pseudo`, `nom`, `prenom`, `pass`, `avatar`, `t
 ALTER TABLE `users`
   ADD PRIMARY KEY (`id_users`);
 
+--
+-- Index pour la table `video_club`
+--
+ALTER TABLE `video_club`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- Index pour la table `video_cours`
+--
+ALTER TABLE `video_cours`
+  ADD PRIMARY KEY (`id`);
+
+--
+-- AUTO_INCREMENT pour les tables exportées
+--
+
+--
+-- AUTO_INCREMENT pour la table `agenda`
+--
+ALTER TABLE `agenda`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
+--
+-- AUTO_INCREMENT pour la table `video_club`
+--
+ALTER TABLE `video_club`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+--
+-- AUTO_INCREMENT pour la table `video_cours`
+--
+ALTER TABLE `video_cours`
+  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;

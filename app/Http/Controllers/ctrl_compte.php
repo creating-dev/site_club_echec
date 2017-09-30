@@ -12,7 +12,6 @@ namespace App\Http\Controllers;
 
 use Database\DAO\DAO_users;
 use Illuminate\Http\Request;
-use App\Http\Requests;
 use Illuminate\Support\Facades\Redirect;
 
 session_start();
@@ -98,6 +97,4 @@ class ctrl_compte
     public function retour(){
         return tools::return_page();
     }
-
-
 }
