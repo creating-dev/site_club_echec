@@ -180,11 +180,7 @@ hr.titr:before {
 }
 
 body {
-<<<<<<< HEAD
-    background: url("../img/fond1.PNG") no-repeat fixed;
-=======
     background: url("../img/header/fond.jpg") no-repeat fixed;
->>>>>>> jerome
     background-size: cover;
 
 }
