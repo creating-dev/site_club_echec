@@ -42,6 +42,7 @@
                             <li><a href="adhesion">Adhesion</a></li>
                             <li><a href="cours">Cours et Tarif</a></li>
                             <li><a href="licence">Licence FFE</a></li>
+                            <li><a href="membre">Membres</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-3">
