@@ -25,6 +25,12 @@ $(document).ready(function () {
 
     });
 
+    $("#m_m_c").hover(function () {//membre
+
+        hover_add_glyph('fa-address-book-o', 3);
+
+    });
+
     // glyph sous menu agenda
 
     $("#a_g_1").hover(function () {//equipe

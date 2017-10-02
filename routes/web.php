@@ -60,6 +60,11 @@ Route::get('/licence', function () {
     return view('licence');
 });
 
+Route::get('/membre', function () {
+    session_start();
+    return view('membre');
+});
+
 
 
 //menu video
