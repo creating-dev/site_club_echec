@@ -1,12 +1,8 @@
 @extends('template/default')
 
+@section('title', 'licence FFE')
 
-@section('title', 'agenda')
-
-
-@include('sous_menu_agenda')
-
-
+@include('sous_menu_club')
 
 @section('content')
 <p>photo</p>
