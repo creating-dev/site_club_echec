@@ -43,6 +43,7 @@
                             <li><a href="cours">Cours et Tarif</a></li>
                             <li><a href="licence">Licence FFE</a></li>
                             <li><a href="membre">Membres</a></li>
+                            <li><a href="photo">Photos du club</a></li>
                         </ul>
                     </div>
                     <div class="col-lg-3">
