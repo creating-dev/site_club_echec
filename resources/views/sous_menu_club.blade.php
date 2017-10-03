@@ -10,7 +10,7 @@
             </li>
         </div>
 
-              <div class="col-lg-1">&nbsp;</div>
+
 
         <div class="col-lg-2">
             <li>
@@ -18,19 +18,24 @@
             </li>
         </div>
 
-              <div class="col-lg-1">&nbsp;</div>
 
         <div class="col-lg-2">
             <li>
                 <a href="licence" id="m_l_f"><span class="icon"></span> Licence FFE</a>
             </li>
         </div>
-
               <div class="col-lg-2">
                   <li>
                       <a href="membre" id="m_m_c"><span class="icon"></span> Membres</a>
                   </li>
               </div>
+
+        <div class="col-lg-2">
+            <li>
+                <a href="photo" id="m_p_c"><span class="icon"></span> Photos du club</a>
+            </li>
+        </div>
+
               <div class="col-lg-1">&nbsp;</div>
     </div>
 @endsection

@@ -65,6 +65,11 @@ Route::get('/membre', function () {
     return view('membre');
 });
 
+Route::get('/photo', function () {
+    session_start();
+    return view('photo');
+});
+
 
 
 //menu video

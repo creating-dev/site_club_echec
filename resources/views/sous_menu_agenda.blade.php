@@ -68,7 +68,7 @@
                     <a href="#" id="a_g_5"><span class="icon"></span> Réunions</a>
                     <ul class="dropdown-content">
                         <li><a href="#">Comité directoire</a></li>
-                        <li><a href="#">Pré</a></li>
+                        <li><a href="#">Membres</a></li>
 
                     </ul>
                 </div>

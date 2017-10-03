@@ -31,6 +31,12 @@ $(document).ready(function () {
 
     });
 
+    $("#m_p_c").hover(function () {//photo
+
+        hover_add_glyph('fa fa-camera', 4);
+
+    });
+
     // glyph sous menu agenda
 
     $("#a_g_1").hover(function () {//equipe
