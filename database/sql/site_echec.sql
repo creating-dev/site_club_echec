@@ -3,9 +3,9 @@
 -- https://www.phpmyadmin.net/
 --
 -- Client :  127.0.0.1
--- Généré le :  Ven 29 Septembre 2017 à 20:19
+-- Généré le :  Mer 04 Octobre 2017 à 16:20
 -- Version du serveur :  5.7.14
--- Version de PHP :  7.0.10
+-- Version de PHP :  5.6.25
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -44,6 +44,32 @@ CREATE TABLE `agenda` (
 INSERT INTO `agenda` (`id`, `Date_agenda`, `Titre`, `heure_fin`, `heure_debut`, `description`, `categorie`, `sous_categorie`) VALUES
 (1, '2017-02-17', 'test', '10:38:00', '07:15:00', 'test desc', 'cate_1', 'sous_cate_1'),
 (2, '2017-02-16', 'test 2', '21:38:00', '20:15:00', 'test desc', 'cate_1', 'sous_cate_1');
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `photo`
+--
+
+CREATE TABLE `photo` (
+  `id_photo` int(11) NOT NULL,
+  `titre_photo` varchar(255) CHARACTER SET utf8 NOT NULL,
+  `date_photo` date NOT NULL,
+  `lien_photo` varchar(255) CHARACTER SET utf8 NOT NULL,
+  `description` longtext CHARACTER SET utf8 NOT NULL,
+  `sous_categorie` varchar(255) CHARACTER SET utf8 NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
+
+-- --------------------------------------------------------
+
+--
+-- Structure de la table `premium`
+--
+
+CREATE TABLE `premium` (
+  `premium` tinyint(1) NOT NULL,
+  `id_premium` int(11) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_unicode_ci;
 
 -- --------------------------------------------------------
 
@@ -154,6 +180,18 @@ ALTER TABLE `agenda`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Index pour la table `photo`
+--
+ALTER TABLE `photo`
+  ADD PRIMARY KEY (`id_photo`);
+
+--
+-- Index pour la table `premium`
+--
+ALTER TABLE `premium`
+  ADD PRIMARY KEY (`id_premium`);
+
+--
 -- Index pour la table `users`
 --
 ALTER TABLE `users`
@@ -181,6 +219,11 @@ ALTER TABLE `video_cours`
 ALTER TABLE `agenda`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
 --
+-- AUTO_INCREMENT pour la table `photo`
+--
+ALTER TABLE `photo`
+  MODIFY `id_photo` int(11) NOT NULL AUTO_INCREMENT;
+--
 -- AUTO_INCREMENT pour la table `video_club`
 --
 ALTER TABLE `video_club`
@@ -190,6 +233,16 @@ ALTER TABLE `video_club`
 --
 ALTER TABLE `video_cours`
   MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=13;
+--
+-- Contraintes pour les tables exportées
+--
+
+--
+-- Contraintes pour la table `premium`
+--
+ALTER TABLE `premium`
+  ADD CONSTRAINT `premium_ibfk_1` FOREIGN KEY (`id_premium`) REFERENCES `users` (`id_users`);
+
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
