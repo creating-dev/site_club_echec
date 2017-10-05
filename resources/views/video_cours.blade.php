@@ -49,10 +49,10 @@
                 <div id="pagination">
                      <?php for ($i = 0; $i < count($video_page); $i++): ?>
                          <?php if (count($video_page) -1 == $i): ?>
-                        <a href="video_cours?page=<?= $i + 1 ?>"><?= $i + 1 ?></a>
+                         <a href="video_cours?page=<?= $i + 1 ?>"><?= $i + 1 ?></a>
                          <?php else: ?>
                          <a href="video_cours?page=<?= $i + 1 ?>"><?= $i + 1 ?></a> -
-                     <?php endif; ?>
+                         <?php endif; ?>
                      <?php endfor; ?>
                 </div>
 
