@@ -16,7 +16,7 @@ class DAO_video
 
     public static function bdd(){
 
-        return  new PDO('mysql:host=localhost;dbname='. env('DB_DATABASE') .';charset=utf8', 'root', '');
+        return  new PDO('mysql:host=localhost;dbname='. env('DB_DATABASE') .';charset=utf8', env('DB_USERNAME'), env('DB_PASSWORD'));
     }
 
     public static function select_Video_cours($lien){
