@@ -145,7 +145,7 @@
                     <p>nos partenaires</p>
                     <hr>
                     <br>
-                    <span id="partenaires_img_1"><a href="https://www.ffe.com/" target="_blank"><img src="img/footer/ffe.PNG"
+                    <span id="partenaires_img_1"><a href="http://www.echecs.asso.fr/" target="_blank"><img src="img/footer/ffe.PNG"
                                                                                                      alt=""></a></span>
                     <span id="partenaires_img_2"><a href="http://www.ollioules.fr/" target="_blank"><img
                                     src="img/footer/ollioules.PNG" alt=""></a></span>
