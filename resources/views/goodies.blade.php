@@ -3,5 +3,7 @@
 @section('title', 'Goodies')
 
 @section('content')
-    <p>goodies</p>
+    <h4 id="titre3Ho">Page goodies en cours de réalisation merci de votre compréhension</h4>
+    <hr class="titr">
+    <br><br>
 @endsection

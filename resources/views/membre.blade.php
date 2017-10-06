@@ -5,5 +5,7 @@
 @include('sous_menu_club')
 
 @section('content')
-    <p>membre</p>
+    <h4 id="titre3Ho">Page membres en cours de réalisation merci de votre compréhension</h4>
+    <hr class="titr">
+    <br><br>
 @endsection
