@@ -71,7 +71,7 @@
 
         <div class="col-lg-4"></div>
         <div class="col-lg-4" id="inscript">
-            <a href="#">Inscription</a>
+            <a href="inscription">Inscription</a>
         </div>
         <div class="col-lg-4"></div>
     </div>
