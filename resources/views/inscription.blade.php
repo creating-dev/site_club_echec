@@ -5,7 +5,7 @@
 @section('content')
 
     <h1 style="text-align: center; width: 100%">S'inscrire</h1><br><br><br>
-    <p><img src="../../public/img/infor.png" alt="information" title="test"> </p>
+
     <div id="mon_compte">
 
         <form action="inscription" method="post" enctype="multipart/form-data">
@@ -14,12 +14,13 @@
 
                 {{ csrf_field() }}
 
-                    <?php $erreur = \App\Http\Controllers\Erreur::get_erreur(); ?>
+                <?php $erreur = \App\Http\Controllers\Erreur::get_erreur(); ?>
 
                 <div class="col-lg-8">
                     <div class="form-group">
-                        <label for="">*Genre : </label> <br>
-                        <select name="genre" class="form-control" style="width: 200px" >
+                        <label for="">*Genre :<img src="../public/img/information.png" alt="information" title="test">
+                        </label> <br>
+                        <select name="genre" class="form-control" style="width: 200px">
                             <option value="Mr">Mr</option>
                             <option value="Mme">Madame</option>
                             <option value="J_F">Jeune Fille</option>
@@ -33,10 +34,16 @@
                         <div class="col-lg-5">
                             <div class="form-group">
                                 <label class="control-label" for="">*Nom :</label>
-                                <input type="text" name="nom" style="width: 200px" value="<?php if(isset($_POST['nom'])){ echo $_POST['nom'];} ?>" class="form-control <?php if(isset($erreur['nom'])&& $erreur['nom'] != ''){ echo 'is-invalid';} ?>" >
+                                <input type="text" name="nom" style="width: 200px"
+                                       value="<?php if (isset($_POST['nom'])) {
+                                           echo $_POST['nom'];
+                                       } ?>"
+                                       class="form-control <?php if (isset($erreur['nom']) && $erreur['nom'] != '') {
+                                           echo 'is-invalid';
+                                       } ?>">
                                 <div class="invalid-feedback">
                                     <?php
-                                    if(isset($erreur['nom'])&& $erreur['nom'] != ''){
+                                    if (isset($erreur['nom']) && $erreur['nom'] != '') {
                                         echo $erreur['nom'];
                                     }
                                     ?>
@@ -54,11 +61,16 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="">*Date de naissance :</label><br>
-                        <input type="date" onchange="is_categorie()" id="date" name="date" style="width: 200px" value="<?php if(isset($_POST['date'])){ echo $_POST['date'];} ?>" class="form-control <?php if(isset($erreur['date'])&& $erreur['date'] != ''){ echo 'is-invalid';} ?>" >
+                        <label for="">*Date de naissance :<img src="../public/img/information.png" alt="information" title="test"></label><br>
+                        <input type="date" onchange="is_categorie()" id="date" name="date" style="width: 200px"
+                               value="<?php if (isset($_POST['date'])) {
+                                   echo $_POST['date'];
+                               } ?>" class="form-control <?php if (isset($erreur['date']) && $erreur['date'] != '') {
+                            echo 'is-invalid';
+                        } ?>">
                         <div class="invalid-feedback">
                             <?php
-                            if(isset($erreur['date'])&& $erreur['date'] != ''){
+                            if (isset($erreur['date']) && $erreur['date'] != '') {
                                 echo $erreur['date'];
                             }
                             ?>
@@ -66,17 +78,29 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="">*Categorie :</label><br>
-                        <input type="text" id="categorie1" style="width: 200px" class="form-control"  value="<?php if(isset($_POST['categorie'])){ echo $_POST['categorie'];} ?>" disabled>
-                        <input type="hidden" id="categorie2"  name="categorie" style="width: 200px" value="<?php if(isset($_POST['categorie'])){ echo $_POST['categorie'];} ?>"  class="form-control">
+                        <label for="">*Categorie :<img src="../public/img/information.png" alt="information" title="test"></label><br>
+                        <input type="text" id="categorie1" style="width: 200px" class="form-control"
+                               value="<?php if (isset($_POST['categorie'])) {
+                                   echo $_POST['categorie'];
+                               } ?>" disabled>
+                        <input type="hidden" id="categorie2" name="categorie" style="width: 200px"
+                               value="<?php if (isset($_POST['categorie'])) {
+                                   echo $_POST['categorie'];
+                               } ?>" class="form-control">
                     </div>
 
                     <div class="form-group">
-                        <label for="">*Pseudo :</label><br>
-                        <input type="text" name="pseudo" style="width: 200px"  value="<?php if(isset($_POST['pseudo'])){ echo $_POST['pseudo'];} ?>" class="form-control <?php if(isset($erreur['pseudo'])&& $erreur['pseudo'] != ''){ echo 'is-invalid';} ?>" >
+                        <label for="">*Pseudo :<img src="../public/img/information.png" alt="information" title="test"></label><br>
+                        <input type="text" name="pseudo" style="width: 200px"
+                               value="<?php if (isset($_POST['pseudo'])) {
+                                   echo $_POST['pseudo'];
+                               } ?>"
+                               class="form-control <?php if (isset($erreur['pseudo']) && $erreur['pseudo'] != '') {
+                                   echo 'is-invalid';
+                               } ?>">
                         <div class="invalid-feedback">
                             <?php
-                            if(isset($erreur['pseudo'])&& $erreur['pseudo'] != ''){
+                            if (isset($erreur['pseudo']) && $erreur['pseudo'] != '') {
                                 echo $erreur['pseudo'];
                             }
                             ?>
@@ -84,11 +108,14 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="">*mot de passe :</label><br>
-                        <input type="password" name="pass" style="width: 200px" class="form-control <?php if(isset($erreur['pass'])&& $erreur['pass'] != ''){ echo 'is-invalid';} ?>" >
+                        <label for="">*mot de passe :<img src="../public/img/information.png" alt="information" title="test"></label><br>
+                        <input type="password" name="pass" style="width: 200px"
+                               class="form-control <?php if (isset($erreur['pass']) && $erreur['pass'] != '') {
+                                   echo 'is-invalid';
+                               } ?>">
                         <div class="invalid-feedback">
                             <?php
-                            if(isset($erreur['pass'])&& $erreur['pass'] != ''){
+                            if (isset($erreur['pass']) && $erreur['pass'] != '') {
                                 echo $erreur['pass'];
                             }
                             ?>
@@ -97,22 +124,29 @@
 
                     <div class="form-group">
                         <label for="">*Confirmation du mot de passe :</label><br>
-                        <input type="password" name="confirm_pass" style="width: 200px" class="form-control <?php if(isset($erreur['confirm_pass'])&& $erreur['confirm_pass'] != ''){ echo 'is-invalid';} ?>">
+                        <input type="password" name="confirm_pass" style="width: 200px"
+                               class="form-control <?php if (isset($erreur['confirm_pass']) && $erreur['confirm_pass'] != '') {
+                                   echo 'is-invalid';
+                               } ?>">
                         <div class="invalid-feedback">
-                        <?php
-                        if(isset($erreur['confirm_pass'])&& $erreur['confirm_pass'] != ''){
-                            echo $erreur['confirm_pass'];
-                        }
-                        ?>
+                            <?php
+                            if (isset($erreur['confirm_pass']) && $erreur['confirm_pass'] != '') {
+                                echo $erreur['confirm_pass'];
+                            }
+                            ?>
                         </div>
                     </div>
 
                     <div class="form-group">
-                        <label for="">*Mail :</label><br>
-                        <input type="email" name="mail" style="width: 200px"  value="<?php if(isset($_POST['mail'])){ echo $_POST['mail'];} ?>" class="form-control <?php if(isset($erreur['mail'])&& $erreur['mail'] != ''){ echo 'is-invalid';} ?>" >
+                        <label for="">*Mail :<img src="../public/img/information.png" alt="information" title="test"></label><br>
+                        <input type="email" name="mail" style="width: 200px" value="<?php if (isset($_POST['mail'])) {
+                            echo $_POST['mail'];
+                        } ?>" class="form-control <?php if (isset($erreur['mail']) && $erreur['mail'] != '') {
+                            echo 'is-invalid';
+                        } ?>">
                         <div class="invalid-feedback">
                             <?php
-                            if(isset($erreur['mail'])&& $erreur['mail'] != ''){
+                            if (isset($erreur['mail']) && $erreur['mail'] != '') {
                                 echo $erreur['mail'];
                             }
                             ?>
@@ -121,33 +155,44 @@
 
                     <div class="form-group">
                         <label for="">Telephone :</label><br>
-                        <input type="tel" name="tel"  style="width: 200px" class="form-control" value="<?php if(isset($_POST['tel'])){ echo $_POST['tel'];} ?>">
+                        <input type="tel" name="tel" style="width: 200px" class="form-control"
+                               value="<?php if (isset($_POST['tel'])) {
+                                   echo $_POST['tel'];
+                               } ?>">
                     </div>
 
                     <div class="form-group">
                         <label for="">Adresse :</label><br>
-                        <textarea name="adresse" id="" cols="30" rows="3" style="width: 300px" class="form-control" value="<?php if(isset($_POST['adresse'])){ echo $_POST['adresse'];} ?>">
+                        <textarea name="adresse" id="" cols="30" rows="3" style="width: 300px" class="form-control"
+                                  value="<?php if (isset($_POST['adresse'])) {
+                                      echo $_POST['adresse'];
+                                  } ?>">
 
                         </textarea>
                     </div>
 
                     <div class="form-group">
-                        <label for="">code FFE :</label><br>
-                        <input type="text" name="ffe" style="width: 200px" class="form-control" value="<?php if(isset($_POST['ffe'])){ echo $_POST['ffe'];} ?>">
+                        <label for="">code FFE :<img src="../public/img/information.png" alt="information" title="test"></label><br>
+                        <input type="text" name="ffe" style="width: 200px" class="form-control"
+                               value="<?php if (isset($_POST['ffe'])) {
+                                   echo $_POST['ffe'];
+                               } ?>">
                     </div>
                 </div>
 
                 <div class="col-lg-4" style="text-align: center">
-                    <div class="form-group">
-                        <img src="img/avatar.PNG" alt="" ><br><br>
-                        <input type="file" name="avatar"  id="avatar" value="test" class="form-control">
+                    <div class="form-group"><img src="../public/img/information.png" alt="information" title="test">
+                        <img src="img/avatar.PNG" alt=""><br><br>
+                        <input type="file" name="avatar" id="avatar" value="test" class="form-control" >
                     </div>
                 </div>
 
             </div>
 
             <input type="submit" value="valider" class="btn btn-primary">
-            <a href="retour"><buuton class="btn btn-primary">Annuler</buuton></a>
+            <a href="retour">
+                <buuton class="btn btn-primary">Annuler</buuton>
+            </a>
 
         </form>
 
