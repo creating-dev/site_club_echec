@@ -5,7 +5,7 @@
 @section('content')
 
     <h1 style="text-align: center; width: 100%">S'inscrire</h1><br><br><br>
-
+    <p><img src="../../public/img/infor.png" alt="information" title="test"> </p>
     <div id="mon_compte">
 
         <form action="inscription" method="post" enctype="multipart/form-data">
@@ -18,13 +18,15 @@
 
                 <div class="col-lg-8">
                     <div class="form-group">
-                        <label for="">*Genre : </label><br>
-                        <select name="genre" class="form-control" style="width: 200px">
+                        <label for="">*Genre : </label> <br>
+                        <select name="genre" class="form-control" style="width: 200px" >
                             <option value="Mr">Mr</option>
                             <option value="Mme">Madame</option>
                             <option value="J_F">Jeune Fille</option>
                             <option value="J_H">Jeune Homme</option>
+
                         </select>
+
                     </div>
 
                     <div class="row">

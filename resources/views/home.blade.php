@@ -28,7 +28,9 @@
         </div>
         <div class="col-lg-4">
             <div id="yout">
-                <img src="../public/img/videoPresentation.png" alt="">
+                <a href="#">
+                <img src="../public/img/videoPresentation.png" alt="" title="Cliquez moi">
+                </a>
             </div>
         </div>
         <div class="col-lg-4">
