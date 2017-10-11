@@ -153,8 +153,8 @@
 
             </div>
 
-            <input type="submit" value="Modifier le profil" class="btn btn-primary">
-            <a href="retour"><buuton class="btn btn-primary">Annuler</buuton></a>
+            <input type="submit" value="Modifier le profil" class="btn btn-primary btn-perso">
+            <a href="retour"><button class="btn btn-primary btn-perso">Annuler</button></a>
 
         </form>
 
@@ -196,8 +196,8 @@
                 </div>
             </div>
 
-            <input type="submit" value="valider" class="btn btn-primary">
-            <a href="inscription"><buuton class="btn btn-primary">S'inscrire au site</buuton></a>
+            <input type="submit" value="valider" class="btn btn-primary btn-perso">
+            <a href="inscription"><button class="btn btn-primary">S'inscrire au site</button></a>
             <br><br><br><br><br><br>
         </form>
 

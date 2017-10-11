@@ -18,7 +18,7 @@
 
                 <div class="col-lg-8">
                     <div class="form-group">
-                        <label for="">*Genre :<img src="../public/img/information.png" alt="information" title="test">
+                        <label for="">*Genre :
                         </label> <br>
                         <select name="genre" class="form-control" style="width: 200px">
                             <option value="Mr">Mr</option>
@@ -61,7 +61,8 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="">*Date de naissance :<img src="../public/img/information.png" alt="information" title="test"></label><br>
+                        <label for="">*Date de naissance :<img src="../public/img/information.png" alt="information"
+                                                               title="Permet d'obtenir une licence de la Fédération Française des Echecs si vous le souhaitez(Jour/Mois/Année) et permets de définir votre catégorie."></label><br>
                         <input type="date" onchange="is_categorie()" id="date" name="date" style="width: 200px"
                                value="<?php if (isset($_POST['date'])) {
                                    echo $_POST['date'];
@@ -78,7 +79,8 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="">*Categorie :<img src="../public/img/information.png" alt="information" title="test"></label><br>
+                        <label for="">*Categorie :<img src="../public/img/information.png" alt="information"
+                                                       title="test"></label><br>
                         <input type="text" id="categorie1" style="width: 200px" class="form-control"
                                value="<?php if (isset($_POST['categorie'])) {
                                    echo $_POST['categorie'];
@@ -108,7 +110,8 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="">*mot de passe :<img src="../public/img/information.png" alt="information" title="test"></label><br>
+                        <label for="">*mot de passe :<img src="../public/img/information.png" alt="information"
+                                                          title="test"></label><br>
                         <input type="password" name="pass" style="width: 200px"
                                class="form-control <?php if (isset($erreur['pass']) && $erreur['pass'] != '') {
                                    echo 'is-invalid';
@@ -138,7 +141,8 @@
                     </div>
 
                     <div class="form-group">
-                        <label for="">*Mail :<img src="../public/img/information.png" alt="information" title="test"></label><br>
+                        <label for="">*Mail :<img src="../public/img/information.png" alt="information"
+                                                  title="test"></label><br>
                         <input type="email" name="mail" style="width: 200px" value="<?php if (isset($_POST['mail'])) {
                             echo $_POST['mail'];
                         } ?>" class="form-control <?php if (isset($erreur['mail']) && $erreur['mail'] != '') {
@@ -181,17 +185,18 @@
                 </div>
 
                 <div class="col-lg-4" style="text-align: center">
-                    <div class="form-group"><img src="../public/img/information.png" alt="information" title="test">
+                    <div class="form-group">
                         <img src="img/avatar.PNG" alt=""><br><br>
-                        <input type="file" name="avatar" id="avatar" value="test" class="form-control" >
+                        <label for="">Avatar : <img src="../public/img/information.png" alt="information" title="test"></label>
+                        <input type="file" name="avatar" id="avatar" value="test" class="form-control">
                     </div>
                 </div>
 
             </div>
 
-            <input type="submit" value="valider" class="btn btn-primary">
+            <input type="submit" value="valider" class="btn btn-primary btn-perso">
             <a href="retour">
-                <buuton class="btn btn-primary">Annuler</buuton>
+                <button class="btn btn-primary btn-perso">Annuler</button>
             </a>
 
         </form>
