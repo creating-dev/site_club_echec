@@ -197,7 +197,7 @@
             </div>
 
             <input type="submit" value="valider" class="btn btn-primary btn-perso">
-            <a href="inscription"><button class="btn btn-primary">S'inscrire au site</button></a>
+            <a href="inscription"><span class="btn btn-primary btn-perso">S'inscrire au site</span></a>
             <br><br><br><br><br><br>
         </form>
 

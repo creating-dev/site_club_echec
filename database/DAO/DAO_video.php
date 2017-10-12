@@ -49,11 +49,9 @@ class DAO_video
 
         $bdd = self::bdd();
 
-<<<<<<< HEAD
+
         $req = $bdd->prepare('SELECT * FROM video_club WHERE lien = :lien');
-=======
-        $req = $bdd->prepare('SELECT * FROM Video_club WHERE lien = :lien');
->>>>>>> ed1453cc9e2b48d3b845b7a0c1f9605a94871eea
+
         $req->execute([
             'lien' => $lien
         ]);
@@ -67,11 +65,8 @@ class DAO_video
 
         $bdd = self::bdd();
 
-<<<<<<< HEAD
         $req = $bdd->prepare('SELECT * FROM video_club');
-=======
-        $req = $bdd->prepare('SELECT * FROM Video_club');
->>>>>>> ed1453cc9e2b48d3b845b7a0c1f9605a94871eea
+
         $req->execute();
 
         $rep = $req->fetchAll();
