@@ -20,13 +20,13 @@
 <body>
 
 <div class="container">
-
+s
     <div class="row">
         <div class="col-lg-12">
             <div id="baniere" class="row">
-                <div class="col-lg-1" id="log1"><img src="img/header/log-1.png" alt=""></div>
+                <div class="col-lg-1" id="log1"><img src="img/header/logo.png" alt=""></div>
                 <div class="col-lg-10" id="ban">Club d'Echecs d'Ollioules</div>
-                <div class="col-lg-1" id="log2"><img src="img/header/log-2.png" alt=""></div>
+                <div class="col-lg-1" id="log2"><img src="img/header/logo.png" alt=""></div>
             </div>
         </div>
         <div class="col-lg-12">
