@@ -35,7 +35,7 @@ s
                 <h2><u><b>Menu</b></u></h2><br><br><br><br>
 
                 <div class="row">
-                    <div class="col-lg-3">
+                    <div class="col-lg-2">
                         <ul>
                             <li><h3><u><a href="club">Club</a></u></h3></li>
                             <li>&nbsp;</li>
@@ -46,7 +46,7 @@ s
                             <li><a href="photo">Photos du club</a></li>
                         </ul>
                     </div>
-                    <div class="col-lg-3">
+                    <div class="col-lg-2">
                         <ul>
                             <li><h3><u><a href="agenda">Agenda</a></u></h3></li>
                             <li>&nbsp;</li>
@@ -57,7 +57,8 @@ s
                             <li><a href="agenda_reunion">Réunions</a></li>
                         </ul>
                     </div>
-                    <div class="col-lg-3">
+
+                    <div class="col-lg-2">
                         <ul>
                             <li><h3><u><a href="video">Vidéo</a></u></h3></li>
                             <li>&nbsp;</li>
@@ -65,7 +66,26 @@ s
                             <li><a href="video_club?page=1">Club</a></li>
                         </ul>
                     </div>
-                    <div class="col-lg-3">
+
+                    <div class="col-lg-2">
+                        <ul>
+                            <li><h3><u><a href="goodies">Goodies</a></u></h3></li>
+                            <li>&nbsp;</li>
+                            <li><a href="goodies">Test</a></li>
+                            <li><a href="goodies">Test</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2">
+                        <ul>
+                            <li><h3><u><a href="forum">Forum</a></u></h3></li>
+                            <li>&nbsp;</li>
+                            <li><a href="forum">Test</a></li>
+                            <li><a href="forum">Test</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="col-lg-2">
                         <ul>
                             <li><h3><u><a href="">Compte</a></u></h3></li>
                             <li>&nbsp;</li>

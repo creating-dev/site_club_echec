@@ -6,9 +6,10 @@ a, form a {
 
 #baniere {
     background-color: black;
-    height: 105px;
+    height: 121px;
     margin-left: 0px;
     margin-right: 0px;
+    margin-top: 0px;
 }
 
 #ban {
@@ -42,7 +43,7 @@ a, form a {
     list-style-type: none;
     display: inline-block;
     margin-left: 6%;
-    font-size: 20px;
+    font-size: 18px;
 }
 
 #menu li a {
