@@ -20,7 +20,7 @@
 <body>
 
 <div class="container">
-s
+    s
     <div class="row">
         <div class="col-lg-12">
             <div id="baniere" class="row">
@@ -62,7 +62,7 @@ s
                         <ul>
                             <li><h3><u><a href="video">Vidéo</a></u></h3></li>
                             <li>&nbsp;</li>
-                            <li><a href="video_cours?page=1">cours</a></li>
+                            <li><a href="video_cours?page=1">Cours</a></li>
                             <li><a href="video_club?page=1">Club</a></li>
                         </ul>
                     </div>
@@ -75,16 +75,6 @@ s
                             <li><a href="goodies">Test</a></li>
                         </ul>
                     </div>
-
-                    <div class="col-lg-2">
-                        <ul>
-                            <li><h3><u><a href="forum">Forum</a></u></h3></li>
-                            <li>&nbsp;</li>
-                            <li><a href="forum">Test</a></li>
-                            <li><a href="forum">Test</a></li>
-                        </ul>
-                    </div>
-
                     <div class="col-lg-2">
                         <ul>
                             <li><h3><u><a href="">Compte</a></u></h3></li>
@@ -97,15 +87,25 @@ s
                             <?php endif; ?>
                         </ul>
                     </div>
+                    <div class="col-lg-2">
+                        <ul>
+                            <li><h3><u><a href="forum">Forum</a></u></h3></li>
+                            <li>&nbsp;</li>
+                            <li><a href="forum">Test</a></li>
+                            <li><a href="forum">Test</a></li>
+                        </ul>
+                    </div>
                 </div>
 
             </div>
 
             <div id="menu">
                 <ul>
-                    <li style="margin-left: -30px; float: left;"><a href="" id="menu_burger"><i class="fa fa-bars fa-3x" aria-hidden="true"></i></a></li>
-                    <li><a href="home">Acceuil</a></li>
-                    <li><a href="club">club</a></li>
+                    <li style="margin-left: -30px; float: left;"><a href="" id="menu_burger"><i class="fa fa-bars fa-3x"
+                                                                                                aria-hidden="true"></i></a>
+                    </li>
+                    <li><a href="home">Accueil</a></li>
+                    <li><a href="club">Club</a></li>
                     <li><a href="agenda">Agenda</a></li>
                     <li><a href="video">Video</a></li>
                     <li><a href="goodies">Goodies</a></li>
@@ -126,7 +126,7 @@ s
         </div>
         <div class="col-lg-12">
             <div id="pub">
-                <p>pub</p>
+                <p>Pub</p>
             </div>
         </div>
         <div class="col-lg-12">
@@ -143,30 +143,33 @@ s
                     </ul>
                 </div>
                 <div class="col-lg-3">
-                    <p>imformation pratique</p>
+                    <p>Information pratique</p>
                     <hr>
                     <br>
                     <span id="information_img_1"><a href="#" target="_blank"><img src="img/footer/plan.PNG" alt=""></a></span>
                     <span id="information_img_2"><a href="#" target="_blank"><img src="img/footer/acces.PNG" alt=""></a></span>
-                    <span id="information_img_3"><a href="contact"><img src="img/footer/contacter.PNG" alt=""></a></span>
+                    <span id="information_img_3"><a href="contact"><img src="img/footer/contacter.PNG"
+                                                                        alt=""></a></span>
                 </div>
                 <div class="col-lg-3">
-                    <p>retrouvez-nous</p>
+                    <p>Retrouvez-nous</p>
                     <hr>
                     <br>
                     <span id="retrouvez-nous_img_1"><a href="https://www.facebook.com/club.echecs.ollioules/"
-                                                       target="_blank"><img src="img/footer/facebook.PNG" alt=""></a></span>
+                                                       target="_blank"><img src="img/footer/facebook.PNG"
+                                                                            alt=""></a></span>
                     <span id="retrouvez-nous_img_2"><a href="#" target="_blank"><img src="img/footer/youtube.PNG"
                                                                                      alt=""></a></span>
                     <span id="retrouvez-nous_img_3"><a href="#" target="_blank"><img src="img/footer/twiter.PNG"
                                                                                      alt=""></a></span>
                 </div>
                 <div class="col-lg-3">
-                    <p>nos partenaires</p>
+                    <p>Nos partenaires</p>
                     <hr>
                     <br>
-                    <span id="partenaires_img_1"><a href="http://www.echecs.asso.fr/" target="_blank"><img src="img/footer/ffe.PNG"
-                                                                                                     alt=""></a></span>
+                    <span id="partenaires_img_1"><a href="http://www.echecs.asso.fr/" target="_blank"><img
+                                    src="img/footer/ffe.PNG"
+                                    alt=""></a></span>
                     <span id="partenaires_img_2"><a href="http://www.ollioules.fr/" target="_blank"><img
                                     src="img/footer/ollioules.PNG" alt=""></a></span>
                 </div>

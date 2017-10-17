@@ -360,7 +360,7 @@ th {
 }
 
 #burger h2, h3 {
-    text-align: center;
+    text-align: left;
 }
 
 #burger a {
@@ -374,7 +374,7 @@ th {
 
 #burger li {
     list-style: none;
-    text-align: center;
+    text-align: left;
     line-height: 2em;
 }
 
