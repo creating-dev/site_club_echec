@@ -1,11 +1,16 @@
+<!-- on extend du template default -->
 @extends('template/default')
 
-@section('title', 'video')
+<!-- on sinifie que le titre de la page et Acceuil -->
+@section('title', 'vidéo du Club')
 
+<!-- on inclus le sous menu  -->
 @include('sous_menu_video')
 
-
+<!-- on replie le contenue de la page home -->
 @section('content')
+
+    <!-- formulaire de recherche video  -->
     <form action="video" method="post">
         <div class="row">
             {{ csrf_field() }}
@@ -49,6 +54,7 @@
 
     <hr>
 
+    <!-- si on a effectuer une recherche on affiche les video demander  -->
     <?php if (isset($_POST) && !empty($_POST)): ?>
 
         <?php if (!empty($tab)): ?>
@@ -60,7 +66,7 @@
                 <div id="zone_video" class="row">
 
                     <?php
-
+                        // on trie les video par 9
                     $video_page = array_chunk($tab, 9);
 
                     $page = 0;
@@ -69,6 +75,7 @@
 
                     <?php for ($i = 0; $i < count($video_page[$page]); $i++): ?>
 
+                    <!-- on affiche toute les videos  -->
                     <div class="col-lg-4 cours">
                         <div class="carte_video">
                             <div class="col-lg-12">
@@ -83,6 +90,7 @@
 
                     <?php endfor; ?>
 
+                    <!-- on genere la paggination  -->
                     <div id="pagination">
                         <?php for ($i = 0; $i < count($video_page); $i++): ?>
                             <?php if (count($video_page) -1 == $i): ?>
@@ -101,6 +109,8 @@
 
 
         <?php else: ?>
+
+        <!-- si la recherche demander na rien donnner on lui dit que on a rien trouvé   -->
 
         <div id="not_found">
             <ps>nous avons rien trouvé avec c'est parametre de recherche recommencer !!!</ps>

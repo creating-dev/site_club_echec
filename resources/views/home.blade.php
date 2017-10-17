@@ -1,7 +1,10 @@
+<!-- on extend du template default -->
 @extends('template/default')
 
+<!-- on sinifie que le titre de la page et Acceuil -->
 @section('title', 'Acceuil')
 
+<!-- on replie le contenue de la page home -->
 @section('content')
     <br><br>
     <h2 id="titre3Ho"> Le jeu d'Echec est le Sport Intellectuel par Excellence ! </h2>

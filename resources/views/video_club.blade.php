@@ -1,13 +1,13 @@
+<!-- on extend du template default -->
 @extends('template/default')
 
+<!-- on sinifie que le titre de la page et Acceuil -->
+@section('title', 'vidéo du Club')
 
-@section('title', 'vidéo des cours')
-
-
+<!-- on inclus le sous menu  -->
 @include('sous_menu_video')
 
-
-
+<!-- on replie le contenue de la page home -->
 @section('content')
 
     <div class="row" id="video_cours">
@@ -23,13 +23,18 @@
             <div id="zone_video" class="row">
 
                 <?php
-                    $video_all = \Database\DAO\DAO_video::select_all_Video_club();
 
-                    $video_page = array_chunk($video_all, 9);
+                // on recupere toute les videos
+                 $video_all = \Database\DAO\DAO_video::select_all_Video_club();
 
-                    $page = $_GET['page'] - 1;
+                // on les trie par 9
+                $video_page = array_chunk($video_all, 9);
+
+                // on initialize la paggination
+                $page = $_GET['page'] - 1;
                 ?>
 
+                <!-- on affiche toute les videos  -->
                 <?php for ($i = 0; $i < count($video_page[$page]); $i++): ?>
 
                 <div class="col-lg-4 cours">
@@ -46,6 +51,7 @@
 
                 <?php endfor; ?>
 
+                <!-- on genere la paggination  -->
                 <div id="pagination">
                      <?php for ($i = 0; $i < count($video_page); $i++): ?>
                          <?php if (count($video_page) -1 == $i): ?>

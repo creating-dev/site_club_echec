@@ -4,6 +4,7 @@
 
 @section('content')
 
+    <!-- on verifi si l'utilisateur est connecter  si ce n'est pas le qu'a on affiche le systeme de connexion -->
     <?php if (isset($_SESSION['connexion']) && $_SESSION['connexion'] == 'ok') : ?>
     <h1 style="text-align: center; width: 100%">mon compte</h1>
     <a href="deco" style="float: right; margin-right: 10%"> deconnexion</a>
