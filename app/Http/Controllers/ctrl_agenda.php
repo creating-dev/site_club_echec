@@ -12,6 +12,7 @@ namespace App\Http\Controllers;
 class ctrl_agenda
 {
 
+    // on defini le calendrier
     public static function calendrier(){
 
         return  [

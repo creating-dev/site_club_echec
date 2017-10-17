@@ -12,10 +12,12 @@ namespace App\Http\Controllers;
 class Erreur
 {
 
+    // on recupere le message d'erreur stoker
     public static function get_erreur(){
        return $_SESSION['erreur'];
     }
 
+    // on modifi si besoin est la variable de session erreur
     public static function set_erreur($key, $value){
         $_SESSION['erreur'][$key] = $value;
     }

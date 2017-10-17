@@ -18,6 +18,7 @@ class DAO_agenda
         return  new PDO('mysql:host=localhost;dbname='. env('DB_DATABASE') .';charset=utf8', 'root', '');
     }
 
+    // on recupere l'evenement demander par la date et on le retourne
     public static function select_Date_agenda($date){
 
         $bdd = self::bdd();
