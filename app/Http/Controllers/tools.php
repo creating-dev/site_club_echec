@@ -16,6 +16,7 @@ use Illuminate\Support\Facades\Redirect;
 class tools
 {
 
+    //on sauvegarde la page ou et l'utilisateur dans la varriable de sesssion save_page
     public static function save_page_url()
     {
 
@@ -39,13 +40,14 @@ class tools
         return $_SESSION['save_page'];
     }
 
-
+// on retourne l'utilisateur dans la page qui a etait sauvegarder dans la varriable de sesssion save_page
     public static function return_page(){
 
         return Redirect::to($_SESSION['save_page']);
 
     }
 
+    // on format la date pour rajouter le 0 si besoin est
     public static function format_date($jours,$mois, $annee){
 
         if ($jours < 10){
@@ -61,6 +63,7 @@ class tools
     }
 
 
+    // on format la date du forma MYSQL au format clasique
     public static function format_datetime_of_date($date){
 
         $tab_date = explode('-', $date);
@@ -68,6 +71,7 @@ class tools
         return $tab_date[2] . '/' . $tab_date[1] . '/' . $tab_date[0] ;
     }
 
+    // on format la date du forma format clasique au MYSQL
     public static function format_date_for_datetime($date ){
 
         $tab_date = explode('/', $date);

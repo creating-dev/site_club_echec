@@ -15,16 +15,18 @@
 
     <?php
 
+            // on recupere les données pour construire l'agenda annuelle
     $calendrier = \App\Http\Controllers\ctrl_agenda::calendrier();
 
     ?>
 
-
+    <!-- si on a pas demander un mois en particulier on affiche l'agenda annuelle  -->
     <?php if (!isset($_GET['mois'])): ?>
 
     <div class="row">
 
 
+        <!-- generation du calendrier annuelle  -->
         <?php for ($j = 1; $j <= 12 ; $j++): ?>
 
             <div class="col-lg-3 agenda_all"  <?php if ($j % 2 == 1){ echo 'style="background-color: #cbb956"'; } ?> >
@@ -41,6 +43,7 @@
                     <?php for ($i = 1; $i <= $calendrier[$j]['jour'] ; $i++): ?>
 
                         <?php
+                        // on defini les semaines
                             if ($i <= 7){
                                 $semaines = 1;
                             }elseif ($i <= 14){
@@ -53,10 +56,13 @@
                                 $semaines = 5;
                             }
 
+                            // on defini la date
                         $date =  \App\Http\Controllers\tools::format_date($i , $j ,'2017');
+                            // on defini l'evenement si il en a un
                         $event_count = count(\Database\DAO\DAO_agenda::select_Date_agenda(\App\Http\Controllers\tools::format_date_for_datetime($date)));
                         ?>
 
+                <!-- on affiche le bon lien si il y a un lien ou non  -->
                         <?php if ($event_count == 0): ?>
                                 <?php if ($i == 8 || $i == 15 || $i == 22 || $i == 29): ?>
 
@@ -97,6 +103,7 @@
 
     </div>
 
+    <!-- si l'utilisateur a cliquer sur un jour on rentre dans la condition   -->
     <?php elseif (!isset($_GET['jours'])): ?>
 
     <div class="row">
@@ -142,6 +149,7 @@
 
             <?php
 
+                // on defini les semaine
                 $semaines = [
                     1 => [
                         'debut' => 1,
@@ -167,6 +175,7 @@
 
             ?>
 
+            <!-- on affiche les jour par semaine  -->
             <?php for ($j = $semaines[$_GET['semaines']]['debut']; $j <= $semaines[$_GET['semaines']]['fin'] ; $j++): ?>
                 <div class="row agenda_mois">
                     <div class="col-lg-1">
@@ -181,7 +190,9 @@
                         <div class="row">
 
                             <?php
+                                // on defini la date
                                 $date =  \App\Http\Controllers\tools::format_date($j , $_GET['mois'] ,'2017');
+                                // on compte combien il y a d'evement pour la semaine
                                 $event_count = count(\Database\DAO\DAO_agenda::select_Date_agenda(\App\Http\Controllers\tools::format_date_for_datetime($date)));
                             ?>
 
@@ -203,12 +214,15 @@
 
              <?php if (isset($_GET['event'])): ?>
                     <?php
+                // on recupere l'evenement et on le morcelle pour recupere ce qui nous interresse
                         $tab_event = explode('_', $_GET['event']);
+                        // on charge l'evenement
                         $event = \Database\DAO\DAO_agenda::select_Date_agenda(\App\Http\Controllers\tools::format_date_for_datetime($tab_event[0]));
                     ?>
             <?php if (!empty($event)): ?>
 
                     <?php
+                // de defini les heure de debut et de fi
                         $heure_debut = explode(':', $event[$tab_event[2]  - 1]['heure_debut']);
                         $heure_fin = explode(':', $event[$tab_event[2]  - 1]['heure_fin']);
                     ?>
@@ -221,8 +235,7 @@
                                 <span>heure: {{$heure_debut[0]}}:{{$heure_debut[1]}}/{{$heure_fin[0]}}:{{$heure_fin[1]}}</span>
                         </div>
                         <div class="col-lg-12" id="view_agenda_event_desc">
-                            {{$event[$tab_event[2] - 1]['description']}}
-                        </div>
+                            {{$event[$tab_event[2] - 1]['description']}}                        </div>
                     </div>
 
                 <?php endif; ?>
