@@ -76,13 +76,13 @@ Route::get('/photo', function () {
 
 Route::get('/video_cours', function () {
     session_start();
-    return view('video_cours');
+    return view('video/video_cours');
 });
 
 
 Route::get('/video_club', function () {
     session_start();
-    return view('video_club');
+    return view('video/video_club');
 });
 
 
@@ -104,7 +104,7 @@ Route::get('/qui', function () {
 
 Route::get('/video', function () {
     session_start();
-    return view('video');
+    return view('video/video');
 });
 
 Route::get('/forums', function () {
@@ -119,12 +119,12 @@ Route::get('/contact', function () {
 
 Route::get('/View_video_cours', function () {
     session_start();
-     return view('View_video_cours');
+     return view('video/View_video_cours');
 });
 
 Route::get('/View_video_club', function () {
     session_start();
-     return view('View_video_club');
+     return view('video/View_video_club');
 });
 
 

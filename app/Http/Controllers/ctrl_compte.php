@@ -25,7 +25,7 @@ class ctrl_compte
 
         $_SESSION['erreur'] = [];
 
-        return view('compte');
+        return view('user/compte');
 
     }
 
@@ -34,7 +34,7 @@ class ctrl_compte
 
         $_SESSION['erreur'] = [];
 
-        return view('inscription');
+        return view('user/inscription');
     }
 
     public function connexion(Request $request){
@@ -53,7 +53,7 @@ class ctrl_compte
 
         }
 
-        return view('compte');
+        return view('user/compte');
 
     }
 
@@ -91,7 +91,7 @@ class ctrl_compte
          DAO_users::update_user($req);
 
 
-        return view('compte');
+        return view('user/compte');
     }
 
     public function retour(){

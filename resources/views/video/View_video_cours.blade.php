@@ -1,11 +1,11 @@
 <!-- on extend du template default -->
-@extends('template/default')
+@extends('template.default')
 
 <!-- on sinifie que le titre de la page et Acceuil -->
 @section('title', 'vidéo des cours')
 
 <!-- on inclus le sous menu  -->
-@include('sous_menu_video')
+@include('sous_menu/sous_menu_video')
 
 <!-- on replie le contenue de la page home -->
 @section('content')

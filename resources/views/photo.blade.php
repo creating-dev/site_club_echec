@@ -2,7 +2,7 @@
 
 @section('title', 'licence FFE')
 
-@include('sous_menu_club')
+@include('sous_menu.sous_menu_club')
 
 @section('content')
     <h4 id="titre3Ho">Page photos en cours de réalisation merci de votre compréhension</h4>
