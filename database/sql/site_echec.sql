@@ -1,11 +1,11 @@
 -- phpMyAdmin SQL Dump
--- version 4.6.4
--- https://www.phpmyadmin.net/
+-- version 4.5.5.1
+-- http://www.phpmyadmin.net
 --
 -- Client :  127.0.0.1
--- Généré le :  Mer 04 Octobre 2017 à 17:17
--- Version du serveur :  5.7.14
--- Version de PHP :  5.6.25
+-- Généré le :  Lun 06 Novembre 2017 à 11:52
+-- Version du serveur :  5.7.11
+-- Version de PHP :  7.0.4
 
 SET SQL_MODE = "NO_AUTO_VALUE_ON_ZERO";
 SET time_zone = "+00:00";
@@ -35,7 +35,7 @@ CREATE TABLE `agenda` (
   `description` varchar(255) NOT NULL,
   `categorie` varchar(255) NOT NULL,
   `sous_categorie` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB DEFAULT CHARSET=latin1;
 
 --
 -- Contenu de la table `agenda`
@@ -44,21 +44,6 @@ CREATE TABLE `agenda` (
 INSERT INTO `agenda` (`id`, `Date_agenda`, `Titre`, `heure_fin`, `heure_debut`, `description`, `categorie`, `sous_categorie`) VALUES
 (1, '2017-02-17', 'test', '10:38:00', '07:15:00', 'test desc', 'cate_1', 'sous_cate_1'),
 (2, '2017-02-16', 'test 2', '21:38:00', '20:15:00', 'test desc', 'cate_1', 'sous_cate_1');
-
--- --------------------------------------------------------
-
---
--- Structure de la table `photo`
---
-
-CREATE TABLE `photo` (
-  `id_photo` int(11) NOT NULL,
-  `titre_photo` varchar(255) NOT NULL,
-  `date_photo` date NOT NULL,
-  `lien_photo` varchar(255) NOT NULL,
-  `description` longtext NOT NULL,
-  `sous_categorie` varchar(255) NOT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 -- --------------------------------------------------------
 
@@ -77,19 +62,20 @@ CREATE TABLE `users` (
   `genre` varchar(20) NOT NULL,
   `birthday` date NOT NULL,
   `categorie` varchar(255) NOT NULL,
+  `prenium` tinyint(1) NOT NULL,
   `mail` varchar(255) NOT NULL,
   `tel` char(10) DEFAULT NULL,
   `adresse` varchar(255) DEFAULT NULL,
-  `codeFFE` varchar(255) DEFAULT NULL,
-  `premium` int(1) NOT NULL
+  `codeFFE` varchar(255) DEFAULT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 
 --
 -- Contenu de la table `users`
 --
 
-INSERT INTO `users` (`id_users`, `pseudo`, `nom`, `prenom`, `pass`, `avatar`, `token`, `genre`, `birthday`, `categorie`, `mail`, `tel`, `adresse`, `codeFFE`, `premium`) VALUES
-(1, 'jojo', 'jonathan', 'da', 'jojo', 'uploads/1/avatar.png', 'V5rLaTzv8aAaShxvXYVGQd5CvlATWVm1Y8lIOUG8', 'Mr', '2017-09-23', 'Petits Poussin', 'jbdfjojo@gmail.com', '0620420555', NULL, NULL, 0);
+INSERT INTO `users` (`id_users`, `pseudo`, `nom`, `prenom`, `pass`, `avatar`, `token`, `genre`, `birthday`, `categorie`, `prenium`, `mail`, `tel`, `adresse`, `codeFFE`) VALUES
+(1, 'jojo1', 'jonathan', 'da', 'jojo', 'uploads/1/avatar.png', 'V5rLaTzv8aAaShxvXYVGQd5CvlATWVm1Y8lIOUG8', 'Mr', '2017-09-23', 'Petits Poussin', 1, 'jbdfjojo@gmail.com', '0620420555', NULL, NULL),
+(2, 'jojo', 'fonseca', 'nathan', 'jojo', NULL, 'DEIcrPOsqvOLw2h3E3h6ynRTPlMIE3qVHLRzRrtG', 'Mr', '2017-11-03', 'Petits Poussin', 0, 'jbdfjojo@gmail.com', '0620420555', 'fggdfgg', 'f45454545');
 
 -- --------------------------------------------------------
 
@@ -164,23 +150,10 @@ INSERT INTO `video_cours` (`id`, `titre`, `lien`, `date`, `vu`, `description`, `
 --
 
 --
--- Index pour la table `agenda`
---
-ALTER TABLE `agenda`
-  ADD PRIMARY KEY (`id`);
-
---
--- Index pour la table `photo`
---
-ALTER TABLE `photo`
-  ADD PRIMARY KEY (`id_photo`);
-
---
 -- Index pour la table `users`
 --
 ALTER TABLE `users`
-  ADD PRIMARY KEY (`id_users`),
-  ADD KEY `premium` (`premium`);
+  ADD PRIMARY KEY (`id_users`);
 
 --
 -- Index pour la table `video_club`
@@ -198,16 +171,6 @@ ALTER TABLE `video_cours`
 -- AUTO_INCREMENT pour les tables exportées
 --
 
---
--- AUTO_INCREMENT pour la table `agenda`
---
-ALTER TABLE `agenda`
-  MODIFY `id` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=3;
---
--- AUTO_INCREMENT pour la table `photo`
---
-ALTER TABLE `photo`
-  MODIFY `id_photo` int(11) NOT NULL AUTO_INCREMENT;
 --
 -- AUTO_INCREMENT pour la table `video_club`
 --
