@@ -14,15 +14,16 @@ class users
 {
 
     private $id;
+    private $pseudo;
     private $nom;
     private $prenom;
-    private $pseudo;
     private $pass;
     private $avatar;
     private $token;
     private $genre;
     private $birthday;
     private $categorie;
+    private $prenium;
     private $mail;
     private $tel;
     private $adresse;
@@ -103,7 +104,14 @@ class users
     public function setPseudo($pseudo)
     {
         if (isset($pseudo)){
-            $this->pseudo = $pseudo;
+            $is_not_exist = DAO_users::select_user($pseudo);
+
+            if (Empty($is_not_exist)){
+                $this->pseudo = $pseudo;
+            }else{
+                Erreur::set_erreur('pseudo', 'le pseudo existe déja');
+            }
+
         }else{
             Erreur::set_erreur('pseudo', 'le champs pseudo est vide');
         }
@@ -227,6 +235,24 @@ class users
     public function setCategorie($categorie)
     {
         $this->categorie = $categorie;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getPrenium()
+    {
+        return $this->prenium;
+    }
+
+    /**
+     * @param mixed $prenium
+     * @return users
+     */
+    public function setPrenium($prenium)
+    {
+        $this->prenium = $prenium;
+        return $this;
     }
 
     /**

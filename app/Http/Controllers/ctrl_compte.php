@@ -41,13 +41,15 @@ class ctrl_compte
 
         $req = $request->request->all();
 
-        $is_ok = DAO_users::connect_user($req);
+        $REQUEST = DAO_users::connect_user($req);
 
-        if($is_ok){
 
-        $_SESSION['connexion'] = 'ok';
+        if($REQUEST[1]){
 
-         return tools::return_page();
+            $_SESSION['connexion'] = 'ok';
+            $_SESSION['user'] = $REQUEST[0];
+
+            return tools::return_page();
 
         }
 
@@ -59,6 +61,7 @@ class ctrl_compte
     public function deconnexion(){
 
         $_SESSION['connexion'] = 'not_ok';
+        $_SESSION['user'] = null;
 
         return Redirect::to('compte');
     }
@@ -67,11 +70,12 @@ class ctrl_compte
 
         $req = $request->request->all();
 
-        $is_ok = DAO_users::inscription_user($req);
+        $REQUEST = DAO_users::inscription_user($req);
 
-        if($is_ok){
+        if($REQUEST[1]){
 
             $_SESSION['connexion'] = 'ok';
+            $_SESSION['user'] = $REQUEST[0];
 
             return tools::return_page();
 
@@ -84,12 +88,8 @@ class ctrl_compte
 
         $req = $request->request->all();
 
-        $is_ok = DAO_users::update_user($req);
+         DAO_users::update_user($req);
 
-        if($is_ok){
-
-
-        }
 
         return view('compte');
     }
