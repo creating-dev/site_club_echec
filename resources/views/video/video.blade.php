@@ -5,7 +5,7 @@
 @section('title', 'vidéo du Club')
 
 <!-- on inclus le sous menu  -->
-@include('sous_menu_video')
+@include('sous_menu/sous_menu_video')
 
 <!-- on replie le contenue de la page home -->
 @section('content')

@@ -54,9 +54,11 @@ class DAO_users
             if ( isset($rep['pseudo']) && $rep['pseudo'] == $parameters['pseudo']){
                 if ($rep['pass'] == $parameters['pass'] && $rep['pass'] != null){
 
-                    $_SESSION['pseudo'] = $parameters['pseudo'];
+                    $user = self::select_user($parameters['pseudo']);
 
-                    return true;
+                    $REQUEST = [$user, true];
+
+                    return $REQUEST;
 
                 }else{
                     Erreur::set_erreur('pass', 'la valeur du champs pass est incorect ou vide !!');
@@ -99,6 +101,7 @@ class DAO_users
         $user->setAdresse($parameters['adresse']);
         $user->setCodeFFE($parameters['ffe']);
         $user->setCategorie($parameters['categorie']);
+        $user->setPrenium(0);
 
         if(Input::hasFile('avatar')){
             $file = Input::file('avatar');
@@ -113,7 +116,7 @@ class DAO_users
 
         if ( !empty($user->getNom()) && !empty($user->getGenre()) &&!empty($user->getBirthday()) &&!empty($user->getCategorie()) &&!empty($user->getPseudo()) &&!empty($user->getPass()) &&!empty($user->getMail())){
 
-            $reponse = $bdd->prepare('INSERT INTO users (id_users, pseudo, nom, prenom, pass, avatar, token, genre, birthday, categorie, mail, tel, adresse, codeFFE) VALUES (:id_users, :pseudo, :nom, :prenom, :pass, :avatar, :token, :genre, :birthday, :categorie, :mail, :tel, :adresse, :codeFFE)');
+            $reponse = $bdd->prepare('INSERT INTO users (id_users, pseudo, nom, prenom, pass, avatar, token, genre, birthday, categorie, prenium ,mail, tel, adresse, codeFFE) VALUES (:id_users, :pseudo, :nom, :prenom, :pass, :avatar, :token, :genre, :birthday, :categorie, :prenium, :mail, :tel, :adresse, :codeFFE)');
             $reponse->execute([
                 'id_users' => $user->getId(),
                 'pseudo' => $user->getPseudo(),
@@ -125,13 +128,16 @@ class DAO_users
                 'genre' => $user->getGenre(),
                 'birthday' => $user->getBirthday(),
                 'categorie' => $user->getCategorie(),
+                'prenium' => $user->getPrenium(),
                 'mail' => $user->getMail(),
                 'tel' => $user->getTel(),
                 'adresse' => $user->getAdresse(),
                 'codeFFE' => $user->getCodeFFE()
             ]);
 
-            return true;
+            $REQUEST = [$user, true];
+
+            return $REQUEST;
 
         }
 
@@ -168,6 +174,8 @@ class DAO_users
         $user->setAdresse($parameters['adresse']);
         $user->setCodeFFE($parameters['ffe']);
         $user->setCategorie($parameters['categorie']);
+        $user->setPrenium(0);
+
 
         if(Input::hasFile('avatar')){
             $file = Input::file('avatar');
@@ -183,7 +191,7 @@ class DAO_users
 
         if ( !empty($user->getNom()) && !empty($user->getGenre()) &&!empty($user->getBirthday()) &&!empty($user->getCategorie()) &&!empty($user->getPseudo()) &&!empty($user->getPass()) &&!empty($user->getMail())){
 
-                $reponse = $bdd->prepare('UPDATE users SET pseudo = :pseudo, nom = :nom, prenom = :prenom, pass = :pass, avatar = :avatar, token = :token, genre = :genre, birthday = :birthday, categorie = :categorie, mail = :mail, tel = :tel, adresse = :adresse, codeFFE = :codeFFE WHERE id_users = :id');
+                $reponse = $bdd->prepare('UPDATE users SET pseudo = :pseudo, nom = :nom, prenom = :prenom, pass = :pass, avatar = :avatar, token = :token, genre = :genre, birthday = :birthday, categorie = :categorie, prenium = :prenium, mail = :mail, tel = :tel, adresse = :adresse, codeFFE = :codeFFE WHERE id_users = :id');
                 $reponse->execute([
                     'id' => $user->getId(),
                     'pseudo' => $user->getPseudo(),
@@ -195,6 +203,8 @@ class DAO_users
                     'genre' => $user->getGenre(),
                     'birthday' => $user->getBirthday(),
                     'categorie' => $user->getCategorie(),
+                    'categorie' => $user->getCategorie(),
+                    'prenium' => $user->getPrenium(),
                     'mail' => $user->getMail(),
                     'tel' => $user->getTel(),
                     'adresse' => $user->getAdresse(),
@@ -202,7 +212,7 @@ class DAO_users
                 ]);
 
 
-         return true;
+         return $user;
 
         }
 

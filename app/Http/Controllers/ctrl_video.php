@@ -39,7 +39,7 @@ class ctrl_video
             }
         }
 
-        return view('video', ['tab' => $data]);
+        return view('video/video', ['tab' => $data]);
     }
 
 }

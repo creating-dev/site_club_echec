@@ -1,4 +1,4 @@
-@extends('template/default')
+@extends('template.default')
 
 @section('title', 'Inscription')
 
@@ -195,8 +195,9 @@
             </div>
 
             <input type="submit" value="valider" class="btn btn-primary btn-perso">
-            <a href="retour">
+            <a href=home">
                 <button class="btn btn-primary btn-perso">Annuler</button>
+                <!-- ATTENTION   coriger le probleme anulation  -->
             </a>
 
         </form>

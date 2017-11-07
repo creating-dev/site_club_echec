@@ -1,8 +1,10 @@
-@extends('template/default')
+@extends('template.default')
 
 @section('title', 'Compte')
 
 @section('content')
+
+    <?php //var_dump($_SESSION['user']); die()?>
 
     <!-- on verifi si l'utilisateur est connecter  si ce n'est pas le qu'a on affiche le systeme de connexion -->
     <?php if (isset($_SESSION['connexion']) && $_SESSION['connexion'] == 'ok') : ?>
@@ -19,10 +21,13 @@
                 {{ csrf_field() }}
 
                 <?php
+                  //  session_destroy();
 
                 $erreur = \App\Http\Controllers\Erreur::get_erreur();
 
-                $user = \Database\DAO\DAO_users::select_user($_SESSION['pseudo']);
+                $user = $_SESSION['user'];
+
+
 
                 ?>
 

@@ -11,12 +11,14 @@ namespace Database\DAO;
 
 class Video
 {
+
 private $id;
 private $titre;
 private $lien;
 private $date;
 private $vu;
 private $description;
+private $sous_categorie;
 
 
 
@@ -114,6 +116,22 @@ private $description;
     public function setDescription($description)
     {
         $this->description = $description;
+    }
+
+    /**
+     * @return mixed
+     */
+    public function getSousCategorie()
+    {
+        return $this->sous_categorie;
+    }
+
+    /**
+     * @param mixed $sous_categorie
+     */
+    public function setSousCategorie($sous_categorie)
+    {
+        $this->sous_categorie = $sous_categorie;
     }
 
 }
