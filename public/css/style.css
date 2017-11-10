@@ -63,31 +63,45 @@ a, form a {
 
 }
 
+@font-face {
+    font-family: 'dearest_openregular';
+    src: url(../../resources/font/Dearest_open-webfont.eot);
+    src: url(../../resources/font/Dearest_open-webfont.eot?#iefix) format('embedded-opentype'),
+    url(../../resources/font/Dearest_open-webfont.woff) format('woff'),
+    url(../../resources/font/Dearest_open-webfont.ttf) format('truetype'),
+    url(../../resources/font/Dearest_open-webfont.svg#dearest_openregular) format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
 #baniere {
     background-color: antiquewhite;
-    height: 121px;
+    height: 120px;
     margin-left: 0px;
     margin-right: 0px;
     margin-top: 0px;
 }
 
 #ban {
-    text-align: center;
+    /*text-align: center;*/
     border-bottom: 1px solid #007002;
     color: black;
-    margin-left: 40px;
-    margin-right: -40px;
+    margin-left: 30px;
+    margin-right: -30px;
     font-size: 65px;
 
-    text-shadow: 8px 5px 8px #34B484/* #007002*/;
+    /*text-shadow: 8px 5px 8px/* #34B484/* #007002*/;
 }
 
 .maj{
-    font-family: "zendaregular";
+    font-family: "dearest_openregular";
+    font-size: 75px;
 }
 
 .min{
     font-family: "carouselregular";
+    font-size: 70px;
 }
 #log1 {
     margin-left: -16px;
