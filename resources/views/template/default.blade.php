@@ -20,12 +20,13 @@
 <body>
 
 <div class="container">
-s
+    s
     <div class="row">
         <div class="col-lg-12">
             <div id="baniere" class="row">
                 <div class="col-lg-1" id="log1"><img src="img/header/logo.png" alt=""></div>
-                <div class="col-lg-10" id="ban">Club d'Echecs d'Ollioules</div>
+                <div class="col-lg-10" id="ban">
+                    <span class="maj">C</span><span class="min">lub d'</span><span class="maj">E</span><span class="min">checs d'</span><span class="maj">O</span><span class="min">llioules</span></div>
                 <div class="col-lg-1" id="log2"><img src="img/header/logo.png" alt=""></div>
             </div>
         </div>
@@ -103,7 +104,9 @@ s
 
             <div id="menu">
                 <ul>
-                    <li style="margin-left: -30px; float: left;"><a href="" id="menu_burger"><i class="fa fa-bars fa-3x" aria-hidden="true"></i></a></li>
+                    <li style="margin-left: -30px; float: left;"><a href="" id="menu_burger"><i class="fa fa-bars fa-3x"
+                                                                                                aria-hidden="true"></i></a>
+                    </li>
                     <li><a href="home">Acceuil</a></li>
                     <li><a href="club">club</a></li>
                     <li><a href="agenda">Agenda</a></li>
@@ -148,14 +151,16 @@ s
                     <br>
                     <span id="information_img_1"><a href="#" target="_blank"><img src="img/footer/plan.PNG" alt=""></a></span>
                     <span id="information_img_2"><a href="#" target="_blank"><img src="img/footer/acces.PNG" alt=""></a></span>
-                    <span id="information_img_3"><a href="contact"><img src="img/footer/contacter.PNG" alt=""></a></span>
+                    <span id="information_img_3"><a href="contact"><img src="img/footer/contacter.PNG"
+                                                                        alt=""></a></span>
                 </div>
                 <div class="col-lg-3">
                     <p>retrouvez-nous</p>
                     <hr>
                     <br>
                     <span id="retrouvez-nous_img_1"><a href="https://www.facebook.com/club.echecs.ollioules/"
-                                                       target="_blank"><img src="img/footer/facebook.PNG" alt=""></a></span>
+                                                       target="_blank"><img src="img/footer/facebook.PNG"
+                                                                            alt=""></a></span>
                     <span id="retrouvez-nous_img_2"><a href="#" target="_blank"><img src="img/footer/youtube.PNG"
                                                                                      alt=""></a></span>
                     <span id="retrouvez-nous_img_3"><a href="#" target="_blank"><img src="img/footer/twiter.PNG"
@@ -165,8 +170,9 @@ s
                     <p>nos partenaires</p>
                     <hr>
                     <br>
-                    <span id="partenaires_img_1"><a href="http://www.echecs.asso.fr/" target="_blank"><img src="img/footer/ffe.PNG"
-                                                                                                     alt=""></a></span>
+                    <span id="partenaires_img_1"><a href="http://www.echecs.asso.fr/" target="_blank"><img
+                                    src="img/footer/ffe.PNG"
+                                    alt=""></a></span>
                     <span id="partenaires_img_2"><a href="http://www.ollioules.fr/" target="_blank"><img
                                     src="img/footer/ollioules.PNG" alt=""></a></span>
                 </div>
