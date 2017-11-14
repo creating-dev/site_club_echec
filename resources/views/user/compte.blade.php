@@ -160,7 +160,7 @@
             </div>
 
             <input type="submit" value="Modifier le profil" class="btn btn-primary btn-perso">
-            <a href="retour"><button class="btn btn-primary btn-perso">Annuler</button></a>
+            <a href="retour"><buton class="btn btn-primary btn-perso">Annuler</buton></a>
 
         </form>
 

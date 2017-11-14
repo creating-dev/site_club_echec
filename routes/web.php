@@ -25,17 +25,17 @@ Route::get('/home', function () {
 
 Route::get('/agenda', function () {
     session_start();
-    return view('agenda');
+    return view('agenda/agenda');
 });
 
 Route::get('/CGU', function () {
     session_start();
-    return view('CGU');
+    return view('footer/CGU');
 });
 
 Route::get('/club', function () {
     session_start();
-    return view('club');
+    return view('club/club');
 });
 
 Route::get('/goodies', function () {
@@ -47,27 +47,27 @@ Route::get('/goodies', function () {
 //menu club
 Route::get('/adhesion', function () {
     session_start();
-    return view('adhesion');
+    return view('club/adhesion');
 });
 
 Route::get('/cours', function () {
     session_start();
-    return view('cours');
+    return view('club/cours');
 });
 
 Route::get('/licence', function () {
     session_start();
-    return view('licence');
+    return view('club/licence');
 });
 
 Route::get('/membre', function () {
     session_start();
-    return view('membre');
+    return view('club/membre');
 });
 
 Route::get('/photo', function () {
     session_start();
-    return view('photo');
+    return view('club/photo');
 });
 
 
@@ -89,17 +89,17 @@ Route::get('/video_club', function () {
 //footer
 Route::get('/mentions_legal', function () {
     session_start();
-    return view('mentions_legal');
+    return view('footer/mentions_legal');
 });
 
 Route::get('/PDD', function () {
     session_start();
-    return view('PDD');
+    return view('footer/PDD');
 });
 
 Route::get('/qui', function () {
     session_start();
-    return view('qui');
+    return view('footer/qui');
 });
 
 Route::get('/video', function () {
@@ -114,7 +114,7 @@ Route::get('/forums', function () {
 
 Route::get('/contact', function () {
     session_start();
-     return view('contact');
+     return view('club');
 });
 
 Route::get('/View_video_cours', function () {

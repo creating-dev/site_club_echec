@@ -195,8 +195,8 @@
             </div>
 
             <input type="submit" value="valider" class="btn btn-primary btn-perso">
-            <a href=home">
-                <button class="btn btn-primary btn-perso">Annuler</button>
+            <a href="retour">
+                <buton class="btn btn-primary btn-perso">Annuler</buton>
                 <!-- ATTENTION   coriger le probleme anulation  -->
             </a>
 

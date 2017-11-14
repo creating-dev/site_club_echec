@@ -1,4 +1,4 @@
-@extends('template/default')
+@extends('template.default')
 
 @section('title', 'PDD')
 
