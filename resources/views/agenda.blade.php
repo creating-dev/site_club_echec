@@ -11,7 +11,7 @@
 @section('content')
 
 
-    <h2 style="text-align: center"><u>agenda 2017</u></h2><br>
+    <h2 style="text-align: center">agenda 2017-2018<hr class="titr"></h2><br>
 
     <?php
 
