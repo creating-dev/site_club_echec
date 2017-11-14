@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8" ?><rss version="2.0" xml:base="https://www.prestashop.com/fr/blog/feed.xml" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:og="http://ogp.me/ns#" xmlns:article="http://ogp.me/ns/article#" xmlns:book="http://ogp.me/ns/book#" xmlns:profile="http://ogp.me/ns/profile#" xmlns:video="http://ogp.me/ns/video#" xmlns:product="http://ogp.me/ns/product#" xmlns:content="http://purl.org/rss/1.0/modules/content/" xmlns:foaf="http://xmlns.com/foaf/0.1/" xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#" xmlns:sioc="http://rdfs.org/sioc/ns#" xmlns:sioct="http://rdfs.org/sioc/types#" xmlns:skos="http://www.w3.org/2004/02/skos/core#" xmlns:xsd="http://www.w3.org/2001/XMLSchema#">
+  <channel>
+    <title>Blog Feed</title>
+    <link>https://www.prestashop.com/fr/blog/feed.xml</link>
+    <description></description>
+    <language>fr</language>
+     <atom:link href="https://www.prestashop.com/fr/blog/feed.xml" rel="self" type="application/rss+xml" />
+      <item>
+    <title>Le centre commercial, un levier d&amp;#039;acquisition à tester près de chez vous !</title>
+    <link>https://www.prestashop.com/fr/blog/vendre-dans-un-mall</link>
+    <description>François-Charles Luxor pilote l’activité « boutiques éphèmeres »  de Carmila, la société des centres commerciaux Carrefour en Europe, une activité qui s’ouvre à de nouveaux acteurs du digit</description>
+     <pubDate>Thu, 09 Nov 2017 11:04:01 +0100</pubDate>
+ <dc:creator>Carmila</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/fr/blog/vendre-dans-un-mall</guid>
+  </item>
+  <item>
+    <title>Augmentez vos ventes de vacances avec des ‘deep-linking’!</title>
+    <link>https://www.prestashop.com/fr/blog/augmentez-vos-ventes-de-vacances-avec-des-deep-linking</link>
+    <description>La saison des vacances est presque là, ce qui signifie qu&#039;il est temps de resserrer vos ventes et vos promotions!</description>
+     <pubDate>Mon, 06 Nov 2017 16:54:25 +0100</pubDate>
+ <dc:creator>Anonymous</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/fr/blog/augmentez-vos-ventes-de-vacances-avec-des-deep-linking</guid>
+  </item>
+  <item>
+    <title>Rencontrez Ian, Ambassadeur du mois  | Octobre 2017</title>
+    <link>https://www.prestashop.com/fr/blog/prestashop-ambassadors/rencontrez-ian-ambassadeur-du-mois-octobre-2017</link>
+    <description>Ian est notre tout premier Ambassadeur en Afrique du Sud : basé à Pretoria, il n’a pas moins de 4 boutiques PrestaShop !</description>
+     <pubDate>Tue, 31 Oct 2017 00:00:00 +0100</pubDate>
+ <dc:creator>Manon Plommet</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/fr/blog/prestashop-ambassadors/rencontrez-ian-ambassadeur-du-mois-octobre-2017</guid>
+  </item>
+  <item>
+    <title>3 raisons de venir rencontrer PrestaShop au salon E-Commerce XPO Courtrai</title>
+    <link>https://www.prestashop.com/fr/blog/evenements/3-raisons-de-venir-rencontrer-prestashop-au-salon-e-commerce-xpo-courtrai</link>
+    <description>Nous sommes heureux de vous annoncer que nous serons présents au salon E-Commerce XPO à Courtrai, le 6 et 7 novembre prochain.</description>
+     <pubDate>Mon, 30 Oct 2017 10:32:33 +0100</pubDate>
+ <dc:creator>JJourdin</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/fr/blog/evenements/3-raisons-de-venir-rencontrer-prestashop-au-salon-e-commerce-xpo-courtrai</guid>
+  </item>
+  <item>
+    <title>Comment éviter les pénalités de Google ?</title>
+    <link>https://www.prestashop.com/fr/blog/comment-eviter-les-penalites-de-google</link>
+    <description>Vous craignez de recevoir une sanction de l&#039;algorithme de Google ? Vous n’êtes pas le seul.</description>
+     <pubDate>Thu, 26 Oct 2017 10:07:16 +0200</pubDate>
+ <dc:creator>Anonymous</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/fr/blog/comment-eviter-les-penalites-de-google</guid>
+  </item>
+  <item>
+    <title>Fonds d’Intégration: déjà 1 000 candidatures</title>
+    <link>https://www.prestashop.com/fr/blog/fonds-integration-1000-candidatures</link>
+    <description>Fonds d’Intégration: qu’est-ce qui a été fait jusqu’à maintenant?</description>
+     <pubDate>Wed, 18 Oct 2017 10:17:54 +0200</pubDate>
+ <dc:creator>margauxchoplin</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/fr/blog/fonds-integration-1000-candidatures</guid>
+  </item>
+  <item>
+    <title>Personnalisez vos campagnes avec les annonces dynamiques</title>
+    <link>https://www.prestashop.com/fr/blog/personnalisez-vos-campagnes-avec-les-annonces-dynamiques</link>
+    <description>L&#039;annonce dynamique permet de proposer un contenu personnalisé aux internautes.</description>
+     <pubDate>Thu, 12 Oct 2017 15:12:01 +0200</pubDate>
+ <dc:creator>Anonymous</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/fr/blog/personnalisez-vos-campagnes-avec-les-annonces-dynamiques</guid>
+  </item>
+  <item>
+    <title>Le guide de planification de la période des fêtes le plus complet pour les retailers</title>
+    <link>https://www.prestashop.com/fr/blog/guide-planification-fetes-retailers</link>
+    <description>Avec le Black Friday, le Cyber Monday et le Boxing Day, la définition de la « présence publicitaire pendant les fêtes » s&#039;est considérablement étendue.</description>
+     <pubDate>Wed, 11 Oct 2017 11:25:13 +0200</pubDate>
+ <dc:creator>Anonymous</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/fr/blog/guide-planification-fetes-retailers</guid>
+  </item>
+  <item>
+    <title>2017 ou l’année de tous les records : la barre des 100 meetups PrestaShop est franchie ! </title>
+    <link>https://www.prestashop.com/fr/blog/2017-ou-lannee-de-tous-les-records-la-barre-des-100-meetups-prestashop-est-franchie</link>
+    <description>Le 23 septembre 2017 est une journée très spéciale pour PrestaShop et sa communauté. Pourquoi ? Parce qu’il s’agit du 100e meetup organisé depuis le 1er janvier !</description>
+     <pubDate>Tue, 03 Oct 2017 10:58:43 +0200</pubDate>
+ <dc:creator>AmbassadorTeam</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/fr/blog/2017-ou-lannee-de-tous-les-records-la-barre-des-100-meetups-prestashop-est-franchie</guid>
+  </item>
+  <item>
+    <title>Rencontrez Mohamadou, Ambassadeur du mois | Septembre 2017</title>
+    <link>https://www.prestashop.com/fr/blog/prestashop-ambassadors/rencontrez-mohamed-ambassadeur-du-mois-septembre-2017</link>
+    <description>Mohamadou est notre Ambassadeur à Dakar, au Sénégal et a récemment fait parler de lui sur </description>
+     <pubDate>Thu, 21 Sep 2017 00:00:00 +0200</pubDate>
+ <dc:creator>Manon Plommet</dc:creator>
+ <guid isPermaLink="false">https://www.prestashop.com/fr/blog/prestashop-ambassadors/rencontrez-mohamed-ambassadeur-du-mois-septembre-2017</guid>
+  </item>
+  </channel>
+</rss>
