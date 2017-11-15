@@ -1,4 +1,4 @@
-<?php /* Smarty version Smarty-3.1.19, created on 2017-11-14 15:13:58
+<?php /* Smarty version Smarty-3.1.19, created on 2017-11-15 18:49:46
          compiled from "C:\wamp64\www\site_club_echec\Boutique\admin88\themes\default\template\helpers\modules_list\modal.tpl" */ ?>
 <?php /*%%SmartyHeaderCode:272505a0afa26f11f24-06403419%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
@@ -7,7 +7,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
     '27f97b7c9126a73e7701bacedce0fd9f5f550ad7' => 
     array (
       0 => 'C:\\wamp64\\www\\site_club_echec\\Boutique\\admin88\\themes\\default\\template\\helpers\\modules_list\\modal.tpl',
-      1 => 1510667299,
+      1 => 1510766740,
       2 => 'file',
     ),
   ),
@@ -15,9 +15,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   'function' => 
   array (
   ),
-  'has_nocache_code' => false,
   'version' => 'Smarty-3.1.19',
   'unifunc' => 'content_5a0afa26f1ada4_47987951',
+  'has_nocache_code' => false,
 ),false); /*/%%SmartyHeaderCode%%*/?>
 <?php if ($_valid && !is_callable('content_5a0afa26f1ada4_47987951')) {function content_5a0afa26f1ada4_47987951($_smarty_tpl) {?>
 <div class="modal fade" id="modules_list_container">
