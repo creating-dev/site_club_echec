@@ -14,7 +14,7 @@
 
     </script>
 
-        <iframe src="../../Boutique" onload="resizeIframe(this)" frameborder="0"  width="100%" height="100%"/>
+        <iframe src="../../Boutique" frameborder="0" scrolling="no" onload="resizeIframe(this)" />
         </iframe>
 
 

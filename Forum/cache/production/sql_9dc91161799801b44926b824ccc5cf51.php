@@ -1,5 +1,9 @@
 <?php exit; ?>
+<<<<<<< HEAD
 1510770948
+=======
+1510770581
+>>>>>>> dd359eb13c6b2bd45248214a2db2604c1cf3b75b
 SELECT ban_ip, ban_userid, ban_email, ban_exclude, ban_give_reason, ban_end FROM phpbb_banlist WHERE ban_email = '' AND (ban_userid = 1 OR ban_ip <> '')
 6
 a:0:{}
