@@ -167,7 +167,7 @@ include("include/header.php");
 	include("include/menu.php");
 	?>
 </div>
-<div id="main">
+<div id="main" style="min-height: 500px">
 	<?php
 	//TITRE DE LA PAGE
 	echo "<h1>";

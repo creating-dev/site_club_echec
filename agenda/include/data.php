@@ -40,7 +40,7 @@ $table_demande="xlagenda_demande"; //NOM DE LA TABLE DES DEMANDES DE COMPTES
 $table_config="xlagenda_config"; //NOM DE LA TABLE DES PARAMETRES
 
 //URL DES PAGES
-$path_agenda="xlagenda44"; //ACCES A L'AGENDA PAR RAPPORT A LA RACINE DU SITE
+$path_agenda="site_club_echec/agenda/"; //ACCES A L'AGENDA PAR RAPPORT A LA RACINE DU SITE
 $url_page="index.php"; //URL DE LA PAGE DE L'AGENDA
 $url_compte="compte.php"; //URL DE LA PAGE DE DEMANDE DE COMPTE
 $url_recherche="rechercher.php"; //URL DE LA PAGE DE RECHERCHE
