@@ -1,0 +1,50 @@
+/*css cours et tarifs*/
+
+.tarif {
+  text-align: justify;
+  text-indent: 10px;
+  font: italic bold 18px comic sans ms;
+}
+.tarifBis {
+
+
+  text-align: center;
+  text-indent: 10px;
+  font: italic bold 18px comic sans ms;
+  color: darkred;
+
+}
+
+
+#cour {
+
+  text-align: center;
+  text-decoration: underline;
+}
+
+table{
+  margin: auto;
+  list-style-type: none;
+
+}
+
+tr {
+
+
+  width: 60%;
+  text-align: center;
+}
+
+
+td {
+  border: medium solid #007002;
+  width: 20%;
+  background-color: lightyellow;
+}
+
+th {
+  text-align: center;
+  border: medium solid #007002;
+  width: 20%;
+  background-color: lightyellow;
+}

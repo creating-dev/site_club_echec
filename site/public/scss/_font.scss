@@ -1,0 +1,82 @@
+@font-face {
+  font-family: 'exoticamedium';
+  src: url(../../resources/font/Exotica-webfont.eot);
+  src: url(../../resources/font/Exotica-webfont.eot?#iefix) format('embedded-opentype'),
+  url(../../resources/font/Exotica-webfont.woff) format('woff'),
+  url(../../resources/font/Exotica-webfont.ttf) format('truetype'),
+  url(../../resources/font/Exotica-webfont.svg#exoticamedium) format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'black_roseregular';
+  src: url(../../resources/font/BLACKR-webfont.eot);
+  src: url(../../resources/font/BLACKR-webfont.eot?#iefix) format('embedded-opentype'),
+  url(../../resources/font/BLACKR-webfont.woff) format('woff'),
+  url(../../resources/font/BLACKR-webfont.ttf) format('truetype'),
+  url(../../resources/font/BLACKR-webfont.svg#black_roseregular) format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'rothenburg_decorativenormal';
+  src: url(../../resources/font/rothenbg-webfont.eot);
+  src: url(../../resources/font/rothenbg-webfont.eot?#iefix) format('embedded-opentype'),
+  url(../../resources/font/rothenbg-webfont.woff) format('woff'),
+  url(../../resources/font/rothenbg-webfont.ttf) format('truetype'),
+  url(../../resources/font/rothenbg-webfont.svg#rothenburg_decorativenormal) format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'zendaregular';
+  src: url(../../resources/font/zenda-webfont.eot);
+  src: url(../../resources/font/zenda-webfont.eot?#iefix) format('embedded-opentype'),
+  url(../../resources/font/zenda-webfont.woff) format('woff'),
+  url(../../resources/font/zenda-webfont.ttf) format('truetype'),
+  url(../../resources/font/zenda-webfont.svg#zendaregular) format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'carouselregular';
+  src: url(../../resources/font/Carousel-webfont.eot);
+  src: url(../../resources/font/Carousel-webfont.eot?#iefix) format('embedded-opentype'),
+  url(../../resources/font/Carousel-webfont.woff) format('woff'),
+  url(../../resources/font/Carousel-webfont.ttf) format('truetype'),
+  url(../../resources/font/Carousel-webfont.svg#carouselregular) format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+@font-face {
+  font-family: 'dearest_openregular';
+  src: url(../../resources/font/Dearest_open-webfont.eot);
+  src: url(../../resources/font/Dearest_open-webfont.eot?#iefix) format('embedded-opentype'),
+  url(../../resources/font/Dearest_open-webfont.woff) format('woff'),
+  url(../../resources/font/Dearest_open-webfont.ttf) format('truetype'),
+  url(../../resources/font/Dearest_open-webfont.svg#dearest_openregular) format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
+
+.maj{
+  font-family: "dearest_openregular";
+  font-size: 75px;
+}
+
+.min{
+  font-family: "carouselregular";
+  font-size: 70px;
+}

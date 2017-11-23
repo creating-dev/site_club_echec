@@ -25,7 +25,7 @@ Route::get('/home', function () {
 
 Route::get('/agenda', function () {
     session_start();
-    return view('agenda/agenda');
+    return view('agenda');
 });
 
 Route::get('/CGU', function () {

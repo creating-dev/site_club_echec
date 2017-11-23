@@ -1,0 +1,27 @@
+
+@import "reste";
+@import "font";
+@import "baniere";
+@import "menu";
+@import "footer";
+@import "titre";
+@import "mon_compte";
+@import "sous_menu";
+@import "corps";
+@import "club";
+@import "cours_et_tarif";
+@import "licence";
+@import "burger";
+@import "video";
+
+
+body {
+  background: url("../img/header/fond.jpg") no-repeat fixed;
+  background-size: cover;
+
+}
+
+.btn-perso{
+  background-color: black;
+  border-color: black;
+}

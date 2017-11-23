@@ -1,0 +1,54 @@
+/*css menu burger*/
+#burger {
+  position: absolute;
+  background-color: #333333;
+  color: white;
+  margin: 80px 0 0 0;
+  z-index: 20;
+  width: 97.5%;
+  height: 500px;
+  display: none;
+}
+
+#burger h2, h3 {
+  text-align: center;
+}
+
+#burger a {
+  text-decoration: none;
+  color: white;
+}
+
+#burger a:hover {
+  color: #34B484;
+}
+
+#burger li {
+  list-style: none;
+  text-align: center;
+  line-height: 2em;
+}
+
+#burger li h3 a {
+  color: #34B484;
+}
+
+#burger li h3 a:hover {
+  color: white;
+}
+
+#menu_burger {
+  position: relative;
+  z-index: 19;
+}
+
+#fade { /*--Masque opaque noir de fond--*/
+  background: #000;
+  position: fixed;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  opacity: .80;
+  z-index: 10;
+}
