@@ -1,0 +1,30 @@
+#menu {
+  background-color: antiquewhite;
+  color: yellow;
+  height: 85px;
+  padding-top: 2%;
+}
+
+#menu li {
+  list-style-type: none;
+  display: inline-block;
+  margin-left: 6%;
+  font-size: 20px;
+  font-family: carouselregular;
+}
+
+#menu li a {
+  text-decoration: none;
+  color: black;
+  /*  text-shadow: 8px 5px 8px #34B484;*/
+}
+
+#menu li a:hover {
+  text-decoration: none;
+  color: #34B484;
+  text-shadow: 8px 5px 8px #fff05a;
+}
+
+hr {
+  border: 1px solid black;
+}

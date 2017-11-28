@@ -1,0 +1,475 @@
+{\rtf1\ansi\ansicpg1252\cocoartf1348\cocoasubrtf170
+\cocoascreenfonts1{\fonttbl\f0\fswiss\fcharset0 ArialMT;\f1\fswiss\fcharset0 Helvetica;\f2\fnil\fcharset0 Verdana;
+\f3\fnil\fcharset0 LucidaGrande;}
+{\colortbl;\red255\green255\blue255;\red65\green80\blue127;\red212\green117\blue9;}
+\paperw11900\paperh16840\margl1440\margr1440\vieww19980\viewh14400\viewkind0
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720
+
+\f0\b\fs52 \cf2 XLAgenda 4\
+\
+\pard\tx565\tx1133\tx1700\tx2266\tx2832\tx3401\tx3967\tx4535\tx5102\tx5669\tx6235\tx6802
+
+\b0\fs24 \cf0 XLAgenda 4 par Xavier LE QUERE\
+Web : http://xavier.lequere.net/xlagenda\
+(C) Xavier LE QUERE, 2003-2013\
+Version 4.4 - 08/05/16\
+\
+\pard\tx565\tx1133\tx1700\tx2266\tx2832\tx3401\tx3967\tx4535\tx5102\tx5669\tx6235\tx6802
+
+\b \cf0 Ce programme utilise des applications et biblioth\'e8ques tierces :
+\b0 \
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\f1\fs26 \cf0 > Tiny MCE, par Moxiecode Systems : http://tinymce.moxiecode.com\
+> DatePicker, par Kelvin Luck : http://www.kelvinluck.com\
+> Jscolor 1.4.1, par Jan Odvarko : http://odvarko.cz\
+> jQuery 1.2.6, par John Resig : www.jquery.com
+\f0\fs24 \
+\pard\tx565\tx1133\tx1700\tx2266\tx2832\tx3401\tx3967\tx4535\tx5102\tx5669\tx6235\tx6802
+
+\b \cf0 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720
+
+\fs32 \cf3 Evolution du produit\
+\
+\pard\tx565\tx1133\tx1700\tx2266\tx2832\tx3401\tx3967\tx4535\tx5102\tx5669\tx6235\tx6802
+
+\b0\fs24 \cf0 --------------------------------\
+08/05/16 - version 4.4\
+--------------------------------\
+\pard\pardeftab720
+
+\f2\b\fs22 \cf0 Principaux bugs corrig\'e9s\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\b0 \cf0 > R\'e9solution d\'92un probl\'e8me de comptabilit\'e9 avec PHP 5.0 et 5.1\
+> Correction d\'92un bug \'e0 la fusion entre deux cat\'e9gories\
+> Correction de probl\'e8mes entra\'eenant l\'92affichage de messages de type \'ab\'a0Undefined variable\'a0\'bb
+\b \
+\pard\pardeftab720
+\cf0 \
+Principales nouveaut\'e9s\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\b0 \cf0 > Comptabilit\'e9 PHP 7\
+
+\f0\b\fs32 \cf3 \
+\pard\tx565\tx1133\tx1700\tx2266\tx2832\tx3401\tx3967\tx4535\tx5102\tx5669\tx6235\tx6802
+
+\b0\fs24 \cf0 --------------------------------\
+16/06/13 - version 4.3\
+--------------------------------\
+\pard\pardeftab720
+
+\f2\b\fs22 \cf0 Principales nouveaut\'e9s\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\b0 \cf0 > L'application est d\'e9sormais localisable\
+> Encodage en UTF-8\
+> Passage en XHTML 1.0\
+> Optimisations et corrections de bugs mineurs\
+
+\f0\b\fs32 \cf3 \
+\pard\tx565\tx1133\tx1700\tx2266\tx2832\tx3401\tx3967\tx4535\tx5102\tx5669\tx6235\tx6802
+
+\b0\fs24 \cf0 --------------------------------\
+13/02/11 - version 4.2\
+--------------------------------\
+\pard\pardeftab720
+
+\f2\b\fs22 \cf0 Principales nouveaut\'e9s\
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720\pardirnatural
+
+\b0 \cf0 > Ajout de la gestion des couleurs des cat\'e9gories\
+> Il est maintenant possible d'autoriser les visiteurs \'e0 proposer des \'e9v\'e9nements\
+> Possibilit\'e9 de modifier et de supprimer un \'e9v\'e9nement directement depuis l'agenda\
+> XLAgenda est maintenant compatible avec PHP 5.3\
+> Modification de la gestion des sessions et du contr\'f4le des autorisations dans l'interface d'administration\
+> La dur\'e9e de timeout des sessions est maintenant param\'e9trable\
+> Possibilit\'e9 de d\'e9sactiver l'envoi d'un mail \'e0 l'administrateur lorsqu'un \'e9v\'e9nement est soumis\
+> Modification des liens affich\'e9s par d\'e9faut dans le menu de l'agenda\
+> Ajout d'une balise meta noindex sur les modules d'installation et de mise \'e0 jour\
+> La version de l'agenda est maintenant est lue en table : suppression de la variable $session du fichier data.php
+\b \
+\pard\pardeftab720
+\cf0 \
+\pard\tx565\tx1133\tx1700\tx2266\tx2832\tx3401\tx3967\tx4535\tx5102\tx5669\tx6235\tx6802
+
+\f0\b0\fs24 \cf0 --------------------------------\
+03/01/11 - version 4.1.1\
+--------------------------------\
+\pard\pardeftab720
+
+\f2\b\fs22 \cf0 Principaux bugs corrig\'e9s
+\f3\b0 \uc0\u8232 
+\f0\fs24 > Correction d'un bug dans l'affichage du nom du mois\
+\pard\pardeftab720
+
+\b\fs32 \cf3 \
+\pard\tx565\tx1133\tx1700\tx2266\tx2832\tx3401\tx3967\tx4535\tx5102\tx5669\tx6235\tx6802
+
+\b0\fs24 \cf0 --------------------------------\
+26/12/10 - version 4.1\
+--------------------------------
+\f2\fs22 \
+\pard\pardeftab720
+
+\b \cf0 Principaux bugs corrig\'e9s
+\f3\b0 \uc0\u8232 
+\f2 > Correction d'un bug qui emp\'eachait l'enregistrement du mot de passe lors d'une demande de nouveau mot de passe dans certaines configurations
+\f3 \uc0\u8232 
+\f2 > Correction d'un bug qui emp\'eachait la validation d'une demande de compte dans certaines configurations\
+\pard\pardeftab720\sa220
+\cf0 > Correction d'un bug qui rendait impossible la connexion apr\'e8s un changement de nom d'utilisateur\
+\pard\pardeftab720
+
+\b \cf0 Principales nouveaut\'e9s
+\f3\b0 \uc0\u8232 
+\f2 > Modification du codage du mot de passe
+\f3 \uc0\u8232 
+\f2 > Possibilit\'e9 d'envoyer un e-mail de confirmation \'e0 la validation d'une demande de compte
+\f3 \uc0\u8232 
+\f2 > Possibilit\'e9 de personnaliser l'affichage du calendrier et de d\'e9finir un style particulier pour les jours avec un \'e9v\'e9nement\
+> Ajout d'un module d'informations sur l'application dans l'admin\
+> Possibilit\'e9 de v\'e9rifier l'existence d'une mise \'e0 jour depuis l'admin\
+> Modification des noms par d\'e9faut des tables\
+\pard\pardeftab720\sa220
+\cf0 > Ajout d'une table de param\'e8tres\
+\pard\tx565\tx1133\tx1700\tx2266\tx2832\tx3401\tx3967\tx4535\tx5102\tx5669\tx6235\tx6802
+
+\f0\fs24 \cf0 --------------------------------\
+21/11/09 - version 4.0.3\
+--------------------------------
+\f2\fs22 \
+\pard\pardeftab720\sa220
+
+\b \cf0 Principaux bugs corrig\'e9s
+\f3\b0 \uc0\u8232 
+\f2 > Correction d'un bug qui emp\'eachait l'ajout d'un \'e9v\'e9nement avec certaines configurations de MySQL
+\f3 \uc0\u8232 
+\f2 > Correction d'un bug qui emp\'eachait la modification d'un \'e9v\'e9nement avec certaines configurations de MySQL\
+
+\b Principales nouveaut\'e9s
+\f3\b0 \uc0\u8232 
+\f2 > Modification de l'affichage des heures dans le cas d'un \'e9v\'e9nement sur deux jours
+\f3 \uc0\u8232 
+\f2 > Lorsqu'une heure de fin est renseign\'e9e mais pas d'heure de d\'e9but, l'heure de d\'e9but est d\'e9sormais affich\'e9e
+\f3 \uc0\u8232 
+\f2 > Suppression du champ "user" de la table agenda, inutilis\'e9 depuis la version 3.3\
+\pard\tx565\tx1133\tx1700\tx2266\tx2832\tx3401\tx3967\tx4535\tx5102\tx5669\tx6235\tx6802
+
+\f0\fs24 \cf0 --------------------------------\
+27/06/09 - version 4.0.2\
+--------------------------------\
+\pard\tx565\tx1133\tx1700\tx2266\tx2832\tx3401\tx3967\tx4535\tx5102\tx5669\tx6235\tx6802
+
+\b \cf0 Principaux bugs corrig\'e9s\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\b0 \cf0 > Correction d'un bug qui emp\'eachait un utilisateur ne pouvant modifier que ses \'e9v\'e9nements de les modifier\
+> Correction d'un bug qui emp\'eachait un utilisateur ne pouvant supprimer que ses \'e9v\'e9nements de les supprimer\
+\
+--------------------------------\
+\pard\tx565\tx1133\tx1700\tx2266\tx2832\tx3401\tx3967\tx4535\tx5102\tx5669\tx6235\tx6802
+\cf0 16/05/09 - version 4.0.1\
+--------------------------------\
+\pard\tx565\tx1133\tx1700\tx2266\tx2832\tx3401\tx3967\tx4535\tx5102\tx5669\tx6235\tx6802
+
+\b \cf0 Principaux bugs corrig\'e9s\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\b0 \cf0 > Correction d'un bug qui emp\'eachait un utilisateur ne pouvant modifier que ses \'e9v\'e9nements de les modifier\
+> Correction d'un bug qui emp\'eachait un utilisateur ne pouvant supprimer que ses \'e9v\'e9nements de les supprimer\
+\pard\tx565\tx1133\tx1700\tx2266\tx2832\tx3401\tx3967\tx4535\tx5102\tx5669\tx6235\tx6802
+\cf0 \
+--------------------------------\
+07/03/09 - version 4.0\
+--------------------------------\
+\pard\tx565\tx1133\tx1700\tx2266\tx2832\tx3401\tx3967\tx4535\tx5102\tx5669\tx6235\tx6802
+
+\b \cf0 Principales nouveaut\'e9s\
+\pard\tx565\tx1133\tx1700\tx2266\tx2832\tx3401\tx3967\tx4535\tx5102\tx5669\tx6235\tx6802
+
+\b0 \cf0 > Nouvelle interface d'administration\
+> Ajout de la gestion des heures\
+> Ajout d'un \'e9diteur HTML\
+> Ajout d'un mini-calendrier pour s\'e9lectionner les dates au lieu de les saisir \'e0 la main\
+> Possibilit\'e9 de d\'e9sactiver des cat\'e9gories\
+> La suppression d'une cat\'e9gorie supprime les \'e9v\'e9nements qu'elle contient\
+> Lors de la fusion de deux cat\'e9gories, il est d\'e9sormais possible de donner \'e0 la nouvelle cat\'e9gorie le nom d'une des cat\'e9gories fusionn\'e9es\
+> A l'ajout ou \'e0 la modification d'un \'e9v\'e9nement, l'application v\'e9rifie que la date de d\'e9but est bien ant\'e9rieure \'e0 la date de fin\
+> Nouveau syst\'e8me de visualisation des \'e9v\'e9nements en mode "vue r\'e9duite"\
+> Contr\'f4les en temps r\'e9el sur la disponibilit\'e9 du nom d'utilisateur et de l'adresse e-mail lors de l'ajout / modification d'un compte\
+> Pr\'e9vention des injections SQL dans l'admin\
+> Modification du code HTML de l'agenda pour faciliter la personnalisation en CSS\
+\
+--------------------------------\
+13/01/08 - version 3.3\
+--------------------------------\
+\pard\tx565\tx1133\tx1700\tx2266\tx2832\tx3401\tx3967\tx4535\tx5102\tx5669\tx6235\tx6802
+
+\b \cf0 Principales nouveaut\'e9s\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\b0 \cf0 > Ajout d'un menu de haut de page dans l'admin pour faciliter la navigation entre les diff\'e9rentes rubriques\
+> Ajout d'un formulaire pour obtenir un nouveau mot de passe en cas de perte de son mot de passe\
+> Tous les utilisateurs peuvent d\'e9sormais modifier leur mot de passe et leur adresse email \'e0 l'aide de la nouvelle rubrique "Modifier votre profil"\
+> Les mots de passe doivent d\'e9sormais faire au moins 6 caract\'e8res\
+> Dans la table "agenda", les utilisateurs sont d\'e9sormais identifi\'e9s par leur id et plus par leur username\
+> Ajout d'une demande de confirmation lors de la suppression d'un \'e9v\'e9nement\
+> Le nom et le pr\'e9nom sont d\'e9sormais enregistr\'e9s dans les param\'e8tres des comptes\
+> Lors d'une demande de cr\'e9ation de compte, ajout d'un contr\'f4le par code cach\'e9 dans une image pour \'e9viter les soumissions automatiques par des robots\
+> Il est d\'e9sormais possible de personnaliser l'adresse d'exp\'e9dition des notifications par email \
+> Il est d\'e9sormais possible de valider les \'e9v\'e9nements un par un\
+> Les administrateurs peuvent d\'e9sormais d\'e9sactiver un \'e9v\'e9nement\
+> Dans l'admin, rubrique "G\'e9rer les utilisateurs", un lien vers la validation des inscriptions s'affiche lorsqu'il y a des demandes d'inscriptions en attente\
+> Il n'est plus possible de modifier les param\'e8tres du compte courant dans la rubrique "G\'e9rer les utilisateurs"\
+> Modification de l'interface d'installation automatique afin d'\'e9viter qu'elle puisse \'eatre utilis\'e9e pour g\'e9n\'e9rer un nouveau compte une fois l'application install\'e9e\
+> Modification de l'interface de mise \'e0 jour automatique pour la rendre compatible avec toutes les versions de l'application\
+\pard\tx565\tx1133\tx1700\tx2266\tx2832\tx3401\tx3967\tx4535\tx5102\tx5669\tx6235\tx6802
+
+\b \cf0 Principaux bugs corrig\'e9s\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\b0 \cf0 > Suppression des messages d'erreur "Undefined variable" lors d'une demande de cr\'e9ation de compte et lors de l'ajout d'un \'e9v\'e9nement par un utilisateur dont les nouveaux \'e9v\'e9nements sont soumis \'e0 validation\
+> Correction d'un bug qui pouvait conduire \'e0 l'affichage d'\'e9v\'e9nements non valid\'e9s dans l'agenda\
+> Il n'est plus possible de cr\'e9er deux utilisateurs avec un m\'eame username ou une m\'eame adresse email\
+> Correction d'un bug qui permettait \'e0 un utilisateur de supprimer un \'e9v\'e9nement qu'il n'avait pas cr\'e9\'e9 sans en avoir le droit\
+> Lors de la modification d'un \'e9v\'e9nement, l'application contr\'f4le d\'e9sormais que les champs obligatoires ont bien \'e9t\'e9 renseign\'e9s\
+\
+--------------------------------\
+\pard\tx565\tx1133\tx1700\tx2266\tx2832\tx3401\tx3967\tx4535\tx5102\tx5669\tx6235\tx6802
+\cf0 02/03/06 - version 3.2.7\
+--------------------------------\
+\pard\tx565\tx1133\tx1700\tx2266\tx2832\tx3401\tx3967\tx4535\tx5102\tx5669\tx6235\tx6802
+
+\b \cf0 Principaux bugs corrig\'e9s\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\b0 \cf0 > Correction d'un bug qui permettait d'acc\'e9der \'e0 l'admin sans avoir de compte lorsque magic_quote \'e9tait d\'e9sactiv\'e9 dans la configuration de PHP\
+\pard\tx565\tx1133\tx1700\tx2266\tx2832\tx3401\tx3967\tx4535\tx5102\tx5669\tx6235\tx6802
+
+\b \cf0 Principales nouveaut\'e9s\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\b0 \cf0 > Remplacement des <? par des <?php dans les fichiers header.php pour am\'e9liorer la compatibilit\'e9\
+> Pr\'e9vention renforc\'e9e des injections SQL dans la partie publique de l'agenda\
+\pard\tx565\tx1133\tx1700\tx2266\tx2832\tx3401\tx3967\tx4535\tx5102\tx5669\tx6235\tx6802
+\cf0 \
+--------------------------------\
+28/12/05 - version 3.2.6\
+--------------------------------\
+\pard\tx565\tx1133\tx1700\tx2266\tx2832\tx3401\tx3967\tx4535\tx5102\tx5669\tx6235\tx6802
+
+\b \cf0 Principales nouveaut\'e9s\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\b0 \cf0 > L'agenda peut d\'e9sormais \'eatre plac\'e9 \'e0 la racine du site\
+\pard\tx565\tx1133\tx1700\tx2266\tx2832\tx3401\tx3967\tx4535\tx5102\tx5669\tx6235\tx6802
+\cf0 \
+--------------------------------\
+11/11/05 - version 3.2.5\
+--------------------------------\
+\pard\tx565\tx1133\tx1700\tx2266\tx2832\tx3401\tx3967\tx4535\tx5102\tx5669\tx6235\tx6802
+
+\b \cf0 Principales nouveaut\'e9s\
+\pard\tx566\tx1133\tx1700\tx2267\tx2834\tx3401\tx3968\tx4535\tx5102\tx5669\tx6236\tx6803\pardirnatural
+
+\b0 \cf0 > Dans le fichier data.php, possibilit\'e9 de configurer la vue par d\'e9faut\
+> Dans le fichier data.php, possibilit\'e9 de d\'e9sactiver le menu de choix des vues
+\b \
+\pard\tx565\tx1133\tx1700\tx2266\tx2832\tx3401\tx3967\tx4535\tx5102\tx5669\tx6235\tx6802
+\cf0 Principaux bugs corrig\'e9s
+\b0 \
+> Correction d'un bug qui affichait l'ann\'e9e en cours au lieu de l'ann\'e9e demand\'e9e dans le message indiquant qu'aucun \'e9v\'e9nement n'est trouv\'e9\
+> Correction d'un bug qui affichait des messages "Undefined variable" dans les menus d\'e9roulants permettant de s\'e9lectionner la date de fin d'un \'e9v\'e9nement\
+\
+--------------------------------\
+13/10/05 - version 3.2.4\
+--------------------------------\
+
+\b Principaux bugs corrig\'e9s
+\b0 \
+> Correction d'un bug qui conduisait \'e0 l'affichage d'\'e9v\'e9nements pas encore valid\'e9s par l'administrateur\
+\
+--------------------------------\
+27/05/05 - version 3.2.3\
+--------------------------------\
+
+\b Principales nouveaut\'e9s\
+\pard\tx565\tx1133\tx1700\tx2266\tx2832\tx3401\tx3967\tx4535\tx5102\tx5669\tx6235\tx6802
+
+\b0 \cf0 > Possibilit\'e9 de choisir le nombre d'ann\'e9es \'e0 afficher avant et apr\'e8s l'ann\'e9e en cours dans les menus "ann\'e9es"\
+> Am\'e9lioration du code HTML pour le rendre plus lisible\
+\pard\tx565\tx1133\tx1700\tx2266\tx2832\tx3401\tx3967\tx4535\tx5102\tx5669\tx6235\tx6802
+
+\b \cf0 Principaux bugs corrig\'e9s
+\b0 \
+> Correction d'un bug qui masquait certains \'e9v\'e9nements lors du filtrage\
+> Correction d'un bug qui emp\'eachait l'affichage de la description de l'\'e9v\'e9nement dans le formulaire de saisie en cas d'erreur
+\b\fs32 \cf3 \
+\pard\tx565\tx1133\tx1700\tx2266\tx2832\tx3401\tx3967\tx4535\tx5102\tx5669\tx6235\tx6802
+
+\b0\fs24 \cf0 \
+--------------------------------\
+12/03/05 - version 3.2.2\
+--------------------------------\
+\pard\tx565\tx1133\tx1700\tx2266\tx2832\tx3401\tx3967\tx4535\tx5102\tx5669\tx6235\tx6802
+
+\b \cf0 Principaux bugs corrig\'e9s
+\b0 \
+> Correction d'un bug qui emp\'eachait de changer le mot de passe d'un utilisateur\
+> Correction d'un bug qui affichait un message d'erreur lors de l'\'e9dition du compte d'un utilisateur\
+\pard\tx565\tx1133\tx1700\tx2266\tx2832\tx3401\tx3967\tx4535\tx5102\tx5669\tx6235\tx6802
+
+\b\fs32 \cf3 \
+\pard\tx565\tx1133\tx1700\tx2266\tx2832\tx3401\tx3967\tx4535\tx5102\tx5669\tx6235\tx6802
+
+\b0\fs24 \cf0 --------------------------------\
+30/12/04 - version 3.2.1\
+--------------------------------\
+\pard\tx565\tx1133\tx1700\tx2266\tx2832\tx3401\tx3967\tx4535\tx5102\tx5669\tx6235\tx6802
+
+\b \cf0 Principaux bugs corrig\'e9s
+\b0 \
+> Correction d'un bug qui affichait un message d'erreur dans la pop up, lors de l'affichage en mode r\'e9duit. 
+\b\fs32 \cf3 \
+\pard\tx560\tx1120\tx1680\tx2240\tx2800\tx3360\tx3920\tx4480\tx5040\tx5600\tx6160\tx6720
+\cf3 \
+\pard\tx565\tx1133\tx1700\tx2266\tx2832\tx3401\tx3967\tx4535\tx5102\tx5669\tx6235\tx6802
+
+\b0\fs24 \cf0 --------------------------------\
+15/12/04 - version 3.2\
+--------------------------------\
+\pard\tx565\tx1133\tx1700\tx2266\tx2832\tx3401\tx3967\tx4535\tx5102\tx5669\tx6235\tx6802
+
+\b \cf0 Principales nouveaut\'e9s\
+\pard\tx565\tx1133\tx1700\tx2266\tx2832\tx3401\tx3967\tx4535\tx5102\tx5669\tx6235\tx6802
+
+\b0 \cf0 > Possibilit\'e9 de consulter les logs de connexion via l'admin, et de les initialiser\
+> Dans le texte des \'e9v\'e9nements, filtrage des tags HTML afin d'am\'e9liorer la s\'e9curit\'e9\
+> Dans le texte des \'e9v\'e9nements, conversion des caract\'e8res accentu\'e9s en HTML afin d'am\'e9liorer la compatibilit\'e9\
+> Sur la partie publique de l'agenda, pr\'e9vention des injections SQL par le contr\'f4le du contenu des variables et par le filtrage des requ\'eates\
+> Sur l'\'e9cran de connexion \'e0 l'admin, limitation du nombre de caract\'e8res des champs afin de r\'e9duire les risques de connexion par injection SQL\
+> Am\'e9lioration de la connexion \'e0 la base de donn\'e9es\
+> Dans la partie publique de l'agenda, ajout d'un message signalant que l'application n'est pas install\'e9e lorsque les tables n'existent pas
+\b \
+Principaux bugs corrig\'e9s
+\b0 \
+> Modification du code de la page de recherche afin d'\'e9viter un message d'erreur du type "undefined index" \
+> Correction d'un bug qui ajoutait des \\ apr\'e8s les apostrophes dans la fen\'eatre d'affichage des \'e9v\'e9nements\
+\
+--------------------------------\
+09/10/04 - version 3.1.1\
+--------------------------------\
+\pard\tx565\tx1133\tx1700\tx2266\tx2832\tx3401\tx3967\tx4535\tx5102\tx5669\tx6235\tx6802
+
+\b \cf0 Principaux bugs corrig\'e9s
+\b0 \
+> Correction d'un bug qui effa\'e7ait la date des \'e9v\'e9nements modifi\'e9s avec une configuration de PHP en register_globals = OFF\
+\
+--------------------------------\
+23/09/04 - version 3.1\
+--------------------------------\
+
+\b Principales nouveaut\'e9s
+\b0 \
+> Lorsqu'un \'e9v\'e9nement est en attente de validation, un email est envoy\'e9 aux administrateurs\
+> Lorsqu'un \'e9v\'e9nement est en attente de validation, un message s'affiche sur la page d'accueil de l'interface d'administration\
+> Apr\'e8s cinq tentatives de connexion \'e0 partir d'un m\'eame nom d'utilisateur, le compte concern\'e9 est bloqu\'e9 jusqu'au lendemain\
+> Les mots de passe sont d\'e9sormais cod\'e9s dans la base de donn\'e9es\
+> Les mots de passe n'apparaissent plus dans l'interface d'administration\
+> Il n'est plus possible de supprimer le compte en cours d'utilisation\
+> L'agenda est d\'e9sormais en HTML 4.0.1 valide\
+> La couleur des cadres est d\'e9sormais g\'e9r\'e9e par la feuille de style CSS\
+> Dans le code HTML, remplacement des ' par des "\
+
+\b Principaux bugs corrig\'e9s
+\b0 \
+> Correction d'une faille de s\'e9curit\'e9 qui permettait d'acc\'e9der \'e0 l'interface d'administration sans \'eatre connect\'e9\
+> Modification du code afin d'\'e9viter les messages d'erreur du type "undefined index" et "undefined variable"\
+> Lors d'une erreur dans l'ajout d'un \'e9v\'e9nement, le menu "ann\'e9es" s'affiche correctement\
+\
+--------------------------------\
+20/08/04 - version 3.0.1\
+--------------------------------\
+
+\b Principales nouveaut\'e9s
+\b0 \
+> Modification de la feuille de style afin d'am\'e9liorer la compatibilit\'e9\
+> Modification du code HTML afin d'am\'e9liorer la compatibilit\'e9\
+> Remplacement des <? par des <?php afin d'am\'e9liorer la compatibilit\'e9\
+> Possibilit\'e9 de personnaliser les URL des pages de recherche et de demande de compte, ainsi que le nom du r\'e9pertoire de l'admin\
+
+\b Principaux bugs corrig\'e9s
+\b0 \
+> Correction d'un bug qui emp\'eachait les \'e9v\'e9nements commenc\'e9s avant la date du jour et pas encore achev\'e9s de s'afficher correctement\
+> Correction d'un bug qui ajoutait un espace apr\'e8s l'apostrophe dans le formulaire de recherche\
+\
+--------------------------------\
+16/06/04 - version 3.0\
+--------------------------------\
+
+\b Principales nouveaut\'e9s
+\b0 \
+> L'utilisateur peut d\'e9sormais choisir le nom des tables\
+> Ajout du calendrier du mois en cours\
+> Possibilit\'e9 d'afficher les \'e9v\'e9nements d'une seule journ\'e9e\
+> Le formulaire de recherche est d\'e9sormais sur une page s\'e9par\'e9e\
+> Possibilit\'e9 de demander un compte en ligne\
+> Nouveaux champs : lieu, adresse du contact, texte du lien\
+
+\b Principaux bugs corrig\'e9s
+\b0 \
+> Lorsque magic_quotes est activ\'e9, l'agenda n'ajoute plus de \\ avant les '\
+> Lorsque le nom du mois commence par une consonne, l'agenda affiche d' et non plus de\
+> Am\'e9lioration de la gestion des URL\
+\
+--------------------------------\
+10/02/04 - version 2.3.1\
+--------------------------------\
+
+\b Principaux bugs corrig\'e9s
+\b0 \
+> L'installation automatique peut se lancer si le serveur SQL n'a pas de mot de passe\
+> Lors de l'installation automatique, les cat\'e9gories comprenant des ' sont introduites dans la table des cat\'e9gories\
+> Lors de l'installation automatique, les cat\'e9gories comprenant des mots accentu\'e9s sont introduites correctement dans la table des cat\'e9gories\
+\
+--------------------------------\
+05/02/04 - version 2.3\
+--------------------------------\
+
+\b Principales nouveaut\'e9s
+\b0 \
+> Affichage de l'agenda en version longue ou en version courte\
+> Possibilit\'e9 de rechercher ou bien dans le mois en cours ou bien dans les \'e9v\'e9nements \'e0 venir\
+> Le nom du mois s'affiche dans le titre de la page\
+> Ajout de nouveaux messages d'information\
+> Am\'e9lioration du script de construction du menu "ann\'e9es"\
+
+\b Principaux bugs corrig\'e9s
+\b0 \
+> Les messages comprenant des mots accentu\'e9s s'affichent correctement\
+\
+--------------------------------\
+18/01/04 - version 2.2\
+--------------------------------\
+> Am\'e9lioration de l'interface de validation afin de rendre plus agr\'e9able la lecture des \'e9v\'e9nements en attente\
+> Am\'e9lioration du script de navigation entre les mois\
+\
+--------------------------------\
+05/01/04 - version 2.1\
+--------------------------------\
+> Modification de l'interface d'administration afin de permettre de modifier ou de supprimer un rendez-vous de l'ann\'e9e pass\'e9e\
+\
+--------------------------------\
+20/12/03 - version 2.0\
+--------------------------------\
+> XLAgenda est d\'e9sormais compatible avec la configuration par d\'e9faut de PHP 4.2.0 et ult\'e9rieur (registrer_globals et magic_qutotes d\'e9sactiv\'e9s)\
+> Am\'e9lioration de l'interface d'installation automatique\
+> Correction de plusieurs bugs mineurs\
+\
+--------------------------------\
+20/09/03 - version 1.0\
+--------------------------------\
+Premi\'e8re version publique de XLAgenda}
