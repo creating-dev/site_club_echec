@@ -15,6 +15,9 @@
     <!--fichier css-->
     <link rel="stylesheet" href="css/style.css">
 
+   <!---->
+    <link href="https://fonts.googleapis.com/css?family=Tangerine|Ewert|Rye|Vast+Shadow" rel="stylesheet">
+
     <title>@yield('title')</title>
 </head>
 <body>
@@ -22,13 +25,11 @@
 <div class="container">
 
     <div class="row">
-
         <div class="col-lg-12">
             <div id="baniere" class="row">
                 <div class="col-lg-1" id="log1"><img src="img/header/logo1.png" alt=""></div>
                 <div class="col-lg-11" id="ban">
-                    <span class="maj">C</span><span class="min">lub d'</span><span class="maj">E</span><span
-                            class="min">checs d'</span><span class="maj">O</span><span class="min">llioules</span></div>
+                    <span class="maj">C</span><span class="min">lub d'</span><span class="maj">E</span><span class="min">checs d'</span><span class="maj">O</span><span class="min">llioules</span></div>
                 <div class="col-lg-0" id="log2"></div>
             </div>
         </div>

@@ -10,11 +10,11 @@
     <h2 id="titre3Ho"> Le jeu d'Echec est le Sport Intellectuel par Excellence ! </h2>
     <hr class="titr"> <br>
     <p id="presentation">
-        Quel que soit votre Age, votre Niveau, votre Motivation, Fille ou Garçon…
-        Les Echecs vous enrichiront et ne vous laisseront Jamais repartir les Mains vides !
-        Par des Méthodes de Travail Structurées et un Travail Personnalisé,
-        le Club d’Echecs d’Ollioules vous offrira par le biais de son Entraineur et de ses Adhérents,
-        une Ambiance Conviviale et Enrichissante à l’Epanouissement Personnel !
+        Quel que soit votre âge, votre niveau, votre motivation, Fille ou Garçon…
+        Les échecs vous enrichiront et ne vous laisseront jamais repartir les mains vides !
+        Par des méthodes de Travail structurées et un Travail Personnalisé, le Club d’échecs
+        d’Ollioules vous offrira par le biais de son entraîneur et de ses adhérents, une ambiance
+        conviviale et Enrichissante à l’épanouissement personnel !
     </p>
     <br><br>
     <div class="row">

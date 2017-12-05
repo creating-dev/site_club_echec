@@ -39,13 +39,19 @@ a, form a {
   src: url(../../resources/font/Dearest_open-webfont.eot?#iefix) format("embedded-opentype"), url(../../resources/font/Dearest_open-webfont.woff) format("woff"), url(../../resources/font/Dearest_open-webfont.ttf) format("truetype"), url(../../resources/font/Dearest_open-webfont.svg#dearest_openregular) format("svg");
   font-weight: normal;
   font-style: normal; }
+@font-face {
+  font-family: 'england_hand_dbregular';
+  src: url(../../resources/font/england-webfont.eot);
+  src: url(../../resources/font/england-webfont.eot?#iefix) format("embedded-opentype"), url(../../resources/font/england-webfont.woff) format("woff"), url(../../resources/font/england-webfont.ttf) format("truetype"), url(../../resources/font/england-webfont.svg#england_hand_dbregular) format("svg");
+  font-weight: normal;
+  font-style: normal; }
 .maj {
-  font-family: "dearest_openregular";
-  font-size: 75px; }
+  font-family: "carouselregular";
+  font-size: 95px; }
 
 .min {
   font-family: "zendaregular";
-  font-size: 70px; }
+  font-size: 90px; }
 
 #baniere {
   background: linear-gradient(#296540, #D6E5BA);
@@ -147,7 +153,7 @@ hr.titr:before {
 /*css home page : */
 #titre3Ho {
   text-align: center;
-  font: italic bold 28px comic sans ms; }
+  font: italic bold 40px black_roseregular, cursive; }
 
 #titre4Ho {
   text-align: center;
@@ -167,10 +173,11 @@ hr.titr:before {
 /*css sous-menu*/
 #s_menu {
   list-style-type: none;
-  font-size: 20px;
   text-align: center;
   background-color: #296540;
   height: 30px;
+  font-family: 'Rye', cursive;
+  font-size: 17px;
   margin-left: 0px;
   margin-right: 0px;
   position: relative;
@@ -179,7 +186,7 @@ hr.titr:before {
 #s_menu li {
   width: 100%;
   font-style: oblique;
-  Font-Weight: Bold; }
+  font-weight: bold; }
 
 #s_menu li a {
   text-decoration: none;
@@ -220,7 +227,7 @@ hr.titr:before {
 #presentation {
   text-align: justify;
   text-indent: 10px;
-  font: italic bold 18px comic sans ms; }
+  font: bold 40px 'Tangerine', cursive; }
 
 #yout {
   text-align: center; }
