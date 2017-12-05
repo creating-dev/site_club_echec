@@ -48,7 +48,7 @@ a, form a {
   font-size: 70px; }
 
 #baniere {
-  background: linear-gradient(#D6E5BA, #296540);
+  background: linear-gradient(#296540, #D6E5BA);
   height: 120px;
   margin-left: 0px;
   margin-right: 0px;
@@ -66,13 +66,13 @@ a, form a {
 
 #log1 {
   margin-left: -14px;
-  /*z-index: 2;*/ }
+  z-index: 2; }
 
 #log2 {
   margin-left: -24px; }
 
 #menu {
-  background: linear-gradient(#D6E5BA, #296540);
+  background: linear-gradient(#D6E5BA, #5C896D);
   color: yellow;
   height: 85px;
   padding-top: 2%; }
@@ -92,7 +92,7 @@ a, form a {
 #menu li a:hover {
   text-decoration: none;
   color: #34B484;
-  text-shadow: 8px 5px 8px #fff05a; }
+  /* text-shadow: 8px 5px 8px #fff05a;*/ }
 
 /*hr {
   border: 1px solid black;
@@ -171,7 +171,6 @@ hr.titr:before {
   text-align: center;
   background-color: #296540;
   height: 30px;
-  border-top: 1px solid;
   margin-left: 0px;
   margin-right: 0px;
   position: relative;
@@ -224,7 +223,7 @@ hr.titr:before {
   font: italic bold 18px comic sans ms; }
 
 .jumbotron {
-  background-color: #F9BF16; }
+  background-color: #f9d906; }
 
 #yout {
   text-align: center; }
