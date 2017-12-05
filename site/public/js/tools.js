@@ -145,7 +145,7 @@ function hover_add_glyph(icone, position) {
         $icone.parentElement.style.width = '150%';
         $icone.parentElement.style.padding = '2%';
         $icone.parentElement.style.background = 'linear-gradient(#FAEBD7, #000000)';
-        $icone.parentElement.style.color = '#ad9314';
+        $icone.parentElement.style.color = '#F9BF16';
         $icone.parentElement.style.marginTop = '1%';
         $icone.parentElement.style.transition= '300ms';
         $icone.innerHTML = '<i class="fa ' + icone + '" aria-hidden="true"></i>';

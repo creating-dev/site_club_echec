@@ -108,7 +108,7 @@
                                                                                                 aria-hidden="true"></i></a>
                     </li>
                     <li><a href="home">Acceuil</a></li>
-                    <li><a href="club">club</a></li>
+                    <li><a href="club">Club</a></li>
                     <li><a href="agenda">Agenda</a></li>
                     <li><a href="video">Video</a></li>
                     <li><a href="goodies">Goodies</a></li>
@@ -146,7 +146,7 @@
                     </ul>
                 </div>
                 <div class="col-lg-3">
-                    <p>imformation pratique</p>
+                    <p>Information pratique</p>
                     <hr>
                     <br>
                     <span id="information_img_1"><a href="#" target="_blank"><img src="img/footer/plan.PNG" alt=""></a></span>
@@ -155,7 +155,7 @@
                                                                         alt=""></a></span>
                 </div>
                 <div class="col-lg-3">
-                    <p>retrouvez-nous</p>
+                    <p>Retrouvez-nous</p>
                     <hr>
                     <br>
                     <span id="retrouvez-nous_img_1"><a href="https://www.facebook.com/club.echecs.ollioules/"
@@ -167,7 +167,7 @@
                                                                                      alt=""></a></span>
                 </div>
                 <div class="col-lg-3">
-                    <p>nos partenaires</p>
+                    <p>Nos partenaires</p>
                     <hr>
                     <br>
                     <span id="partenaires_img_1"><a href="http://www.echecs.asso.fr/" target="_blank"><img
