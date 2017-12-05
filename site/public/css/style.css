@@ -44,7 +44,7 @@ a, form a {
   font-size: 75px; }
 
 .min {
-  font-family: "carouselregular";
+  font-family: "zendaregular";
   font-size: 70px; }
 
 #baniere {
@@ -222,9 +222,6 @@ hr.titr:before {
   text-indent: 10px;
   font: italic bold 18px comic sans ms; }
 
-.jumbotron {
-  background-color: #f9d906; }
-
 #yout {
   text-align: center; }
 
@@ -244,8 +241,11 @@ hr.titr:before {
   font: italic bold 18px comic sans ms; }
 
 .jumbotron1 {
-  background-color: lightyellow;
+  background-color: #F9BF16;
   text-align: center; }
+
+.jumbotron {
+  background-color: #F9BF16; }
 
 .adhes {
   list-style-type: none; }
