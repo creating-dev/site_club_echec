@@ -94,9 +94,9 @@ a, form a {
   color: #34B484;
   text-shadow: 8px 5px 8px #fff05a; }
 
-hr {
-  border: 1px solid black; }
-
+/*hr {
+  border: 1px solid black;
+}*/
 #pub {
   padding-top: 2%;
   background-color: black;
@@ -224,7 +224,7 @@ hr.titr:before {
   font: italic bold 18px comic sans ms; }
 
 .jumbotron {
-  background-color: lightyellow; }
+  background-color: #F9BF16; }
 
 #yout {
   text-align: center; }
