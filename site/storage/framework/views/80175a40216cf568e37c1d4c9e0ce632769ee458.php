@@ -12,9 +12,9 @@
     <p id="presentation">
         Quel que soit votre âge, votre niveau, votre motivation, Fille ou Garçon…
         Les échecs vous enrichiront et ne vous laisseront jamais repartir les mains vides !
-        Par des méthodes de Travail structurées et un Travail Personnalisé, le Club d’échecs
+        Par des méthodes de Travail structurées et un Travail personnalisé, le Club d’Echecs
         d’Ollioules vous offrira par le biais de son entraîneur et de ses adhérents, une ambiance
-        conviviale et Enrichissante à l’épanouissement personnel !
+        conviviale et enrichissante à l’épanouissement personnel !
     </p>
     <br><br>
     <div class="row">

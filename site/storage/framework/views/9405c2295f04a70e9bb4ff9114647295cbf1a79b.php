@@ -107,8 +107,7 @@
 
             <div id="menu">
                 <ul>
-                    <li style="margin-left: -30px; float: left;"><a href="" id="menu_burger"><i class="fa fa-bars fa-3x"
-                                                                                                aria-hidden="true"></i></a>
+                    <li style="margin-left: -30px; float: left;"><a href="" id="menu_burger"><i class="fa fa-bars fa-3x" aria-hidden="true"></i></a>
                     </li>
                     <li><a href="home">Acceuil</a></li>
                     <li><a href="club">Club</a></li>
@@ -116,8 +115,8 @@
                     <li><a href="video">Video</a></li>
                     <li><a href="goodies">Goodies</a></li>
                     <li><a href="forums">Forum</a></li>
-                    <li><a href="goodies"><img src="img/menu/kdo.PNG" alt=""></a></li>
-                    <li><a href="compte"><img src="img/menu/compte.PNG" alt=""></a></li>
+                    <li ><a href="goodies"><img src="img/menu/kdo.PNG" alt="" ></a></li>
+                    <li ><a href="compte"><img  src="img/menu/compte.PNG"  alt="" ></a></li>
                 </ul>
             </div>
         </div>

@@ -64,7 +64,7 @@ a, form a {
   text-align: center;
   margin-left: 30px;
   margin-right: -30px;
-  font-size: 65px;
+  font-size: 85px;
   /*text-shadow: 8px 5px 8px/* #34B484/* #007002*/ }
 
 .maj {
@@ -97,7 +97,7 @@ a, form a {
 
 #menu li a:hover {
   text-decoration: none;
-  color: #34B484;
+  color: #F9BF16;
   /* text-shadow: 8px 5px 8px #fff05a;*/ }
 
 /*hr {
@@ -113,7 +113,7 @@ a, form a {
 
 #footer {
   margin-top: -19px;
-  background-color: #007002;
+  background-color: #296540;
   color: black;
   min-height: 100px;
   text-align: center;
