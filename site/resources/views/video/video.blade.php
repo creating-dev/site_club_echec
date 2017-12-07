@@ -12,7 +12,7 @@
 
     <!-- formulaire de recherche video  -->
     <form action="video" method="post">
-        <div class="row">
+        <div class="row" >
             {{ csrf_field() }}
                 <div class="col-lg-3">
                     <div class="form-group">
