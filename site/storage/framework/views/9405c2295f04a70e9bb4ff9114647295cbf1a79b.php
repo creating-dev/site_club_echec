@@ -153,7 +153,7 @@
                     <br>
                     <span id="information_img_1"><a href="#" target="_blank"><img src="img/footer/plan.PNG" alt=""></a></span>
                     <span id="information_img_2"><a href="#" target="_blank"><img src="img/footer/acces.PNG" alt=""></a></span>
-                    <span id="information_img_3"><a href="club"><img src="img/footer/contacter.PNG"
+                    <span id="information_img_3"><a href="contact"><img src="img/footer/contacter.PNG"
                                                                         alt=""></a></span>
                 </div>
                 <div class="col-lg-3">

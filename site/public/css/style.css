@@ -103,6 +103,14 @@ a, form a {
 /*hr {
   border: 1px solid black;
 }*/
+hr {
+  opacity: 1;
+  border: 2px solid #F9BF16; }
+
+.second {
+  opacity: 1;
+  border: 2px solid #296540; }
+
 #pub {
   padding-top: 2%;
   background-color: black;
@@ -160,7 +168,7 @@ hr.titr:before {
 
 #titre4Ho {
   text-align: center;
-  font: italic bold 20px comic sans ms; }
+  font: italic bold 25px comic sans ms; }
 
 #titre5Ho {
   text-align: center; }
