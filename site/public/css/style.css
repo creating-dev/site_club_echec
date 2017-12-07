@@ -58,7 +58,8 @@ a, form a {
   height: 120px;
   margin-left: 0px;
   margin-right: 0px;
-  margin-top: 0px; }
+  margin-top: 0px;
+  text-align: center; }
 
 #ban {
   text-align: center;

@@ -32,7 +32,7 @@
         <div class="col-lg-4">
             <div id="yout">
                 <a href="#">
-                <img src="../public/img/videoPresentation.png" alt="" title="Cliquez moi">
+                <img src="../public/img/header/log12.png" alt="" title="Cliquez moi">
                 </a>
             </div>
         </div>
