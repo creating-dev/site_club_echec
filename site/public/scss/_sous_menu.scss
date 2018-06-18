@@ -2,11 +2,11 @@
 
 #s_menu {
   list-style-type: none;
-  font-size: 20px;
   text-align: center;
-  background-color: #007002;
+  background-color: #296540;
   height: 30px;
-  border-top: 1px solid;
+  font-family: 'Rye', cursive;
+  font-size: 17px;
   margin-left: 0px;
   margin-right: 0px;
   position: relative;
@@ -16,7 +16,8 @@
 #s_menu li {
   width: 100%;
   font-style: oblique;
-  Font-Weight: Bold;
+  font-weight: bold;
+
 }
 
 #s_menu li a {

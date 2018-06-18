@@ -1,6 +1,6 @@
 
 hr.titr {
-  border-color: #007002;
+  border-color: #296540;
   height: 30px;
   border-style: solid;
   border-width: 7px 0 0 0;
@@ -22,12 +22,16 @@ hr.titr:before {
 /*css home page : */
 #titre3Ho {
   text-align: center;
-  font: italic bold 28px comic sans ms;
+  font-family : Tangerine , serif   ;
+  text-shadow:  4px 4px 4px #aaa ;
+  font-size: 68px;
+  font-weight: bold;
+
 }
 
 #titre4Ho {
   text-align: center;
-  font: italic bold 20px comic sans ms;
+  font: italic bold 25px comic sans ms;
 }
 
 #titre5Ho {

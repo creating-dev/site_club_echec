@@ -1,24 +1,32 @@
+
+
 #baniere {
-  background-color: antiquewhite;
+  background:linear-gradient(#296540, #D6E5BA);
   height: 120px;
   margin-left: 0px;
   margin-right: 0px;
   margin-top: 0px;
+  text-align: center;
+
+
 }
 
 #ban {
-  /*text-align: center;*/
-  border-bottom: 1px solid #007002;
-  color: black;
+  text-align: center;
   margin-left: 30px;
   margin-right: -30px;
-  font-size: 65px;
+  font-size: 85px;
 
   /*text-shadow: 8px 5px 8px/* #34B484/* #007002*/;
 }
 
+.maj{
+  color: #F9BF16;
+}
+
 #log1 {
-  margin-left: -16px;
+  margin-left: -14px;
+  z-index: 2;
 
 }
 

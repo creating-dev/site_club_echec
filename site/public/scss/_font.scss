@@ -70,13 +70,26 @@
 
 }
 
+@font-face {
+  font-family: 'england_hand_dbregular';
+  src: url(../../resources/font/england-webfont.eot);
+  src: url(../../resources/font/england-webfont.eot?#iefix) format('embedded-opentype'),
+  url(../../resources/font/england-webfont.woff) format('woff'),
+  url(../../resources/font/england-webfont.ttf) format('truetype'),
+  url(../../resources/font/england-webfont.svg#england_hand_dbregular) format('svg');
+  font-weight: normal;
+  font-style: normal;
+
+}
+
 
 .maj{
-  font-family: "dearest_openregular";
-  font-size: 75px;
+  font-family: "carouselregular";
+  font-size: 95px;
+
 }
 
 .min{
-  font-family: "carouselregular";
-  font-size: 70px;
+  font-family: "zendaregular";
+  font-size: 90px;
 }

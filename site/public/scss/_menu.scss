@@ -1,5 +1,5 @@
 #menu {
-  background-color: antiquewhite;
+  background:linear-gradient(#D6E5BA, #5C896D);
   color: yellow;
   height: 85px;
   padding-top: 2%;
@@ -21,10 +21,11 @@
 
 #menu li a:hover {
   text-decoration: none;
-  color: #34B484;
-  text-shadow: 8px 5px 8px #fff05a;
+  color: #F9BF16;
+ /* text-shadow: 8px 5px 8px #fff05a;*/
 }
 
-hr {
+/*hr {
   border: 1px solid black;
-}
+}*/
+

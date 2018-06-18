@@ -144,21 +144,25 @@ function hover_add_glyph(icone, position) {
 
         $icone.parentElement.style.width = '150%';
         $icone.parentElement.style.padding = '2%';
-        $icone.parentElement.style.backgroundColor = 'black';
-        $icone.parentElement.style.color = 'yellow';
+        $icone.parentElement.style.background = 'linear-gradient(#FAEBD7, #000000)';
+        $icone.parentElement.style.color = '#F9BF16';
         $icone.parentElement.style.marginTop = '1%';
         $icone.parentElement.style.transition= '300ms';
-        $icone.innerHTML = '<i class="fa ' + icone + '" aria-hidden="true"></i>'
+        $icone.innerHTML = '<i class="fa ' + icone + '" aria-hidden="true"></i>';
 
+    }
 
-    } else {
+    else {
 
-        $icone.innerHTML = ''
+        $icone.innerHTML = '';
         $icone.parentElement.style.width = '100%';
+        $icone.parentElement.style.heigth = '30px';
+        $icone.parentElement.style.marginTop = '0%';
         $icone.parentElement.style.padding = '0%';
-        $icone.parentElement.style.backgroundColor = '#007002';
+        $icone.parentElement.style.background = '#296540';
         $icone.parentElement.style.color = 'black';
         $icone.parentElement.style.transition= '800ms';
+        $icone.parentElement.style.zindex = '-1';
     }
 
 }
