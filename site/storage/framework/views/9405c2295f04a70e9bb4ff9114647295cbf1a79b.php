@@ -75,17 +75,15 @@
                         <ul>
                             <li><h3><u><a href="goodies">Goodies</a></u></h3></li>
                             <li>&nbsp;</li>
-                            <li><a href="goodies">Test</a></li>
-                            <li><a href="goodies">Test</a></li>
+                            <li><a href="goodies">goodies</a></li>
                         </ul>
                     </div>
 
                     <div class="col-lg-2">
                         <ul>
-                            <li><h3><u><a href="forum">Forum</a></u></h3></li>
+                            <li><h3><u><a href="forums">Forum</a></u></h3></li>
                             <li>&nbsp;</li>
-                            <li><a href="forum">Test</a></li>
-                            <li><a href="forum">Test</a></li>
+                            <li><a href="forums">forum</a></li>
                         </ul>
                     </div>
 
