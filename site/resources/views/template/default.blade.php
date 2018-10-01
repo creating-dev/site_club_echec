@@ -2,18 +2,15 @@
 <html lang="fr">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport"
-          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
     <!-- librairie  bootstrap installer par composer-->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css">
 
     <!--librairie glyph installer manuellement-->
-    <link rel="stylesheet" href="../resources/Lib/font-awesome/css/font-awesome.min.css">
+    <link rel="stylesheet" href="{{ URL::asset('Lib/font-awesome/css/font-awesome.min.css') }}">
 
     <!--fichier css-->
-    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="{{ URL::asset('css/style.css') }}">
 
    <!---->
     <link href="https://fonts.googleapis.com/css?family=Tangerine|Ewert|Rye|Vast+Shadow" rel="stylesheet">
