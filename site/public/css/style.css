@@ -46,16 +46,6 @@ a, form a {
   font-weight: normal;
   font-style: normal;
 }
-<<<<<<< HEAD
-.maj {
-  font-family: "dearest_openregular";
-  font-size: 75px;
-}
-
-.min {
-  font-family: "carouselregular";
-  font-size: 70px;
-=======
 @font-face {
   font-family: "england_hand_dbregular";
   src: url(../../resources/font/england-webfont.eot);
@@ -71,7 +61,6 @@ a, form a {
 .min {
   font-family: "zendaregular";
   font-size: 90px;
->>>>>>> jermen25
 }
 
 #baniere {
@@ -80,24 +69,13 @@ a, form a {
   margin-left: 0px;
   margin-right: 0px;
   margin-top: 0px;
-<<<<<<< HEAD
-=======
   text-align: center;
->>>>>>> jermen25
 }
 
 #ban {
   text-align: center;
   margin-left: 30px;
   margin-right: -30px;
-<<<<<<< HEAD
-  font-size: 65px;
-  /*text-shadow: 8px 5px 8px/* #34B484/* #007002*/
-}
-
-#log1 {
-  margin-left: -16px;
-=======
   font-size: 85px;
   /*text-shadow: 8px 5px 8px/* #34B484/* #007002*/
 }
@@ -109,7 +87,6 @@ a, form a {
 #log1 {
   margin-left: -14px;
   z-index: 2;
->>>>>>> jermen25
 }
 
 #log2 {
@@ -139,31 +116,14 @@ a, form a {
 
 #menu li a:hover {
   text-decoration: none;
-<<<<<<< HEAD
-  color: #34B484;
-  text-shadow: 8px 5px 8px #fff05a;
-=======
   color: #F9BF16;
   /* text-shadow: 8px 5px 8px #fff05a;*/
->>>>>>> jermen25
 }
 
 /*hr {
   border: 1px solid black;
 }*/
 hr {
-<<<<<<< HEAD
-  border: 1px solid black;
-}
-
-#corps {
-  min-height: 500px;
-  background-color: antiquewhite;
-  border: double #007002 20px;
-  padding: 2%;
-  position: relative;
-  z-index: 1;
-=======
   opacity: 1;
   border: 2px solid #F9BF16;
 }
@@ -171,7 +131,6 @@ hr {
 .second {
   opacity: 1;
   border: 2px solid #296540;
->>>>>>> jermen25
 }
 
 #pub {
@@ -231,23 +190,15 @@ hr.titr:before {
 /*css home page : */
 #titre3Ho {
   text-align: center;
-<<<<<<< HEAD
-  font: italic bold 28px comic sans ms;
-=======
   font-family: Tangerine, serif;
   text-shadow: 4px 4px 4px #aaa;
   font-size: 68px;
   font-weight: bold;
->>>>>>> jermen25
 }
 
 #titre4Ho {
   text-align: center;
-<<<<<<< HEAD
-  font: italic bold 20px comic sans ms;
-=======
   font: italic bold 25px comic sans ms;
->>>>>>> jermen25
 }
 
 #titre5Ho {
@@ -281,11 +232,7 @@ hr.titr:before {
 #s_menu li {
   width: 100%;
   font-style: oblique;
-<<<<<<< HEAD
-  Font-Weight: Bold;
-=======
   font-weight: bold;
->>>>>>> jermen25
 }
 
 #s_menu li a {
@@ -301,8 +248,6 @@ hr.titr:before {
   position: relative;
   z-index: 5;
 }
-<<<<<<< HEAD
-=======
 
 #corps {
   min-height: 500px;
@@ -315,7 +260,6 @@ hr.titr:before {
   position: relative;
   z-index: 0;
 }
->>>>>>> jermen25
 
 #methode {
   list-style-type: circle;
@@ -336,15 +280,7 @@ hr.titr:before {
 #presentation {
   text-align: justify;
   text-indent: 10px;
-<<<<<<< HEAD
-  font: italic bold 18px comic sans ms;
-}
-
-.jumbotron {
-  background-color: lightyellow;
-=======
   font: bold 40px "Tangerine", cursive;
->>>>>>> jermen25
 }
 
 #yout {
@@ -370,11 +306,6 @@ hr.titr:before {
 }
 
 .jumbotron1 {
-<<<<<<< HEAD
-  background-color: lightyellow;
-  text-align: center;
-}
-=======
   background-color: #F9BF16;
   text-align: center;
 }
@@ -382,7 +313,6 @@ hr.titr:before {
 .jumbotron {
   background-color: #F9BF16;
 }
->>>>>>> jermen25
 
 .adhes {
   list-style-type: none;
@@ -557,11 +487,8 @@ th {
   color: red;
   text-align: center;
 }
-<<<<<<< HEAD
-=======
 
 /* model de menu en dropdown :
->>>>>>> jermen25
 
 .dropdown {
   position: relative;
@@ -575,10 +502,7 @@ th {
   background:linear-gradient(#D6E5BA, #296540);
   min-width: 150%;
   padding: 12px 16px;
-<<<<<<< HEAD
-=======
 
->>>>>>> jermen25
 }
 
 .dropdown-content:hover {
@@ -586,26 +510,15 @@ th {
   text-decoration: none;
   display: block;
   position: relative;
-<<<<<<< HEAD
-=======
 
->>>>>>> jermen25
 }
 
 .dropdown:hover .dropdown-content {
   display: block;
-<<<<<<< HEAD
-}
-=======
->>>>>>> jermen25
 
 }*/
 body {
-<<<<<<< HEAD
-  background: url("../img/header/fond.jpg") no-repeat fixed;
-=======
   background: url("../img/header/21863.jpg") no-repeat fixed center;
->>>>>>> jermen25
   background-size: cover;
 }
 
